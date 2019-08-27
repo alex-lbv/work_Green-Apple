@@ -1,0 +1,41 @@
+<button class="btn" uk-toggle="target: #popup-add-review" type="button">Попапчик 'Добавить отзыв'</button>
+
+<div id="popup-add-review" class="uk-flex-top popup" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical popup__inner popup__inner--lg">
+        <svg class="popup__close popup__close--below uk-modal-close">
+            <use xlink:href="img/symbol/sprite.svg#close"></use>
+        </svg>
+        <h2 class="title">Добавить отзыв</h2>
+        <p class="popup__text popup__text--mb-25">Вам понравилось покупать у нас или есть замечания? Поделитесь своими
+            впечатлениями в форме ниже:</p>
+        <form class="popup__form" action="">
+            <div class="popup__container row">
+                <div class="col">
+                    <div class="field form__field">
+                        <label for="" class="field__title field__title--pointed-green">Плюсы</label>
+                        <textarea class="field__input field__input--shaded" name="" id="" cols="" rows="2"></textarea>
+                    </div>
+                    <div class="field form__field">
+                        <label for="" class="field__title field__title--pointed-red">Минусы</label>
+                        <textarea class="field__input field__input--shaded" name="" id="" cols="" rows="2"></textarea>
+                    </div>
+                    <div class="field form__field">
+                        <label class="field__title field__title--pointed-gray" for="">Комментарий</label>
+                        <textarea class="field__input field__input--mh-120 field__input--shaded" name="" id="" cols="" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="field">
+                        <label class="field__title" for="">Имя</label>
+                        <input class="field__input field__input--shaded" type="" name="" id="">
+                    </div>
+                    <div class="field">
+                        <label class="field__title" for="">Электронная почта</label>
+                        <input class="field__input field__input--shaded" type="" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn btn--bg-green btn--size-lg">Оформить заказ</a>
+        </form>
+    </div>
+</div>

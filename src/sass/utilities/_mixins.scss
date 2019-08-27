@@ -1,0 +1,63 @@
+%vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+%inline-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%ellipsis {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin screen($size) {
+  @if $size=='sm' {
+    @media only screen and (min-width: 0) and (max-width: ($breakpoint-md - 1) + px) {
+      @content;
+    }
+  }
+
+  @else if $size=='smlim' {
+    @media only screen and (min-width: 0) and (max-width: ($breakpoint-lg - 1) + px) {
+      @content;
+    }
+  }
+
+  @else if $size=='md' {
+    @media only screen and (min-width: $breakpoint-md + px) {
+      @content;
+    }
+  }
+
+  @else if $size=='mdlim' {
+    @media only screen and (min-width: $breakpoint-md + px) and (max-width: ($breakpoint-lg - 1) + px) {
+      @content;
+    }
+  }
+
+  @else if $size=='lg' {
+    @media only screen and (min-width: $breakpoint-lg + px) {
+      @content;
+    }
+  }
+}
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.eot');
+    src: url($file-name + '.eot?#iefix') format('embedded-opentype'),
+    url($file-name + '.woff') format('woff'),
+    url($file-name + '.woff2') format('woff2'),
+    url($file-name + '.ttf') format('truetype'),
+    url($file-name + '.svg##{$font-name}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: block;
+  }
+}

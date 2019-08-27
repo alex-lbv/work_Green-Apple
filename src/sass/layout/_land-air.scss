@@ -1,0 +1,395 @@
+.land-air {
+  border-radius: 20px;
+  border: solid 1px #e2e2e2;
+  text-align: center;
+  background-color: #ffffff;
+
+  &__title {
+    &--sm {
+      @include screen(smlim) {
+        font: bold 18px / 28px AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: bold 24px / normal AvenirNext, sans-serif;
+      }
+    }
+
+    &--md {
+      @include screen(smlim) {
+        font: bold 18px / 28px AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: bold 32px / normal AvenirNext, sans-serif;
+      }
+    }
+
+    &--lg {
+      @include screen(smlim) {
+        font: bold 28px / 36px AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: bold 38px / normal AvenirNext, sans-serif;
+      }
+    }
+  }
+
+  &__text {
+    &--sm {
+      @include screen(smlim) {
+      }
+
+      @include screen(lg) {
+        font: 300 16px/1.63 Roboto, sans-serif;
+      }
+    }
+
+    &--md {
+      @include screen(smlim) {
+        font: 300 14px/22px Roboto, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: 300 18px/1.78 Roboto, sans-serif;
+      }
+    }
+
+    &--lg {
+      @include screen(smlim) {
+        font: bold 18px / 25px AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: bold 18px / normal AvenirNext, sans-serif;
+      }
+    }
+  }
+
+  &__top {
+    position: relative;
+    border-radius: 17px 17px 0 0;
+
+    @include screen(sm) {
+      margin-bottom: 40px;
+      background: url("../img/pic/bg/land-air-top.jpg") top center/130%
+        no-repeat;
+    }
+
+    @include screen(mdlim) {
+      margin-bottom: 40px;
+      background: url("../img/pic/bg/land-air-top.jpg") top center/100%
+        no-repeat;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 80px;
+      background: url("../img/pic/bg/land-air-top.jpg") -100px -106px/115%
+        no-repeat;
+    }
+
+    .land-air__title {
+      position: relative;
+      margin: 0 auto 26px;
+      max-width: 780px;
+
+      @include screen(sm) {
+        padding: 67% 15px 0;
+      }
+
+      @include screen(mdlim) {
+        padding: 425px 15px 0;
+      }
+
+      @include screen(lg) {
+        padding-top: 420px;
+      }
+    }
+
+    .land-air__text {
+      position: relative;
+      margin: 0 auto;
+      max-width: 710px;
+
+      @include screen(smlim) {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(230, 231, 236, 0),
+      #ffffff
+    );
+
+    @include screen(sm) {
+      top: 30%;
+      height: 300px;
+    }
+
+    @include screen(mdlim) {
+      top: 35%;
+      height: 400px;
+    }
+
+    @include screen(lg) {
+      top: 310px;
+      height: 282px;
+    }
+  }
+
+  &__black {
+    color: $white;
+    background-color: #000;
+
+    @include screen(smlim) {
+      padding: 40px 15px;
+      background: url("../img/pic/bg/land-air-black.jpg") center/ 700px 500px
+          no-repeat,
+        #000;
+    }
+
+    @include screen(lg) {
+      padding: 80px 230px;
+      background: url("../img/pic/bg/land-air-black.jpg") center/ 1168px 892px
+          no-repeat,
+        #000;
+    }
+
+    .land-air__text--md {
+      padding-top: 26px;
+    }
+
+    &-text {
+      @include screen(sm) {
+        margin-bottom: 50%;
+      }
+
+      @include screen(mdlim) {
+        margin-bottom: 275px;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 572px;
+      }
+    }
+  }
+
+  &__gray {
+    text-align: left;
+
+    @include screen(smlim) {
+      padding: 400px 15px 40px;
+      background: url(../img/pic/bg/land-air-airpods.jpg) 50% 40px /280px 324px no-repeat,
+        #fafafa;
+    }
+
+    @include screen(lg) {
+      padding: 440px 80px 168px;
+      background: url("../img/pic/bg/land-air-airpods.jpg") center 60px/ 720px 835px
+          no-repeat,
+        #fafafa;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+
+      @include screen(smlim) {
+        flex-direction: column;
+      }
+
+      @include screen(mdlim) {
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    &-item {
+      max-width: 320px;
+
+      @include screen(smlim) {
+        &:first-of-type {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    .land-air__text--lg {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__feature {
+    @include screen(smlim) {
+      background: url(../img/pic/bg/land-air-hands-mobile.jpg) center
+          bottom/100% auto no-repeat,
+        #ffffff;
+      padding: 0 15px 50%;
+    }
+
+    @include screen(lg) {
+      padding: 0 229px 500px;
+      background: url("../img/pic/bg/land-air-hands.jpg") center bottom/ 1170px
+          492px no-repeat,
+        #ffffff;
+    }
+
+    &-title {
+      margin-bottom: 26px;
+
+      @include screen(smlim) {
+        padding: 40px 0 0;
+      }
+
+      @include screen(lg) {
+        padding: 80px 0 0;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+
+      @include screen(smlim) {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 45px 0 0;
+        max-width: 320px;
+      }
+
+      @include screen(lg) {
+        padding: 77px 62px 0;
+      }
+    }
+
+    &-item {
+      @include screen(smlim) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        text-align: left;
+
+        &:nth-of-type(2) {
+          order: 1;
+          margin-bottom: 0;
+        }
+      }
+
+      @include screen(lg) {
+        width: 33.33%;
+      }
+    }
+
+    &-text {
+      @include screen(smlim) {
+        font: normal 12px / 14px Roboto, sans-serif;
+
+        &:last-of-type {
+          max-width: 94px;
+          line-height: 18px;
+        }
+      }
+
+      @include screen(lg) {
+        font: normal 12px / normal Roboto, sans-serif;
+      }
+    }
+
+    &-time {
+      display: inline-block;
+      font: 300 48px / normal Roboto, sans-serif;
+
+      @include screen(smlim) {
+        padding: 5px 0 0;
+      }
+
+      @include screen(lg) {
+        padding: 5px 0 4px;
+      }
+    }
+  }
+
+  &__set {
+    text-align: left;
+    background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
+
+    @include screen(lg) {
+      padding: 0 40px 60px;
+    }
+
+    &-content {
+      display: flex;
+      border-radius: 2px;
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      @include screen(smlim) {
+        flex-direction: column;
+        padding: 25px 15px 20px;
+      }
+
+      @include screen(lg) {
+        justify-content: space-between;
+        padding: 40px 140px 40px 50px;
+      }
+    }
+
+    &-description {
+      @include screen(smlim) {
+        margin-bottom: 20px;
+      }
+
+      @include screen(lg) {
+        padding-top: 10px;
+        max-width: 424px;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+      max-width: 297px;
+      max-height: 340px;
+
+      @include screen(smlim) {
+        align-self: center;
+      }
+    }
+
+    .land-air__title {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__footer {
+    @include screen(smlim) {
+      padding: 40px 15px 0;
+    }
+
+    @include screen(lg) {
+      padding: 0 160px;
+    }
+
+    &-title {
+      margin-bottom: 26px;
+    }
+
+    &-text {
+      margin-bottom: 35px;
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+      max-width: 683px;
+      max-height: 568px;
+    }
+  }
+}

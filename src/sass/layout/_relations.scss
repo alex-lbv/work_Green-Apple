@@ -1,0 +1,84 @@
+.relations {
+  border-radius: 20px;
+  background-color: #f7f7f7;
+
+  @include screen(smlim) {
+    padding: 20px 15px 15px;
+  }
+
+  @include screen(lg) {
+    padding: 20px 20px 10px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font: 600 18px / normal AvenirNext;
+
+    @include screen(smlim) {
+      padding-left: 5px;
+    }
+
+    @include screen(lg) {
+      padding-left: 8px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen(sm) {
+      flex-direction: column;
+    }
+
+    @include screen(mdlim) {
+      justify-content: space-around;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    max-width: 275px;
+
+    @include screen(sm) {
+      margin: 0 auto;
+    }
+
+    @include screen(mdlim) {
+      margin-bottom: 10px;
+    }
+
+    &:not(:nth-of-type(4n)) {
+      @include screen(lg) {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &:not(:last-of-type) {
+      @include screen(sm) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .col {
+    &--25 {
+      @include screen(lg) {
+        flex: 1 0 24%;
+      }
+    }
+  }
+
+  .btn {
+    @include screen(smlim) {
+      padding: 7px 5px;
+      font-size: 14px;
+    }
+
+    @include screen(lg) {
+      font-size: 14px;
+    }
+  }
+}

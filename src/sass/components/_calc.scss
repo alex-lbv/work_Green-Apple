@@ -1,0 +1,26 @@
+.calc__total {
+  display: flex;
+  padding: 10px 0 5px;
+  font-family: Roboto;
+
+  @include screen('sm') {
+    flex-direction: column;
+  }
+
+  @include screen('mdlim') {
+    align-items: center;
+  }
+}
+
+.calc__result {
+  flex: 0 0 46%;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  color: #4bd964;
+  white-space: nowrap;
+
+  @include screen('sm') {
+    margin-bottom: 10px;
+  }
+}

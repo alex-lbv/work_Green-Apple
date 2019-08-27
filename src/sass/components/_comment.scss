@@ -1,0 +1,241 @@
+.comment {
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2b2d30;
+
+  &--dependent {
+    padding: 20px 0;
+    position: relative;
+    border-top: 1px solid #e9ebef;
+
+    .comment__head {
+      @include screen('smlim') {
+        padding: 0 20px 0 17px;
+      }
+    }
+
+    .comment__footer {
+      justify-content: flex-end;
+
+      @include screen('smlim') {
+        padding: 0 20px 0 37px;
+        margin-bottom: 14px;
+      }
+
+      @include screen('lg') {
+        margin-bottom: 15px;
+      }
+    }
+
+    .comment__author {
+      padding-left: 20px;
+    }
+
+    .comment__content {
+      padding-left: 20px;
+      margin-bottom: 7px;
+    }
+
+    .comment--last::before {
+      @include screen('lg') {
+        left: 20px;
+      }
+    }
+
+    @include screen('lg') {
+      padding: 15px 21px 15px 35px;
+    }
+  }
+
+  &--dependent::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 11px;
+    background: url('../img/dependent-icon.svg') no-repeat center;
+
+    @include screen('smlim') {
+      top: 20px;
+      left: 19px;
+    }
+
+    @include screen('lg') {
+      top: 16px;
+      left: 36px;
+    }
+
+    & .comment--last {
+      left: 20px;
+    }
+  }
+
+  &--last {
+    @include screen('lg') {
+      padding: 15px 0 15px 17px
+    }
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    @include screen('sm') {
+      margin-bottom: 16px;
+    }
+
+    &--top {
+      padding: 0 20px;
+
+      @include screen('sm') {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      @include screen('mdlim') {
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+    }
+
+    @include screen('lg') {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__head-left {
+    display: flex;
+
+    @include screen('sm') {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__author {
+    margin: 0;
+    font: 600 16px AvenirNext;
+
+    @include screen('lg') {
+      margin-right: 23px;
+    }
+  }
+
+  &__date {
+    opacity: .6;
+
+    @include screen('sm') {
+      font-size: 12px;
+    }
+
+    @include screen('lg') {
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    padding: 0 20px;
+
+    &--dependent {
+      @include screen(smlim) {
+        padding: 0 10px 0 37px;
+        margin-bottom: 21px;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include screen('sm') {
+      margin-bottom: 20px;
+    }
+
+    @include screen('mdlim') {
+      margin-bottom: 20px;
+    }
+
+    @include screen('lg') {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    &:not(:last-of-type) {
+      @include screen('sm') {
+        margin-bottom: 20px;
+      }
+
+      @include screen('mdlim') {
+        margin-bottom: 20px;
+      }
+
+      @include screen('lg') {
+        margin-bottom: 15px;
+      }
+    }
+
+    &--pointed-green::before,
+    &--pointed-red::before,
+    &--pointed-gray::before {
+      position: absolute;
+      content: "";
+      top: 7px;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    &--pointed-green::before {
+      background-color: $point-green;
+    }
+
+    &--pointed-red::before {
+      background-color: $point-red;
+    }
+
+    &--pointed-gray::before {
+      background-color: $point-gray;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-left: 17px;
+    line-height: 1.6;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    &--top {
+      padding: 0 20px;
+    }
+  }
+
+  &__link {
+    font-family: AvenirNext;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1fc119;
+    transition: color .5s;
+
+    &:hover {
+      color: #48f342;
+    }
+  }
+}

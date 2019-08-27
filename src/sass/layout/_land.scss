@@ -1,0 +1,2270 @@
+.land {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+
+  @include screen(smlim) {
+    padding: 20px 10px 15px;
+  }
+
+  @include screen(lg) {
+    padding: 70px 40px 40px;
+  }
+
+  &__image {
+    &-top {
+      width: 100%;
+      max-width: 1114px;
+      max-height: 320px;
+
+      @include screen(smlim) {
+        margin-bottom: 16px;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-middle {
+      @include screen(sm) {
+        margin: 40px 0 30px;
+        width: 250px;
+        height: 233px;
+      }
+
+      @include screen(mdlim) {
+        margin: 40px 0;
+        width: 350px;
+        height: 333px;
+      }
+
+      @include screen(lg) {
+        margin: 60px 0 52px;
+        width: 100%;
+        height: 552px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    background-color: #202020;
+
+    @include screen(smlim) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+
+    &--retina {
+      @include screen(smlim) {
+        padding: 23px 20px 30px;
+      }
+
+      @include screen(lg) {
+        padding: 50px 100px 60px 50px;
+      }
+
+      img {
+        align-items: flex-start;
+
+        @include screen(sm) {
+          max-width: 240px;
+          max-height: 323px;
+        }
+
+        @include screen(md) {
+          max-width: 350px;
+          max-height: 340px;
+        }
+      }
+
+      .land__grad {
+        @include screen(smlim) {
+          margin-bottom: 47px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--side {
+      @include screen(smlim) {
+        padding: 30px 20px 0;
+      }
+
+      @include screen(lg) {
+        padding: 41px 55px 0 97px;
+      }
+
+      img {
+        @include screen(sm) {
+          max-width: 240px;
+          max-height: 199px;
+        }
+
+        @include screen(smlim) {
+          order: 1;
+        }
+
+        @include screen(md) {
+          max-width: 330px;
+          max-height: 355px;
+        }
+      }
+
+      .land__grad {
+        @include screen(smlim) {
+          margin-bottom: 27px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--face-id {
+      @include screen(smlim) {
+        padding: 30px 20px 0;
+      }
+
+      @include screen(lg) {
+        padding: 50px 127px 0 50px;
+      }
+
+      img {
+        @include screen(sm) {
+          width: 220px;
+          height: 235px;
+        }
+
+        @include screen(smlim) {
+          order: 1;
+        }
+
+        @include screen(md) {
+          max-width: 283px;
+          height: 389px;
+        }
+      }
+
+      .land__grad {
+        @include screen(smlim) {
+          margin-bottom: 20px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--camera {
+      @include screen(smlim) {
+        padding: 25px 20px 0;
+      }
+
+      @include screen(lg) {
+        padding: 50px 98px 0 50px;
+      }
+
+      img {
+        @include screen(sm) {
+          width: 240px;
+          height: 290px;
+        }
+
+        @include screen(smlim) {
+          order: 1;
+        }
+
+        @include screen(md) {
+          max-width: 305px;
+          max-height: 370px;
+        }
+      }
+
+      .land__grad {
+        @include screen(smlim) {
+          margin-bottom: 20px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--bottom {
+      align-items: center;
+      background-color: #000000;
+
+      @include screen(smlim) {
+        margin: 40px 0 20px;
+      }
+
+      @include screen(lg) {
+        justify-content: flex-start;
+        margin: 60px 0;
+        padding: 0 50px;
+      }
+
+      .land__container-content {
+        text-align: left;
+
+        @include screen(smlim) {
+          margin-bottom: 30px;
+          padding-left: 7px;
+        }
+
+        @include screen(lg) {
+          padding-top: 5px;
+          margin-left: 121px;
+          max-width: 370px;
+        }
+
+        &--reverse {
+          @include screen(lg) {
+            padding: 0;
+            margin: 0 147px 0 0;
+            max-width: none;
+          }
+        }
+
+        .land__title {
+          @include screen(lg) {
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 0.55px;
+          }
+        }
+      }
+
+      img {
+        @include screen(sm) {
+          order: 1;
+          width: 280px;
+          height: 375px;
+        }
+
+        @include screen(mdlim) {
+          order: 1;
+        }
+
+        @include screen(md) {
+          max-width: 400px;
+          max-height: 540px;
+        }
+      }
+    }
+
+    &--reverse {
+      @include screen(lg) {
+        margin-top: -15px;
+      }
+    }
+  }
+  &__grad {
+    display: -webkit-box;
+    background-clip: text;
+
+    &--gold {
+      max-width: 460px;
+      background-image: url("../img/pic/fonts/bg-font-gold.jpg");
+      background-position: right;
+    }
+
+    &--violet {
+      max-width: 485px;
+      background-image: url("../img/pic/fonts/bg-font-violet.jpg");
+      background-position: right;
+    }
+  }
+
+  &__title {
+    &--top {
+      @include screen(smlim) {
+        margin-bottom: 25px;
+        font: normal 20px / normal AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 30px;
+        font: normal 33px / normal AvenirNext, sans-serif;
+      }
+    }
+
+    &--sm {
+      margin-bottom: 20px;
+      font: 500 24px / normal AvenirNext, sans-serif;
+    }
+
+    &--md {
+      align-self: flex-start;
+      text-align: left;
+
+      @include screen(smlim) {
+        margin-bottom: 20px;
+        padding-left: 25px;
+        font: bold 18px / normal AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 30px;
+        padding-left: 50px;
+        font: bold 32px / normal AvenirNext, sans-serif;
+      }
+    }
+
+    &--lg {
+      @include screen(smlim) {
+        margin-bottom: 20px;
+        font: bold 28px / 1.29 AvenirNext, sans-serif;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 25px;
+        font: bold 56px / normal AvenirNext, sans-serif;
+      }
+    }
+  }
+
+  &__text {
+    &--sm {
+      @include screen(smlim) {
+        font: normal 14px/1.63 Roboto, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: normal 16px/1.5 Roboto, sans-serif;
+      }
+    }
+
+    &--md {
+      @include screen(smlim) {
+        margin-bottom: 30px;
+        padding: 0 5px;
+        letter-spacing: 0.12px;
+        font: 300 14px/1.6 Roboto, sans-serif;
+      }
+
+      @include screen(lg) {
+        max-width: 710px;
+        margin: 0 auto 60px;
+        font: 300 18px/1.78 Roboto, sans-serif;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    &--lg {
+      @include screen(smlim) {
+        font: normal 16px/1.63 Roboto, sans-serif;
+      }
+
+      @include screen(lg) {
+        font: normal 24px/1.6 Roboto, sans-serif;
+      }
+    }
+  }
+
+  &__color {
+    &-gold {
+      color: #fee5db;
+    }
+
+    &-gradient {
+      color: transparent;
+      text-align: left;
+    }
+  }
+
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    @include screen(smlim) {
+      align-items: center;
+      flex-direction: column;
+      margin: 40px 0;
+      padding: 0 20px 0 25px;
+    }
+
+    @include screen(lg) {
+      margin: 80px 0;
+      padding: 0 50px;
+    }
+
+    .land__text {
+      max-width: 280px;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+
+    @include screen(smlim) {
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include screen(lg) {
+      width: 29.3%;
+    }
+
+    &-image {
+      margin-bottom: 25px;
+      fill: $white;
+
+      &--steel {
+        width: 64px;
+        height: 64px;
+      }
+
+      &--charging {
+        width: 69px;
+        height: 64px;
+      }
+
+      &--coating {
+        width: 86px;
+        height: 64px;
+      }
+    }
+  }
+
+  &__video {
+    border-radius: 2px;
+
+    @include screen(smlim) {
+      width: 100%;
+      height: auto;
+    }
+
+    @include screen(lg) {
+      width: 1090px;
+      height: 440px;
+    }
+
+    &-wrap {
+      position: relative;
+      cursor: pointer;
+
+      @include screen(smlim) {
+        padding: 0 5px;
+        margin-top: 20px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background: url("../img/pic/ico/video-play.svg") no-repeat;
+
+        @include screen(smlim) {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 30%;
+          height: 30%;
+          transform: translateX(35%);
+          background-size: contain;
+        }
+
+        @include screen(lg) {
+          top: 170px;
+          left: 520px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  /* iphone xs */
+  &--black {
+    color: $white;
+    background: #000000;
+
+    .land__container {
+      &--bottom {
+        align-items: center;
+        background-color: #000000;
+
+        @include screen(smlim) {
+          margin: 40px 0 20px;
+        }
+
+        @include screen(lg) {
+          justify-content: flex-start;
+          margin: 60px 0;
+          padding: 0 50px;
+        }
+
+        .land__container-content {
+          .land__title {
+            @include screen(lg) {
+              margin-bottom: 15px;
+              font-weight: 600;
+              letter-spacing: 0.55px;
+            }
+          }
+
+          .land__text {
+            @include screen(lg) {
+              max-width: 342px;
+            }
+          }
+        }
+      }
+
+      &--side {
+        .land__text {
+          @include screen(lg) {
+            padding-bottom: 40px;
+          }
+        }
+
+        img {
+          @include screen(lg) {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  /* iphone xr */
+  &--white {
+    border: solid 1px #e2e2e2;
+    color: #2b2d30;
+    background: $white;
+
+    @include screen(lg) {
+      padding-top: 0;
+    }
+
+    .land__title,
+    .land__text {
+      color: #2b2d30;
+    }
+
+    .land__title {
+      &--top {
+        @include screen(lg) {
+          margin-bottom: 20px;
+          font: normal 55px / normal AvenirNext, sans-serif;
+        }
+      }
+    }
+
+    .land__container {
+      background: #f2f3f5;
+
+      &--bottom {
+        background: $white;
+      }
+
+      &--retina {
+        @include screen(smlim) {
+          padding: 23px 20px 0px;
+        }
+
+        @include screen(lg) {
+          padding: 0 129px 0 50px;
+        }
+
+        img {
+          align-items: flex-start;
+
+          @include screen(sm) {
+            max-width: 240px;
+            max-height: 323px;
+          }
+
+          @include screen(md) {
+            max-width: 270px;
+            max-height: 440px;
+          }
+        }
+
+        .land__grad {
+          @include screen(smlim) {
+            margin-bottom: 0;
+            padding: 0 5px;
+          }
+
+          @include screen(lg) {
+            padding-top: 50px;
+          }
+        }
+      }
+
+      &--side {
+        @include screen(smlim) {
+          padding: 30px 20px 0;
+        }
+
+        @include screen(lg) {
+          padding: 0 55px 0 91px;
+        }
+
+        img {
+          @include screen(sm) {
+            max-width: 240px;
+            max-height: 275px;
+          }
+
+          @include screen(smlim) {
+            order: 1;
+          }
+
+          @include screen(md) {
+            max-width: 260px;
+            max-height: 412px;
+          }
+        }
+
+        .land__grad {
+          @include screen(smlim) {
+            margin-bottom: 27px;
+            padding: 0 5px;
+          }
+
+          @include screen(lg) {
+            padding-top: 25px;
+          }
+        }
+      }
+
+      &--camera {
+        @include screen(smlim) {
+          padding: 25px 20px 0;
+        }
+
+        @include screen(lg) {
+          padding: 50px 70px 0 50px;
+        }
+
+        img {
+          @include screen(sm) {
+            width: 240px;
+            height: 290px;
+          }
+
+          @include screen(smlim) {
+            order: 1;
+          }
+
+          @include screen(md) {
+            align-self: flex-end;
+            max-width: 350px;
+            max-height: 420px;
+          }
+        }
+
+        .land__grad {
+          @include screen(smlim) {
+            margin-bottom: 20px;
+            padding: 0 5px;
+          }
+
+          @include screen(lg) {
+            padding-bottom: 40px;
+          }
+        }
+      }
+
+      &--face-id {
+        img {
+          @include screen(smlim) {
+            width: 100%;
+            height: auto;
+            margin-bottom: -6px;
+            max-width: 350px;
+          }
+
+          @include screen(lg) {
+            margin-bottom: -6px;
+          }
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(lg) {
+        margin-bottom: 130px;
+      }
+    }
+
+    .land__feature-image {
+      fill: #2b2d30;
+    }
+
+    .land__image {
+      &-top {
+        align-self: center;
+
+        @include screen(lg) {
+          margin: 0;
+          max-width: 700px;
+          max-height: 395px;
+        }
+      }
+
+      &-middle {
+        @include screen(lg) {
+          box-shadow: 40px 0px 0 #000000, -40px 0px 0 #000000;
+        }
+      }
+    }
+  }
+
+  /* iphone X */
+  &--x {
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    background-color: #fafafa;
+
+    @include screen(smlim) {
+      padding: 31px 0 0;
+    }
+
+    @include screen(lg) {
+      padding: 60px 0 0;
+    }
+
+    .land__container {
+      text-align: left;
+
+      &--characteristic {
+        margin: 0;
+        background-color: $white;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(smlim) {
+          padding: 31px 28px 0;
+        }
+
+        @include screen(mdlim) {
+          width: 100%;
+        }
+
+        @include screen(lg) {
+          padding: 39px 90px 0 90px;
+        }
+
+        .land__image {
+          @include screen(smlim) {
+            max-width: 450px;
+          }
+
+          @include screen(lg) {
+            align-self: flex-end;
+            max-width: 660px;
+            max-height: 387px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(lg) {
+            padding: 19px 0 35px;
+            margin-right: 140px;
+          }
+        }
+
+        .land__title {
+          @include screen(smlim) {
+            padding-left: 0;
+          }
+        }
+      }
+
+      &--features {
+        margin: 0;
+        background-color: $white;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+        overflow: hidden;
+
+        @include screen(smlim) {
+          flex-direction: column-reverse;
+          padding-bottom: 34px;
+        }
+
+        @include screen(lg) {
+          padding: 60px 70px 95px 0;
+        }
+
+        .land__title {
+          &--md {
+            @include screen(smlim) {
+              padding-left: 0;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(smlim) {
+            max-width: 500px;
+          }
+
+          @include screen(lg) {
+            margin: 10px 0 0 -25px;
+            max-width: 540px;
+            max-height: 386px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(smlim) {
+            padding: 28px 26px 0 28px;
+          }
+        }
+
+        .list {
+          @include screen(smlim) {
+            margin-bottom: 19px;
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          @include screen(lg) {
+            line-height: 1.57;
+          }
+
+          &--green {
+            .list__item {
+              @include screen(smlim) {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      &--bottom {
+        align-items: flex-start;
+        overflow: hidden;
+        margin: 0;
+        color: $white;
+        background-color: #000000;
+
+        @include screen(lg) {
+          padding: 0 0 0 90px;
+        }
+
+        .land__container-content {
+          margin: 0;
+          max-width: none;
+
+          @include screen(smlim) {
+            padding: 30px 0 0;
+            margin-bottom: 24px;
+          }
+
+          @include screen(lg) {
+            padding-top: 57px;
+          }
+        }
+
+        .land__title {
+          &--md {
+            @include screen(smlim) {
+              margin-bottom: 20px;
+              padding-left: 28px;
+              max-width: none;
+            }
+
+            @include screen(lg) {
+              width: 360px;
+            }
+          }
+        }
+
+        .land__text {
+          &--sm {
+            @include screen(smlim) {
+              padding: 0 25px 0 30px;
+              font: normal 16px / 24px Roboto, sans-serif;
+            }
+
+            @include screen(lg) {
+              padding-right: 55px;
+              line-height: 1.5;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(sm) {
+            margin-left: 30px;
+          }
+
+          @include screen(mdlim) {
+            align-self: flex-end;
+          }
+
+          @include screen(lg) {
+            margin: 56px -31px 0 0;
+            max-width: 696px;
+            height: 496px;
+          }
+        }
+      }
+
+      .list {
+        font: normal 15px/23px Roboto, sans-serif;
+
+        &__item {
+          padding-left: 18px;
+        }
+
+        &__item:before {
+          top: 7px;
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(smlim) {
+        align-items: flex-start;
+        padding: 0 20px 0 21px;
+      }
+
+      @include screen(lg) {
+        margin: 76px 0 79px 0;
+        padding: 0 50px 0 91px;
+      }
+
+      .land__text {
+        padding-left: 8px;
+        max-width: none;
+
+        @include screen(smlim) {
+          line-height: 24px;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .land__feature {
+      @include screen(lg) {
+        width: 25%;
+      }
+    }
+
+    .land__image {
+      width: 100%;
+      height: 100%;
+
+      &-top {
+        @include screen(smlim) {
+          margin-bottom: 32px;
+        }
+
+        @include screen(lg) {
+          margin-bottom: 41px;
+          max-width: 970px;
+          max-height: 232px;
+        }
+      }
+
+      &-big {
+        @include screen(smlim) {
+          max-width: 500px;
+        }
+
+        @include screen(lg) {
+          max-width: 880px;
+          max-height: 362px;
+        }
+      }
+    }
+
+    .land__title {
+      &--md {
+        @include screen(lg) {
+          padding: 0;
+        }
+      }
+
+      &--lg {
+        @include screen(smlim) {
+          padding: 0 15px;
+        }
+      }
+
+      &--top {
+        @include screen(smlim) {
+          font-size: 24px;
+          margin-bottom: 23px;
+        }
+
+        @include screen(lg) {
+          margin-bottom: 26px;
+          font-size: 46px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(lg) {
+          margin-bottom: 60px;
+          min-width: 880px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  /* iphone 8 */
+  &--8 {
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    @include screen(smlim) {
+      padding: 0;
+    }
+
+    @include screen(lg) {
+      padding: 0;
+    }
+
+    .land__image {
+      @include screen(sm) {
+        width: 100%;
+        height: auto;
+      }
+
+      &-top {
+        @include screen(sm) {
+          width: 300px;
+          height: 300px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(mdlim) {
+          width: 850px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(lg) {
+          margin-bottom: 60px;
+          max-width: 1170px;
+          max-height: 571px;
+        }
+      }
+    }
+
+    .land__title {
+      &--md {
+        @include screen(lg) {
+          padding: 0;
+        }
+      }
+
+      &--lg {
+        @include screen(smlim) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(smlim) {
+          padding: 0 15px;
+        }
+
+        @include screen(lg) {
+          margin-bottom: 60px;
+          min-width: 900px;
+          font-weight: 300;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    .land__container {
+      text-align: left;
+
+      &--characteristic {
+        margin: 0;
+        background-color: $white;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(smlim) {
+          padding-bottom: 50px;
+        }
+
+        @include screen(md) {
+          width: 100%;
+        }
+
+        @include screen(lg) {
+          padding: 44px 190px 57px 90px;
+        }
+
+        .land__image {
+          @include screen(smlim) {
+            max-width: 300px;
+          }
+
+          @include screen(lg) {
+            max-width: 262px;
+            max-height: 312px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(smlim) {
+            padding: 29px 23px 0 26px;
+          }
+
+          @include screen(lg) {
+            padding: 0 150px 0 0;
+          }
+        }
+
+        .land__title {
+          @include screen(smlim) {
+            padding-left: 4px;
+          }
+        }
+
+        .list {
+          @include screen(smlim) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          &__item {
+            @include screen(smlim) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      &--4k {
+        margin: 0;
+        background-color: $white;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(smlim) {
+          flex-direction: column-reverse;
+          padding: 30px 29px 30px 30px;
+        }
+
+        @include screen(lg) {
+          padding: 57px 113px 58px 85px;
+        }
+
+        .land__image {
+          @include screen(smlim) {
+            max-width: 450px;
+          }
+
+          @include screen(lg) {
+            margin-right: 60px;
+            max-width: 395px;
+            max-height: 321px;
+          }
+        }
+
+        .land__container-content {
+          padding: 0;
+
+          @include screen(smlim) {
+            margin-bottom: 25px;
+          }
+        }
+        .land__title {
+          @include screen(smlim) {
+            padding-left: 0;
+          }
+        }
+
+        .land__text {
+          @include screen(smlim) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      &--bottom {
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        color: #2b2d30;
+        background-color: #fceee3;
+        border-top: 1px solid #e4e4e4;
+
+        @include screen(smlim) {
+          padding: 30px 25px 0 31px;
+        }
+
+        @include screen(lg) {
+          padding: 0 47px 0 90px;
+        }
+
+        .land__container-content {
+          margin: 0;
+          max-width: none;
+
+          @include screen(smlim) {
+            padding: 0;
+          }
+        }
+
+        .land__title {
+          &--md {
+            @include screen(smlim) {
+              padding-left: 0;
+              max-width: none;
+            }
+
+            @include screen(lg) {
+              width: 360px;
+            }
+          }
+        }
+
+        .land__text {
+          &--sm {
+            @include screen(smlim) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(lg) {
+            max-width: 585px;
+            height: 413px;
+          }
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(smlim) {
+        align-items: flex-start;
+        padding: 0 20px 0 31px;
+      }
+
+      @include screen(lg) {
+        padding: 0 90px 0 96px;
+      }
+
+      .land__text {
+        max-width: none;
+
+        @include screen(smlim) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .land__feature {
+      @include screen(lg) {
+        width: 30%;
+      }
+    }
+
+    .list__item:before {
+      top: 7px;
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  /* iphone 7plus */
+  &--7plus {
+    overflow: hidden;
+    text-align: center;
+    color: $white;
+    background-color: #000000;
+
+    @include screen(smlim) {
+      padding: 40px 0 0;
+    }
+
+    @include screen(lg) {
+      padding: 80px 0 0;
+    }
+
+    .land__image {
+      width: 100%;
+      height: auto;
+
+      &--top {
+        @include screen(smlim) {
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          margin-bottom: -50px;
+          max-width: 1198px;
+          max-height: 561px;
+        }
+      }
+
+      &--design {
+        @include screen(smlim) {
+          margin: 20px auto 0;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          margin: 37px auto 0;
+          max-width: 792px;
+          max-height: 515px;
+        }
+      }
+
+      &--home {
+        @include screen(smlim) {
+          margin: -40px 0 150px;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          margin: -120px auto 60px;
+          max-width: 1170px;
+          max-height: 636px;
+        }
+      }
+
+      &--watertightness {
+        @include screen(mdlim) {
+          max-width: 400px;
+        }
+
+        @include screen(lg) {
+          max-width: 527px;
+        }
+      }
+
+      &--camera {
+        @include screen(smlim) {
+          margin: 40px 0;
+        }
+
+        @include screen(lg) {
+          margin: 7px 0 40px;
+          max-width: 1198px;
+          max-height: 1035px;
+        }
+      }
+
+      &--zoom {
+        @include screen(smlim) {
+          margin: 30px 0 20px;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          margin: -15px 0 -20px;
+          max-width: 1198px;
+          max-height: 545px;
+        }
+      }
+
+      &--horizontal {
+        @include screen(smlim) {
+          margin: 20px 0;
+          max-width: 600px;
+        }
+
+        @include screen(lg) {
+          margin: 23px 0 58px;
+          max-width: 1198px;
+          max-height: 487px;
+        }
+      }
+
+      &--cpu {
+        @include screen(smlim) {
+          margin: 5px 0 20px;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          margin: 8px 0 37px 20px;
+          max-width: 1135px;
+          max-height: 650px;
+        }
+      }
+
+      &--bright {
+        @include screen(smlim) {
+          margin: 20px 0;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          margin: 15px 0 -10px 0;
+          max-width: 1198px;
+          max-height: 645px;
+        }
+      }
+
+      &--bottom {
+        @include screen(smlim) {
+          margin: 20px 0 0;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          max-width: 1198px;
+          max-height: 545px;
+        }
+      }
+    }
+
+    .land__title {
+      &--top {
+        @include screen(smlim) {
+          margin-bottom: 20px;
+          font: 500 28px/36px AvenirNext, sans-serif;
+        }
+
+        @include screen(lg) {
+          font: 500 48px/66px AvenirNext, sans-serif;
+        }
+      }
+
+      &--md {
+        position: relative;
+        z-index: 2;
+        align-self: center;
+        padding: 0;
+        text-align: center;
+
+        @include screen(lg) {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        position: relative;
+        margin: 0 auto;
+        letter-spacing: 0;
+        font-weight: 300;
+
+        @include screen(smlim) {
+          padding: 0 15px;
+        }
+
+        @include screen(md) {
+          max-width: 860px;
+        }
+      }
+
+      &--top {
+        @include screen(md) {
+          max-width: 740px;
+        }
+      }
+    }
+
+    .land__container {
+      background: rgb(31, 31, 31);
+      border-radius: 2px;
+
+      @include screen(smlim) {
+        margin-bottom: 40px;
+      }
+
+      @include screen(mdlim) {
+        flex-direction: row;
+      }
+
+      @include screen(lg) {
+        margin: 0 41px 75px 41px;
+        padding: 0 55px 0 0;
+      }
+
+      &-content {
+        text-align: left;
+
+        @include screen(smlim) {
+          padding: 30px;
+        }
+
+        @include screen(lg) {
+          padding: 60px 0 60px 23px;
+        }
+      }
+
+      .land__title {
+        &--md {
+          text-align: left;
+
+          @include screen(smlim) {
+            font: 500 18px/28px AvenirNext, sans-serif;
+          }
+
+          @include screen(lg) {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .land__text {
+        @include screen(smlim) {
+          font: 300 14px/22px Roboto, sans-serif;
+        }
+
+        @include screen(lg) {
+          font: 300 24px/38px Roboto, sans-serif;
+        }
+      }
+    }
+  }
+
+  /* iphone 6s */
+  &--six-s {
+    overflow: hidden;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    color: #2b2d30;
+    background: #ffffff;
+
+    @include screen(lg) {
+      padding: 0;
+    }
+
+    .land__title {
+      &--top {
+        @include screen(smlim) {
+          font: 500 28px/36px AvenirNext, sans-serif;
+        }
+        @include screen(lg) {
+          font: 500 56px/76px AvenirNext, sans-serif;
+        }
+      }
+
+      &--md {
+        padding: 0;
+        align-self: center;
+
+        @include screen(smlim) {
+          font: 500 18px/28px AvenirNext, sans-serif;
+        }
+
+        @include screen(lg) {
+          font-weight: 500;
+        }
+      }
+
+      &--left {
+        align-self: flex-start;
+
+        @include screen(lg) {
+          position: relative;
+          margin: 59px 0 30px 0;
+          padding-left: 91px;
+        }
+      }
+
+      &--right {
+        text-align: left;
+
+        @include screen(smlim) {
+          align-self: flex-start;
+        }
+
+        @include screen(lg) {
+          position: relative;
+          align-self: flex-end;
+          padding-right: 459px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(smlim) {
+          font: 300 14px/22px Roboto, sans-serif;
+        }
+
+        @include screen(lg) {
+          max-width: 880px;
+          font-weight: 300;
+        }
+      }
+
+      &--left {
+        position: relative;
+        align-self: flex-start;
+        text-align: left;
+
+        @include screen(lg) {
+          margin: 0;
+          padding-left: 90px;
+          max-width: 830px;
+          line-height: 28px;
+          letter-spacing: 0;
+        }
+      }
+
+      &--right {
+        position: relative;
+        text-align: left;
+        align-self: flex-end;
+
+        @include screen(lg) {
+          align-self: flex-end;
+          margin: 0 68px 0 0;
+          max-width: 514px;
+        }
+      }
+    }
+
+    .land__container {
+      display: block;
+      margin: 0;
+      width: 100%;
+      background: #fafafa;
+
+      @include screen(lg) {
+        padding: 114px 0 21px 0;
+      }
+
+      &-gray {
+        @include screen(smlim) {
+          padding: 30px 0 10px;
+          background: #fafafa;
+          box-shadow: 100px 0 0 0 #fafafa, -100px 0 0 0 #fafafa;
+        }
+
+        @include screen(lg) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &-content {
+        position: relative;
+
+        @include screen(lg) {
+          align-self: flex-start;
+          padding-left: 91px;
+        }
+      }
+
+      .land__text {
+        &--md {
+          @include screen(smlim) {
+            text-align: left;
+
+            br {
+              display: none;
+            }
+          }
+
+          @include screen(lg) {
+            margin: 0;
+            max-width: none;
+            text-align: left;
+            letter-spacing: 0;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .land__image {
+      width: 100%;
+      height: auto;
+
+      &--top {
+        @include screen(lg) {
+          margin: 0 63px -57px 0;
+          max-width: 709px;
+          max-height: 700px;
+        }
+      }
+
+      &--touch {
+        @include screen(smlim) {
+          margin: 20px 0 30px;
+        }
+
+        @include screen(lg) {
+          margin: 12px 0 60px;
+          max-width: 1200px;
+          max-height: 574px;
+        }
+      }
+
+      &--camera {
+        @include screen(smlim) {
+          margin: -70px 0 20px;
+          max-width: 700px;
+        }
+
+        @include screen(lg) {
+          margin: -309px 0 100px;
+          max-width: 1197px;
+          max-height: 734px;
+        }
+      }
+
+      &--cpu {
+        @include screen(smlim) {
+          margin-top: -35px;
+          max-width: 500px;
+        }
+
+        @include screen(lg) {
+          margin: -330px 0 0;
+          max-width: 1169px;
+          max-height: 626px;
+          box-shadow: 0 20px 0 #fafafa;
+        }
+      }
+
+      &--bottom {
+        @include screen(smlim) {
+          max-width: 500px;
+        }
+
+        @include screen(lg) {
+          margin: -194px 55px 0 0;
+          max-width: 1196px;
+          max-height: 577px;
+        }
+      }
+    }
+  }
+
+  /* iphone 7 */
+  &--7 {
+    overflow: hidden;
+    text-align: center;
+    color: $white;
+    background-color: #000000;
+
+    @include screen(smlim) {
+      padding: 40px 0 0;
+    }
+
+    @include screen(lg) {
+      padding: 80px 0 0;
+    }
+
+    .land__image {
+      width: 100%;
+      height: auto;
+
+      &--top {
+        @include screen(sm) {
+          margin-bottom: 30px;
+        }
+
+        @include screen(mdlim) {
+          margin-bottom: 30px;
+          max-width: 500px;
+          transform: translateX(44%);
+        }
+
+        @include screen(lg) {
+          align-self: flex-end;
+          margin: 0 0 60px 140px;
+          max-width: 1035px;
+          max-height: 448px;
+        }
+      }
+
+      &--design {
+        @include screen(smlim) {
+          margin: -15px 0 5px;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          align-self: center;
+          margin: -60px 0 -110px 0;
+          max-width: 780px;
+          max-height: 652px;
+        }
+      }
+
+      &--home {
+        @include screen(smlim) {
+          padding: 0 30px;
+          margin: 20px 0 80px;
+          max-width: 450px;
+        }
+
+        @include screen(lg) {
+          align-self: center;
+          margin-bottom: 67px;
+          max-width: 456px;
+          max-height: 322px;
+        }
+      }
+
+      &--camera {
+        @include screen(sm) {
+          margin: 30px 0;
+        }
+
+        @include screen(mdlim) {
+          margin: -250px 0 0;
+          max-width: 750px;
+        }
+
+        @include screen(lg) {
+          margin: -388px 0 20px;
+        }
+      }
+
+      &--cpu {
+        @include screen(sm) {
+          margin: 6px 0 30px;
+          max-width: 500px;
+        }
+
+        @include screen(mdlim) {
+          margin: 6px 0 30px;
+          max-width: 750px;
+        }
+
+        @include screen(lg) {
+          margin: 48px 0 91px 20px;
+          max-width: 1135px;
+          max-height: 650px;
+        }
+      }
+
+      &--bright {
+        @include screen(sm) {
+          margin: 20px 0 30px;
+        }
+
+        @include screen(mdlim) {
+          max-width: 750px;
+          margin: -100px 0 30px;
+        }
+
+        @include screen(lg) {
+          margin: -323px 0 30px;
+          max-width: 1198px;
+          max-height: 960px;
+        }
+      }
+
+      &--bottom {
+        @include screen(sm) {
+          margin-top: 20px;
+        }
+
+        @include screen(mdlim) {
+          max-width: 750px;
+          margin-top: 20px;
+        }
+
+        @include screen(lg) {
+          margin-top: 5px;
+          max-width: 1198px;
+          max-height: 545px;
+        }
+      }
+    }
+
+    .land__title {
+      &--top {
+        @include screen(smlim) {
+          margin-bottom: 20px;
+          font: 500 28px/36px AvenirNext, sans-serif;
+        }
+
+        @include screen(lg) {
+          font: 500 48px/66px AvenirNext, sans-serif;
+        }
+      }
+
+      &--md {
+        position: relative;
+        z-index: 2;
+        align-self: center;
+        padding: 0;
+        text-align: center;
+
+        @include screen(lg) {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        position: relative;
+        margin: 0 auto;
+        letter-spacing: 0;
+        font-weight: 300;
+
+        @include screen(smlim) {
+          padding: 0 15px;
+        }
+
+        @include screen(md) {
+          max-width: 860px;
+        }
+      }
+
+      &--top {
+        @include screen(md) {
+          max-width: 740px;
+        }
+      }
+    }
+
+    .land__container {
+      @include screen(sm) {
+        padding-top: 70%;
+        margin-bottom: 60px;
+        background: url("../img/pic/phones/land-7-4-mobile.jpg") top center/
+          contain no-repeat;
+      }
+
+      @include screen(mdlim) {
+        padding-top: 35%;
+        margin-bottom: 60px;
+        background: url("../img/pic/phones/land-7-4-mobile.jpg") top right/ 50%
+          no-repeat;
+      }
+
+      @include screen(lg) {
+        padding: 53px 0 53px 125px;
+        margin-bottom: 70px;
+        background: url("../img/pic/phones/land-7-4.jpg") 100% 82%/ 100% no-repeat;
+      }
+
+      &-content {
+        text-align: left;
+
+        @include screen(smlim) {
+          padding: 0 8%;
+        }
+
+        @include screen(lg) {
+          max-width: 485px;
+        }
+      }
+
+      .land__title {
+        &--md {
+          text-align: left;
+
+          @include screen(smlim) {
+            font: 500 18px/28px AvenirNext, sans-serif;
+          }
+
+          @include screen(lg) {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .land__text {
+        @include screen(smlim) {
+          font: 300 14px/22px Roboto, sans-serif;
+        }
+
+        @include screen(lg) {
+          font: 300 24px/38px Roboto, sans-serif;
+        }
+      }
+    }
+  }
+
+  /* iphone 8plus */
+  &--8plus {
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    @include screen(smlim) {
+      padding: 0;
+    }
+
+    @include screen(lg) {
+      padding: 0;
+    }
+
+    .land__image {
+      @include screen(sm) {
+        width: 100%;
+        height: auto;
+      }
+
+      &-top {
+        @include screen(sm) {
+          width: 300px;
+          height: 300px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(mdlim) {
+          width: 850px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(lg) {
+          margin-bottom: 60px;
+          max-width: 1170px;
+          max-height: 571px;
+        }
+      }
+    }
+
+    .land__title {
+      &--md {
+        @include screen(lg) {
+          padding: 0;
+        }
+      }
+
+      &--lg {
+        @include screen(smlim) {
+          margin-bottom: 20px;
+          max-width: 200px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(smlim) {
+          padding: 0 15px;
+        }
+
+        @include screen(lg) {
+          margin-bottom: 60px;
+          min-width: 900px;
+          font-weight: 300;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    .land__container {
+      text-align: left;
+
+      &--characteristic {
+        margin: 0;
+        background-color: $white;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(lg) {
+          padding: 10px 100px 0px 90px;
+        }
+
+        .land__image {
+          @include screen(smlim) {
+            max-width: 300px;
+          }
+
+          @include screen(lg) {
+            max-width: 337px;
+            max-height: 404px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(smlim) {
+            padding: 29px 23px 0 26px;
+          }
+
+          @include screen(lg) {
+            padding: 50px 150px 0 0;
+          }
+        }
+
+        .land__title {
+          @include screen(smlim) {
+            padding-left: 4px;
+          }
+        }
+
+        .list {
+          @include screen(smlim) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          &__item {
+            @include screen(smlim) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      &--4k {
+        margin: 0;
+        background-color: $white;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(smlim) {
+          flex-direction: column-reverse;
+          padding: 30px 29px 30px 30px;
+        }
+
+        @include screen(lg) {
+          padding: 57px 113px 58px 85px;
+        }
+
+        .land__image {
+          @include screen(lg) {
+            margin-right: 60px;
+            max-width: 299px;
+            max-height: 330px;
+          }
+        }
+
+        .land__container-content {
+          padding: 0;
+
+          @include screen(smlim) {
+            margin-bottom: 25px;
+          }
+
+          @include screen(lg) {
+            padding-left: 100px;
+          }
+        }
+        .land__title {
+          @include screen(smlim) {
+            padding-left: 0;
+          }
+        }
+
+        .land__text {
+          @include screen(smlim) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      &--bottom {
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        color: #2b2d30;
+        background-color: #fceee3;
+        border-top: 1px solid #e4e4e4;
+
+        @include screen(smlim) {
+          padding: 30px 25px 0 31px;
+        }
+
+        @include screen(lg) {
+          padding: 0 47px 0 90px;
+        }
+
+        .land__container-content {
+          margin: 0;
+          max-width: none;
+
+          @include screen(smlim) {
+            padding: 0;
+          }
+        }
+
+        .land__title {
+          &--md {
+            @include screen(smlim) {
+              padding-left: 0;
+              max-width: none;
+            }
+
+            @include screen(lg) {
+              width: 360px;
+            }
+          }
+        }
+
+        .land__text {
+          &--sm {
+            @include screen(smlim) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+
+            @include screen(lg) {
+              padding-right: 65px;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(lg) {
+            max-width: 473px;
+            height: 413px;
+          }
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(smlim) {
+        align-items: flex-start;
+        padding: 0 20px 0 31px;
+      }
+
+      @include screen(lg) {
+        padding: 0 90px 0 96px;
+      }
+
+      .land__text {
+        max-width: none;
+
+        @include screen(smlim) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .land__feature {
+      @include screen(lg) {
+        width: 30%;
+      }
+    }
+
+    .list__item:before {
+      top: 7px;
+      width: 5px;
+      height: 5px;
+    }
+  }
+}

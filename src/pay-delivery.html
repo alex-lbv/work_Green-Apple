@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        //= components/header-long.html
+        <div class="container">
+            //= components/breadcrumbs-dark.html
+            <div class="page-head page-head--orange">
+                <div class="page-head__content">
+                    <h1 class="page-head__title">Оплата и доставка</h1>
+                    <p class="page-head__text">Быстрая доставка товаров по&nbsp;Санкт&#8209;Петербургу</p>
+                    <ul class="page-head__list">
+                        <li class="page-head__item">Доставим вашу покупку в день заказа</li>
+                        <li class="page-head__item">Вы оплатите товар после проверки</li>
+                        <li class="page-head__item"> Курьер поможет настроить устройство</li>
+                        <li class="page-head__item">У курьера есть сдача и терминал для оплаты</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pay-delivery">
+                <div class="row" uk-height-match=".intro">
+                    <div class="col">
+                        <h2 class="title">Как это работает</h2>
+                        <p class="intro">Вы можете забрать товар прямо у своего дома. Курьер довезет ваш заказ до двери
+                            за
+                            несколько часов
+                            после заказа.</p>
+                        <ul class="tab-features">
+                            <li class="feature tab-features__feature">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-sms"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">Отслеживайте статус заказа с&nbsp;помощью смс-оповещений
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="feature tab-features__feature">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-cb-orange"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">За час до доставки курьер Вас наберет</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2 class="title">Самовывоз</h2>
+                        <p class="intro">Заберите ваше устройство самостоятельно по адресу, указанному на странице
+                            контактов.</p>
+                        <ul class="tab-features">
+                            <li class="feature tab-features__feature">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-pickpoint"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">Удобно расположенный
+                                        пункт выдачи</p>
+                                </div>
+                            </li>
+                            <li class="feature tab-features__feature">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-time"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">Работаем с 10:00 до 21:00, 7&nbsp;дней&nbsp;в&nbsp;неделю
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <h2 class="title">Курьерская доставка</h2>
+                <ul class="tab-features tab-features--row">
+                    <li class="feature tab-features__feature">
+                        <svg class="feature__icon">
+                            <use xlink:href="img/symbol/sprite.svg#feature-cash"></use>
+                        </svg>
+                        <div class="feature__content">
+                            <span class="feature__subtitle">Оплата наличными</span>
+                            <p class="feature__text feature__text--small">Оплачивайте товары наличными после полного
+                                осмотра</p>
+                        </div>
+                    </li>
+                    <li class="feature tab-features__feature">
+                        <svg class="feature__icon">
+                            <use xlink:href="img/symbol/sprite.svg#feature-cashless"></use>
+                        </svg>
+                        <div class="feature__content">
+                            <span class="feature__subtitle">Безналичный рассчет</span>
+                            <p class="feature__text feature__text--small">Деньги списываются с расчетного счета
+                                предпринимателя (Без НДС)</p>
+                        </div>
+                    </li>
+                    <li class="feature tab-features__feature">
+                        <svg class="feature__icon">
+                            <use xlink:href="img/symbol/sprite.svg#feature-card"></use>
+                        </svg>
+                        <div class="feature__content">
+                            <span class="feature__subtitle">Банковской картой</span>
+                            <p class="feature__text feature__text--small">Наши курьеры всегда носят с&nbsp;собой
+                                терминал для оплаты</p>
+                        </div>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="faq">
+                <h2 class="title faq__title">Частые вопросы</h2>
+                <ul uk-accordion="multiple: true" class="accordion">
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">У вас есть доставка за пределы
+                            КАД?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Да. Более того, мы можем доставить товар в любую России.
+                        </p>
+                    </li>
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">Есть ли у курьера сдача?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                        </p>
+                    </li>
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">Курьер поможет активировать и
+                            настроить
+                            устройство?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                        </p>
+                    </li>
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">Есть ли у курьера банковский
+                            терминал?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                        </p>
+                    </li>
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">Как перенести доставку?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                        </p>
+                    </li>
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">Могу ли я открыть и проверить товар
+                            перед оплатой?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                        </p>
+                    </li>
+                    <li class="accordion__body">
+                        <a class="uk-accordion-title accordion__title" href="#">Могу ли я оплатить картой
+                            курьеру?</a>
+                        <p class="uk-accordion-content accordion__content">
+                            Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            //= components/subscribe.html
+            //= components/footer.html
+        </div>
+    </div>
+    <div class="bg"></div>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

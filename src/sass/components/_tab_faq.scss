@@ -1,0 +1,6 @@
+.tab-faq {
+  @include screen ("mdlim") {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+}

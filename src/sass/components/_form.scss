@@ -1,0 +1,78 @@
+.form {
+  @include screen(smlim) {
+    padding: 19px 20px 27px;
+  }
+
+  @include screen(lg) {
+    padding: 15px 39px;
+  }
+
+  &--commented {
+    border-top: 1px solid #e9ebef;
+  }
+
+  &__title {
+    font: 500 20px/normal AvenirNext;
+
+    @include screen(smlim) {
+      margin-bottom: 15px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &--adds-review {
+    @include screen(smlim) {
+      padding: 14px 20px 28px;
+
+      & .field__title--pointed-red,
+      & .field__title--pointed-green,
+      & .field__title--pointed-gray {
+        padding-left: 15px;
+        margin-bottom: 5px;
+      }
+
+      & .field__input {
+        max-height: 100px;
+      }
+    }
+
+    @include screen(lg) {
+      padding: 25px 37px 35px 37px;
+    }
+  }
+
+  &__button {
+    @include screen(smlim) {
+      padding: 17px 30px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    @include screen(lg) {
+      padding: 14px 30px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--commented {
+      @include screen(sm) {
+        width: 100%;
+      }
+
+      @include screen(lg) {
+        max-width: 145px;
+        padding: 12px 30px;
+      }
+    }
+  }
+}

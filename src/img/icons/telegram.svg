@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>telegram svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="48" height="48" rx="24"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-714.000000, -219.000000)">
+            <g id="telegram-svg" transform="translate(714.000000, 219.000000)">
+                <g id="telegram_PNG12">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#2CA5E0" xlink:href="#path-1"></use>
+                </g>
+                <path d="M11.8383962,20.7231579 L32.4154342,13.2941497 C33.3504737,12.9565688 34.3821364,13.4409046 34.7197174,14.3759441 C34.8613555,14.7682566 34.8623543,15.1975814 34.7225431,15.5905486 L27.4482727,36.0363442 C27.1150461,36.9729444 26.0856482,37.4620753 25.1490481,37.1288487 C24.7128786,36.9736669 24.3532702,36.6563967 24.1449467,36.2429641 L20.537551,29.0838369 C20.3688868,28.7491111 20.0999378,28.4753868 19.768232,28.3008583 L11.6114981,24.0091553 C10.7317313,23.546262 10.3937886,22.457821 10.8566819,21.5780542 C11.0658076,21.1805938 11.4159646,20.87567 11.8383962,20.7231579 Z" id="Path-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

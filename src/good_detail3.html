@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    //= components/header.html
+    <div class="content">
+      <div class="container">
+        //= components/breadcrumbs.html
+        <h1 class="title shift">Apple iPhone XS Max 256Gb Gold</h1>
+        //= components/rating-tab.html
+      </div>
+      <main>
+        <div class="tabs">
+          <div class="container swiper-container tabs-swiper">
+            <div class="tabs__container swiper-wrapper">
+              <span class="swiper-slide tabs__btn tabs__btn--active" data-tab="about">
+                О товаре
+              </span>
+              <span class="swiper-slide tabs__btn" data-tab="characteristic">
+                Характеристики
+              </span>
+              <span class="swiper-slide tabs__btn" data-tab="review">
+                Отзывы
+              </span>
+              <span class="swiper-slide tabs__btn" data-tab="warranty">
+                Гарантия
+              </span>
+              <span class="swiper-slide tabs__btn" data-tab="delivery">
+                Оплата и доставка
+              </span>
+              <span class="swiper-slide tabs__btn" data-tab="trade-in">
+                Trade-in
+              </span>
+              <span class="swiper-slide tabs__btn tabs__btn--bright" data-tab="faq">
+                Частые вопросы
+              </span>
+            </div>
+          </div>
+
+          <div class="tabs__content-wrap frame frame--wide">
+            <!-- Tab content -->
+            <div id="about" class="container tabs__content tabs__content--visible">
+              //= components/product/product-phone-2.html
+              //= components/lands/land-iPhone-black.html
+            </div>
+
+            <div id="characteristic" class="container tabs__content clearfix">
+              <h2 class="title shift title--lh-normal specs__title">Технические характеристики</h2>
+              <div class="tabs__wrapper">
+                <div class="tabs__card tab-col tab-col--right">
+                  //= components/card/card--wide.html
+                </div>
+                <div class="tab-col tab-col--left">
+                  <div class="frame frame--spaced frame--dark frame--bordered specs">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>Операционная система:</td>
+                          <td>iOS</td>
+                        </tr>
+                        <tr>
+                          <td>Диагональ дисплея:</td>
+                          <td>6.5"</td>
+                        </tr>
+                        <tr>
+                          <td>Разрешение экрана:</td>
+                          <td>2688×1242</td>
+                        </tr>
+                        <tr>
+                          <td>Процессор:</td>
+                          <td>Apple A12 Bionic</td>
+                        </tr>
+                        <tr>
+                          <td>Количество ядер:</td>
+                          <td>6</td>
+                        </tr>
+                        <tr>
+                          <td>Оперативная память:</td>
+                          <td>4 Гб</td>
+                        </tr>
+                        <tr>
+                          <td>Встроенная память:</td>
+                          <td>64 Гб</td>
+                        </tr>
+                        <tr>
+                          <td>Основная камера:</td>
+                          <td>Двойная: 12 Мп + 12 Мп</td>
+                        </tr>
+                        <tr>
+                          <td>Фронтальная камера:</td>
+                          <td>7 Мп</td>
+                        </tr>
+                        <tr>
+                          <td>Количество SIM-карт:</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>Тип SIM-карты:</td>
+                          <td>Nano</td>
+                        </tr>
+                        <tr>
+                          <td>Интернет:</td>
+                          <td>С поддержкой 4G</td>
+                        </tr>
+                        <tr>
+                          <td>Время работы:</td>
+                          <td>До 25 часов в режиме разговоров</td>
+                        </tr>
+                        <tr>
+                          <td>Вес:</td>
+                          <td>208 г</td>
+                        </tr>
+                        <tr>
+                          <td>Размеры:</td>
+                          <td>157,5*77,4*7.7 мм</td>
+                        </tr>
+                        <tr>
+                          <td>Гарантия:</td>
+                          <td>12 месяцев</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="frame frame--dark frame--bordered specs">
+                    <h3 class="title title--size-md specs__subtitle">Комплектация</h3>
+                    <ul class="list list--green">
+                      <li class="list__item">iPhone XS Max 256 gb золотой</li>
+                      <li class="list__item">Наушники EarPods</li>
+                      <li class="list__item">Кабель Lightning</li>
+                      <li class="list__item">Сетевое зарядное устройство</li>
+                      <li class="list__item">Скрепка для извлечения SIM-карты</li>
+                      <li class="list__item">Документация</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-col tab-col--right tab-question">
+                  <button class="btn btn--radius-s btn--faq">Задать вопрос оператору</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="review" class="container tabs__content clearfix">
+              <h2 class="title shift">Отзывы</h2>
+              //= components/tab-reviews.html
+            </div>
+
+            <div id="warranty" class="container tabs__content clearfix">
+              <h2 class="title shift tabs-title">Гарантия 1 год</h2>
+              <div class="tabs__wrapper">
+                <div class="tabs__card tab-col tab-col--right">
+                  //= components/card/card--wide.html
+                </div>
+                <div class="tab-col tab-col--left tab-col--shifted tabs__content--spaced">
+                  <p class="intro intro--spaced-xs intro--improved">
+                    В своей работе мы руководствуемся положениями закона
+                    «О&nbsp;защите прав потребителей». Так, мы поможем вам избежать
+                    неприятностей, связанных с заводским браком и прочими
+                    недочетами производителя.
+                  </p>
+                  <div class="tab-features tab-features--mb-lg">
+                    <div class="feature tab-features__feature tab-features__feature--mb-lg">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-calendar"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text feature__text--improved">На протяжении 14 дней со дня покупки вы
+                          выявляете
+                          заводской брак или
+                          прочие поломки устройства</p>
+                      </div>
+                    </div>
+                    <div class="feature tab-features__feature tab-features__feature--mb-lg">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-diagnostic"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text feature__text--improved">Отдаете купленный товар на диагностику в одном
+                          из
+                          наших магазинов</p>
+                      </div>
+                    </div>
+                    <div class="feature tab-features__feature tab-features__feature--mb-lg">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-problem"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text feature__text--improved">Если проблема – по нашей вине, возвращаем
+                          деньги
+                          или меняем товар на
+                          такой же, но без дефектов.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="tabs-hr">
+                  <ul uk-accordion="multiple: true" class="accordion tab-faq">
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">У вас есть доставка
+                        за пределы КАД?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Да. Более того, мы можем доставить товар в любую России.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Есть ли у курьера
+                        сдача?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Курьер поможет
+                        активировать и настроить устройство?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Есть ли у курьера
+                        банковский
+                        терминал?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Как перенести
+                        доставку?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Могу ли я открыть и
+                        проверить товар перед оплатой?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Могу ли я оплатить
+                        картой курьеру?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Как оплатить при
+                        помощи расчетного счета?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Нужна ли печать для
+                        забора покупки, оплаченной с помощью расчетного счета?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Могу ли я оплатить
+                        при помощи Сбербанк. Онлайн?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Предоставляете ли
+                        Вы чек?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-col tab-col--right tab-question">
+                  <button class="btn btn--radius-s btn--faq">Задать вопрос оператору</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="delivery" class="container tabs__content clearfix">
+              <h2 class="title shift tabs-title">Оплата и доставка</h2>
+              <div class="tabs__wrapper">
+                <div class="tabs__card tab-col tab-col--right">
+                  //= components/card/card--wide.html
+                </div>
+                <div class="tab-col tab-col--left tab-col--shifted tabs__content--spaced">
+                  <p class="intro intro--spaced-sm">
+                    Быстрая доставка товаров по Санкт-Петербургу. Доставляем
+                    покупки в любое удобное для вас время
+                  </p>
+                  <div class="tab-features">
+                    <div class="feature tab-features__feature">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-1daydeliver"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text">Доставим вашу покупку в&nbsp;день заказа</p>
+                      </div>
+                    </div>
+                    <div class="feature tab-features__feature">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-config"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text">Курьер поможет настроить и активировать устройство.</p>
+                      </div>
+                    </div>
+                    <div class="feature tab-features__feature">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-check2"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text">Вы оплатите товар только после проверки</p>
+                      </div>
+                    </div>
+                    <div class="feature tab-features__feature">
+                      <svg class="feature__icon">
+                        <use xlink:href="img/symbol/sprite.svg#feature-pay"></use>
+                      </svg>
+                      <div class="feature__content">
+                        <p class="feature__text">У курьера всегда есть сдача и терминал для оплаты</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="tabs-hr">
+                  <h3 class="title title--size-md">Курьерская доставка</h3>
+                  <p class="tab-text">Вы можете забрать товар прямо у своего дома. Курьер довезет ваш заказ до двери за
+                    несколько часов после заказа.</p>
+                  <ul class="list list--green tab-list">
+                    <li class="list__item">Отслеживайте статус заказа с помощью смс-оповещений</li>
+                    <li class="list__item">За час до доставки курьер вас наберет</li>
+                  </ul>
+                  <h3 class="title title--size-md">Самовывоз</h3>
+                  <p class="tab-text">Заберите ваше устройство самостоятельно по адресу, указанному на странице
+                    контактов.
+                  </p>
+                  <ul class="list list--green tab-list">
+                    <li class="list__item">Удобно расположенный пункт выдачи</li>
+                    <li class="list__item">Работаем с 10:00 до 21:00, 7 дней в неделю</li>
+                  </ul>
+                  <hr class="tabs-hr">
+                  <h3 class="title title--size-md">Оплата наличными</h3>
+                  <p class="tab-text">Оплачивайте товары наличными после полного осмотра</p>
+                  <h3 class="title title--size-md">Безналичный рассчет</h3>
+                  <p class="tab-text">Деньги списываются с расчетного счета предпринимателя (Без НДС)</p>
+                  <h3 class="title title--size-md">Банковской картой</h3>
+                  <p class="tab-text">Наши курьеры всегда носят с собой терминал для оплаты</p>
+                  <h3 class="title title--size-md">В кредит</h3>
+                  <p class="tab-text">Оформляем кредиты по телефону за&nbsp;5&nbsp;минут <a href="#"
+                      class="link link--green">Подробнее</a></p>
+                </div>
+                <div class="tab-col tab-col--right tab-question">
+                  <button class="btn btn--radius-s btn--faq">Задать вопрос оператору</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="trade-in" class="container tabs__content clearfix">
+              //= components/trade-in-tab.html
+            </div>
+
+            <div id="faq" class="container tabs__content clearfix">
+              <h2 class="title title--mb shift">Частые вопросы</h2>
+              <div class="tabs__wrapper">
+                <div class="tabs__card tab-col tab-col--right">
+                  //= components/card/card--wide.html
+                </div>
+                <div class="tab-col tab-col--left">
+                  <ul uk-accordion="multiple: true" class="accordion tab-faq">
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">У вас есть доставка
+                        за пределы КАД?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Да. Более того, мы можем доставить товар в любую России.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Есть ли у курьера
+                        сдача?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Курьер поможет
+                        активировать и настроить устройство?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Есть ли у курьера
+                        банковский
+                        терминал?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Как перенести
+                        доставку?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Могу ли я открыть и
+                        проверить товар перед оплатой?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Могу ли я оплатить
+                        картой курьеру?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Как оплатить при
+                        помощи расчетного счета?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Нужна ли печать для
+                        забора покупки, оплаченной с помощью расчетного счета?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Могу ли я оплатить
+                        при помощи Сбербанк. Онлайн?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                    <li class="accordion__body">
+                      <a class="uk-accordion-title accordion__title accordion__title--dark" href="#">Предоставляете ли
+                        Вы чек?</a>
+                      <p class="uk-accordion-content accordion__content">
+                        Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-col tab-col--right tab-question">
+                  <button class="btn btn--radius-s btn--faq">Задать вопрос оператору</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+      <div class="container">
+        <div class="carousel__container">
+          <div class="carousel">
+            <h2 class="carousel__title carousel__title--orange">
+              <span class="carousel__title-text carousel__title-text--sm">Рекомендуем</span>
+            </h2>
+            <div class="carousel__inner">
+              <div class="swiper-container swiper-good">
+                <ul class="swiper-wrapper" uk-height-match="target: .card__title">
+                  <li class="carousel__item swiper-slide">
+                    <div class="card frame frame--shadowed">
+                      <div class="card__stickers card__stickers--vertical">
+                        <span class="sticker sticker--bordered sticker--color-green2">Cкидка 15%</span>
+                        <span class="sticker sticker--bordered sticker--color-red">В наличии</span>
+                      </div>
+                      <a href="#" title="Подробнее" class="card__image-wrap">
+                        <img src="img/card.jpg" alt="" class="card__image" />
+                      </a>
+                      <div class="card__description">
+                        <div class="card__stickers">
+                          <span class="sticker sticker--color-green">Суперцена</span>
+                        </div>
+                        <h3 class="card__title">
+                          <a href="#" title="Подробнее">Apple iPhone XS </a>
+                        </h3>
+                        <div class="price price--columned">
+                          <div class="price__profit price__profit--rowed">
+                            <span class="price__old">59&nbsp;990&nbsp;₽</span>
+                            <span class="price__discount">-&nbsp;5000&nbsp;₽</span>
+                          </div>
+                          <span class="price__current price__current--size-md">53&nbsp;990&nbsp;₽</span>
+                        </div>
+
+                      </div>
+                      <div class="card__buttons">
+                        <a href="" class="btn btn--bg-green btn--size-xxs">В корзину</a>
+                        <a href="" class="btn btn--bg-red btn--size-xxs card__button-desktop">Купить в 1 клик</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    <div class="card frame frame--shadowed">
+                      <div class="card__stickers card__stickers--vertical">
+                        <span class="sticker sticker--bordered sticker--color-green2">Cкидка 15%</span>
+                        <span class="sticker sticker--bordered sticker--color-red">В наличии</span>
+                      </div>
+                      <a href="#" title="Подробнее" class="card__image-wrap">
+                        <img src="img/card.jpg" alt="" class="card__image" />
+                      </a>
+                      <div class="card__description">
+                        <div class="card__stickers">
+                          <span class="sticker sticker--color-green">Суперцена</span>
+                        </div>
+                        <h3 class="card__title">
+                          <a href="#" title="Подробнее">Apple iPhone XS</a>
+                        </h3>
+                        <div class="price price--columned">
+                          <div class="price__profit price__profit--rowed">
+                            <span class="price__old">59&nbsp;990&nbsp;₽</span>
+                            <span class="price__discount">-&nbsp;5000&nbsp;₽</span>
+                          </div>
+                          <span class="price__current price__current--size-md">53&nbsp;990&nbsp;₽</span>
+                        </div>
+
+                      </div>
+                      <div class="card__buttons">
+                        <a href="" class="btn btn--bg-green btn--size-xxs">В корзину</a>
+                        <a href="" class="btn btn--bg-red btn--size-xxs card__button-desktop">Купить в 1 клик</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                </ul>
+              </div>
+              <a class="carousel__next swiper-button-next" title="показать следующий" href="javascript:void(0)">
+                <svg class="carousel__arrow" style="margin-top:0px;" title=" ">
+                  <defs>
+                    <linearGradient id="grad1">
+                      <stop offset="0%" stop-color="#66d927" />
+                      <stop offset="100%" stop-color="#b7ff00" />
+                    </linearGradient>
+                  </defs>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="carousel">
+            <h2 class="carousel__title">
+              <span class="carousel__title-text carousel__title-text--sm">Недавно&nbsp;просмотренные</span>
+            </h2>
+            <div class="carousel__inner">
+              <div class="swiper-container swiper-good">
+                <ul class="swiper-wrapper" uk-height-match="target: .card__title">
+                  <li class="carousel__item swiper-slide">
+                    <div class="card frame frame--shadowed">
+                      <div class="card__stickers card__stickers--vertical">
+                        <span class="sticker sticker--bordered sticker--color-green2">Cкидка 15%</span>
+                        <span class="sticker sticker--bordered sticker--color-red">В наличии</span>
+                      </div>
+                      <a href="#" title="Подробнее" class="card__image-wrap">
+                        <img src="img/card.jpg" alt="" class="card__image" />
+                      </a>
+                      <div class="card__description">
+                        <div class="card__stickers">
+                          <span class="sticker sticker--color-green">Суперцена</span>
+                        </div>
+                        <h3 class="card__title">
+                          <a href="#" title="Подробнее">Apple iPhone XS </a>
+                        </h3>
+                        <div class="price price--columned">
+                          <div class="price__profit price__profit--rowed">
+                            <span class="price__old">59&nbsp;990&nbsp;₽</span>
+                            <span class="price__discount">-&nbsp;5000&nbsp;₽</span>
+                          </div>
+                          <span class="price__current price__current--size-md">53&nbsp;990&nbsp;₽</span>
+                        </div>
+
+                      </div>
+                      <div class="card__buttons">
+                        <a href="" class="btn btn--bg-green btn--size-xxs">В корзину</a>
+                        <a href="" class="btn btn--bg-red btn--size-xxs card__button-desktop">Купить в 1 клик</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    <div class="card frame frame--shadowed">
+                      <div class="card__stickers card__stickers--vertical">
+                        <span class="sticker sticker--bordered sticker--color-green2">Cкидка 15%</span>
+                        <span class="sticker sticker--bordered sticker--color-red">В наличии</span>
+                      </div>
+                      <a href="#" title="Подробнее" class="card__image-wrap">
+                        <img src="img/card.jpg" alt="" class="card__image" />
+                      </a>
+                      <div class="card__description">
+                        <div class="card__stickers">
+                          <span class="sticker sticker--color-green">Суперцена</span>
+                        </div>
+                        <h3 class="card__title">
+                          <a href="#" title="Подробнее">Apple iPhone XS</a>
+                        </h3>
+                        <div class="price price--columned">
+                          <div class="price__profit price__profit--rowed">
+                            <span class="price__old">59&nbsp;990&nbsp;₽</span>
+                            <span class="price__discount">-&nbsp;5000&nbsp;₽</span>
+                          </div>
+                          <span class="price__current price__current--size-md">53&nbsp;990&nbsp;₽</span>
+                        </div>
+
+                      </div>
+                      <div class="card__buttons">
+                        <a href="" class="btn btn--bg-green btn--size-xxs">В корзину</a>
+                        <a href="" class="btn btn--bg-red btn--size-xxs card__button-desktop">Купить в 1 клик</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                  <li class="carousel__item swiper-slide">
+                    //= components/card/card.html
+                  </li>
+                </ul>
+              </div>
+              <a class="carousel__next swiper-button-next" title="показать следующий" href="javascript:void(0)">
+                <svg class="carousel__arrow" style="margin-top:0px;" title=" ">
+                  <defs>
+                    <linearGradient id="grad1">
+                      <stop offset="0%" stop-color="#66d927" />
+                      <stop offset="100%" stop-color="#b7ff00" />
+                    </linearGradient>
+                  </defs>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        //= components/subscribe.html
+      </div>
+      //= components/footer.html
+    </div>
+    <div class="bg"></div>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  color: $txt-dark;
+
+  &--columned {
+    align-items: center;
+    justify-content: center;
+    flex-direction: initial;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__profit {
+    white-space: nowrap;
+
+    &--rowed {
+      display: flex;
+      flex-direction: column;
+      padding-right: 12px;
+    }
+  }
+
+  &__old {
+    position: relative;
+    color: rgba(#333, .4);
+    font-size: 12px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: rgba(#333, .4);
+    }
+
+    .card &:before {
+      background-color: #fe4e1d;
+    }
+
+    &--size-big {
+      @include screen("sm") {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+
+      @include screen("md") {
+        font-size: 18px;
+        line-height: 2.5;
+      }
+    }
+  }
+
+  &__discount {
+    margin-top: 3px;
+    padding: 4px 5px;
+    border-radius: 8px;
+    background-color: #fff5f2;
+    font-weight: 700;
+    color: #fe4e1d;
+    font-size: 12px;
+  }
+
+  &__current {
+    font-weight: 500;
+
+    &--bright {
+      font-size: 22px;
+      color: #1fc119;
+
+      @include screen("smlim") {
+        line-height: 1.4;
+        margin-bottom: 5px;
+      }
+
+      @include screen("lg") {
+        line-height: 1.8;
+      }
+    }
+  }
+
+  &__current--size-md {
+    font-size: 22px;
+    line-height: 39px;
+  }
+
+  &__current--size-big {
+    @include screen("sm") {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    @include screen("md") {
+      font-size: 32px;
+      line-height: 0.75;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    z-index: 2;
+    padding: 15px 20px 20px;
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+    background-color: $white;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+    transition: opacity 0.4s;
+
+    @include screen(sm) {
+      top: -275px;
+      left: -180px;
+      width: 300px;
+    }
+
+    @include screen(md) {
+      top: -253px;
+      left: -164px;
+      width: 340px;
+      height: 240px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 8px solid transparent;
+      border-top: none;
+      border-bottom: 8px solid #fff;
+      z-index: 1;
+      transform: translateX(-50%) rotate(180deg);
+
+      @include screen(sm) {
+        bottom: -8px;
+        left: 221px;
+      }
+
+      @include screen(md) {
+        bottom: -8px;
+        left: 204px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 7px;
+      font: 600 16px / normal AvenirNext;
+      color: #2b2d30;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #2b2d30;
+    }
+  }
+
+  &__link {
+    position: relative;
+    max-width: 78px;
+    font-size: 12px;
+    line-height: 1.33;
+    text-decoration: underline;
+    color: rgba(51, 51, 51, 0.6);
+
+    @include screen("smlim") {
+      &--shown {
+        .price__tooltip {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+
+    @include screen("lg") {
+      &:hover {
+        .price__tooltip {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include screen(smlim) {
+      padding: 0 31px;
+      margin-bottom: 19px;
+    }
+
+    @include screen(lg) {
+      padding-right: 5px;
+      margin-bottom: 17px;
+    }
+  }
+
+  &--without-discount {
+    .price__container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .price__link {
+      margin-top: 10px;
+      max-width: none;
+    }
+
+    .price__tooltip {
+      @include screen(sm) {
+        left: -43px;
+      }
+
+      @include screen(lg) {
+        left: -60px;
+      }
+
+      &::after {
+        @include screen(sm) {
+          left: 151px;
+        }
+
+        @include screen(lg) {
+          left: 170px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.subscribe {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  @include screen(sm) {
+    flex-direction: column;
+    padding-top: 35px;
+  }
+
+  @include screen('mdlim') {
+    justify-content: space-between;
+    padding: 33px 0 33px 15px;
+  }
+
+  @include screen('lg') {
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0 33px 50px;
+  }
+
+  &__content {
+    @include screen('sm') {
+      margin: 0 30px 20px;
+    }
+
+    @include screen('lg') {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    font: 600 26px/normal AvenirNext;
+    color: $txt-grey;
+  }
+
+  & p {
+    @include screen('sm') {
+      margin-bottom: 20px;
+    }
+
+    @include screen('md') {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__field {
+    width: 280px;
+    max-width: 100%;
+    margin-right: 8px;
+
+    @include screen('sm') {
+      margin-bottom: 10px;
+    }
+
+    @include screen('mdlim') {
+      margin-bottom: 10px;
+    }
+
+    @include screen('lg') {
+      display: inline-flex;
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+
+    @include screen('smlim') {
+      margin-bottom: 25px;
+    }
+  }
+
+  & .btn {
+
+    @include screen('lg') {
+      flex: .3;
+      align-self: flex-end;
+      margin-left: 10px;
+    }
+  }
+
+  &__button-wrap {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(#333, .7);
+    cursor: pointer;
+    transform: translateY(12px);
+    transition: transform .5s, color .5s;
+
+    &:hover {
+      transform: translateY(6px);
+      color: rgba(#333, 1);
+    }
+
+    @include screen(sm) {
+      width: 59px;
+    }
+
+    @include screen(md) {
+      width: 65px;
+    }
+  }
+
+  &__buttons {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto 6px;
+  }
+
+  &__image {
+    @include screen('sm') {
+      width: 100%;
+      height: auto;
+    }
+
+    @include screen('mdlim') {
+      align-self: flex-end;
+      width: 100%;
+      height: auto;
+    }
+
+    @include screen('md') {
+      max-width: 550px;
+      max-height: 209px;
+      margin-top: 5px;
+    }
+  }
+}

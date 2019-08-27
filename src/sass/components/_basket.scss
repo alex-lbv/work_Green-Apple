@@ -1,0 +1,77 @@
+.basket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #e9ebef;
+  border-radius: 0 30px 30px 0;
+  color: #1c1d1e;
+  line-height: 1;
+  box-shadow: 0 0 0 5px #fff inset;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity .5s, background .5s;
+
+  &:hover {
+    background: #f7f7f7;
+  }
+
+  @include screen('smlim') {
+    padding: 0 30px 0 20px;
+  }
+
+  @include screen('lg') {
+    padding: 0 80px 0 15px;
+  }
+
+  .header__bottom--long & {
+    @include screen('lg') {
+      border-radius: 0 30px 0 0;
+    }
+  }
+
+  &--full {
+    box-shadow: 0 0 0 5px #4bd964 inset;
+    background-color: #4bd964;
+    color: #fff;
+    transition: background .5s, box-shadow .5s;
+
+    &:hover {
+      background-color: #1fc119;
+      box-shadow: 0 0 0 5px #1fc119 inset;
+    }
+  }
+
+  .header__bottom--active & {
+    opacity: 0;
+  }
+
+  &__text {
+    margin-left: 15px;
+  }
+
+  &__name {
+    display: block;
+    font: 500 16px/1.5 AvenirNext;
+  }
+
+  &__info {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  &__icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    fill: url(#basket);
+
+    .basket--full & {
+      fill: #f5ff00;
+    }
+  }
+}
+
+/* скрываем самовывоз, когда он выбран в оформлении */
+#total_shipping.pickup-pickup {
+  display: none;
+}

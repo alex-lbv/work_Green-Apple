@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+
+  @include screen(smlim) {
+    flex-direction: column;
+  }
+}
+
+.col {
+  min-width: 50%;
+  flex: 0 0 50%;
+
+  &--25 {
+    min-width: auto;
+
+    @include screen("sm") {
+      flex: 0 0 90%;
+
+      .main-news & {
+        flex: 0 0 82%;
+      }
+    }
+
+    @include screen("mdlim") {
+      flex: 0 0 40%;
+    }
+
+    @include screen("lg") {
+      flex: 0 0 25%;
+    }
+  }
+}

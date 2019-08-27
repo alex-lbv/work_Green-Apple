@@ -1,0 +1,27 @@
+.contact {
+    text-align: center;
+
+    &__text {
+        margin-bottom: 13px;
+        font: 600 14px/normal AvenirNext;
+    }
+
+    &__number {
+        margin-bottom: 7px;
+        color: #2b2d30;
+
+        @include screen(sm) {
+            font: 500 28px/normal AvenirNext;
+        }
+
+        @include screen(md) {
+            font: 500 32px/normal AvenirNext;
+        }
+    }
+
+    &__info {
+        font-size: 14px;
+        line-height: normal;
+        opacity: .5;
+    }
+}

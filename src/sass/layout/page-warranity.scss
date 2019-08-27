@@ -1,0 +1,113 @@
+.warranity {
+  margin-bottom: 40px;
+
+  @include screen("sm") {
+    padding: 0 15px;
+  }
+
+  @include screen("md") {
+    padding: 0 20px;
+  }
+
+  &__title {
+    @include screen("smlim") {
+      margin-bottom: 15px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__accordion {
+    @include screen("sm") {
+      margin: 0 -15px 30px;
+    }
+
+    @include screen("lg") {
+      margin: 0 -18px 60px;
+    }
+  }
+
+  &__content {
+    @include screen("lg") {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 10px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__text {
+    @include screen("sm") {
+      margin-bottom: 40px;
+    }
+
+    @include screen("lg") {
+      width: 53.8%;
+    }
+  }
+
+  &__subtitle {
+    font-family: "AvenirNext";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 14px;
+  }
+
+  &__features {
+    box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+
+    @include screen("sm") {
+      margin: 0 -15px;
+      padding: 20px 28px 20px 15px;
+    }
+
+    @include screen("mdlim") {
+      margin: 40px auto 0 auto;
+      padding: 30px;
+      max-width: 70%;
+    }
+
+    @include screen("lg") {
+      padding: 45px 70px 45px 40px;
+      margin: -10px -16px 0;
+      width: 42.2%;
+    }
+  }
+
+  &__feature {
+    @include screen("smlim") {
+      margin-bottom: 20px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 40px;
+    }
+  }
+
+  .feature__text--small {
+
+    @include screen("mdlim") {
+      line-height: 24px;
+    }
+
+    @include screen("lg") {
+      line-height: 26px;
+    }
+  }
+
+  .title {
+
+    @include screen("mdlim") {
+      margin-bottom: 12px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 25px;
+    }
+  }
+}

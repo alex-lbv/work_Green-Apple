@@ -1,0 +1,159 @@
+.feature {
+  display: flex;
+
+  @include screen("lg") {
+    align-items: center;
+  }
+
+  &--centered {
+    align-items: center;
+  }
+
+  br {
+    @include screen("sm") {
+      display: none;
+    }
+  }
+
+  &__icon {
+    @include screen("sm") {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      margin-top: 2px;
+    }
+
+    @include screen("md") {
+      width: 74px;
+      height: 74px;
+      min-width: 74px;
+    }
+  }
+
+  &__content {
+    margin-left: 20px;
+
+    .feature--centered & {
+      text-align-last: left;
+    }
+  }
+
+  &__title {
+    font: 600 18px/28px "AvenirNext";
+  }
+
+  &__subtitle {
+    font: 600 18px/1.56 AvenirNext;
+  }
+
+  &__text {
+    font-size: 16px;
+
+    @include screen("sm") {
+      white-space: normal;
+      line-height: 26px;
+
+      &--small {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    @include screen("md") {
+      line-height: 24px;
+
+      &--small {
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+
+    &--improved {
+      @include screen(md) {
+        padding-right: 168px;
+        line-height: 1.67;
+      }
+    }
+  }
+
+  &--full {
+    @include screen("sm") {
+      align-items: flex-start;
+    }
+
+    @include screen("lg") {
+      align-items: center;
+    }
+  }
+
+  &--centered {
+    @include screen("lg") {
+      justify-content: center;
+      line-height: 1.63;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features-main {
+  border-bottom: solid 1px #e2e2e2;
+  margin-bottom: 60px;
+
+  @include screen("sm") {
+    padding: 40px 0 40px 15px;
+  }
+
+  @include screen("md") {
+    padding: 20px 0;
+  }
+
+  @include screen("lg") {
+    padding: 55px 0 60px;
+  }
+
+  & .feature {
+    @include screen("sm") {
+      margin-bottom: 18px;
+    }
+
+    @include screen("mdlim") {
+      margin-bottom: 20px;
+    }
+  }
+
+  & .col {
+    &:last-child {
+      & .feature {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    @include screen("smlim") {
+      margin-bottom: 30px;
+      line-height: normal;
+    }
+
+    @include screen("mdlim") {
+      max-width: 50%;
+    }
+
+    @include screen("lg") {
+      max-width: 45%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen("mdlim") {
+      justify-content: space-around;
+    }
+  }
+}

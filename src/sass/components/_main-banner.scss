@@ -1,0 +1,114 @@
+.main-banner {
+  border: solid 1px #e2e2e2;
+
+  @include screen("sm") {
+    margin-bottom: 35px;
+    background-color: #fff;
+  }
+
+  @include screen("md") {
+    margin-bottom: 58px;
+    background-color: #fafafa;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include screen("sm") {
+      flex-wrap: wrap;
+      padding: 40px 15px 0 15px;
+    }
+
+    @include screen("md") {
+      padding-top: 0;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include screen("sm") {
+      order: 0;
+      margin-bottom: 32px;
+      width: 100%;
+    }
+
+    @include screen("mdlim") {
+      order: 1;
+      width: 35%;
+    }
+
+    @include screen("lg") {
+      order: 1;
+      width: 50%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "AvenirNext";
+    color: $txt-dark;
+
+    @include screen("smlim") {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 18px;
+      font-size: 48px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    color: $point-green;
+
+    &:hover {
+      text-decoration: underline; // Временно
+    }
+
+    &:after {
+      content: ">";
+      display: inline-block;
+      transform: scaleY(2);
+      margin-left: 10px;
+      vertical-align: middle;
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    @include screen("smlim") {
+      width: 100%;
+    }
+
+    @include screen("lg") {
+      height: 100%;
+    }
+  }
+
+  &__image-wrapper {
+    font-size: 0;
+
+    @include screen("sm") {
+      max-width: 288px;
+    }
+
+    @include screen("mdlim") {
+      max-width: 32%;
+      margin-right: 30px;
+    }
+
+    @include screen("lg") {
+      max-width: 52%;
+      height: 280px;
+    }
+  }
+}

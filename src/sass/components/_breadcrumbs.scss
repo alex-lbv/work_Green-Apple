@@ -1,0 +1,61 @@
+.breadcrumbs {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  font: normal 12px / normal AvenirNext;
+  color: #2b2d30;
+
+  @include screen(smlim) {
+    margin: 10px 0 5px 5px;
+  }
+
+  @include screen(lg) {
+    margin: 15px 0 10px 10px;
+  }
+
+  &--dark {
+    @include screen(smlim) {
+      color: #2b2d30;
+    }
+
+    @include screen(lg) {
+      color: #fff;
+    }
+  }
+
+  &__item {
+    padding: 0 10px;
+
+    &:not(:last-of-type) {
+      border-right: 2px solid #dcdcdc;
+
+      @include screen(sm) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &:last-child {
+      @include screen(smlim) {
+        opacity: 0.35;
+      }
+
+      @include screen(lg) {
+        .breadcrumbs:not(.breadcrumbs--dark) & {
+          opacity: 0.35;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    color: inherit;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,276 @@
+.main-slider {
+  position: relative;
+  overflow: hidden;
+
+  @include screen(sm) {
+    padding-top: 23px;
+  }
+
+  @include screen(md) {
+    padding-top: 40px;
+  }
+
+  .sticker {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 4px 15px 3px;
+  }
+
+  &__item {
+    .container {
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+
+      @include screen(sm) {
+        min-height: 470px;
+      }
+
+      @include screen(lg) {
+        padding-left: 25px;
+        min-height: 405px;
+        background-size: contain;
+      }
+    }
+
+    &--iphone_xr .container {
+      background-image: url(../img/pic/banner/iphone_xr.jpg);
+      background-position: 40% 100%;
+
+      @include screen(smlim) {
+        background-size: contain;
+        background-position: bottom;
+      }
+    }
+
+    &--iphone_xs .container {
+      @include screen(smlim) {
+        background-image: url(../img/pic/banner/iphone_xs-mobile.jpg);
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      @include screen(lg) {
+        background-image: url(../img/pic/banner/iphone_xs.jpg);
+        background-position: 60% 100%;
+      }
+    }
+
+    &--iphone_x .container {
+      @include screen(smlim) {
+        background-image: url(../img/pic/banner/iphone_x-mobile.jpg);
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      @include screen(lg) {
+        background-image: url(../img/pic/banner/iphone_x.jpg);
+        background-position: 55% 100%;
+      }
+    }
+
+    &--iphone_8 .container {
+      @include screen(smlim) {
+        background-image: url(../img/pic/banner/iphone_8-mobile.jpg);
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      @include screen(lg) {
+        background-image: url(../img/pic/banner/iphone_8.jpg);
+        background-position: 55% 100%;
+      }
+    }
+
+    &--iphone_7 .container {
+      @include screen(smlim) {
+        background-image: url(../img/pic/banner/iphone_7-mobile.jpg);
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      @include screen(lg) {
+        background-image: url(../img/pic/banner/iphone_7.jpg);
+        background-position: 55% 100%;
+      }
+    }
+
+    &--airpods .container {
+      @include screen(smlim) {
+        background-image: url(../img/pic/banner/airpods-mobile.jpg);
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      @include screen(lg) {
+        background-image: url(../img/pic/banner/airpods.jpg);
+        background-position: 55% 100%;
+      }
+    }
+
+    &--watch .container {
+      @include screen(smlim) {
+        background-image: url(../img/pic/banner/watch-mobile.jpg);
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      @include screen(lg) {
+        background-image: url(../img/pic/banner/watch.jpg);
+        background-position: 55% 100%;
+      }
+    }
+  }
+
+  &__bg-shift.container {
+    background-position: 40% 100%;
+  }
+
+  &__content {
+    @include screen(sm) {
+      padding-bottom: 60%;
+    }
+
+    @include screen(smlim) {
+      padding-left: 29px;
+    }
+
+    &--none-mobile {
+      @include screen(sm) {
+        display: none;
+      }
+
+      @include screen(mdlim) {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &__title {
+    @include screen(smlim) {
+      margin-bottom: 5px;
+      font: 600 26px / normal AvenirNext;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 4px;
+      font: 600 50px / normal AvenirNext;
+
+      &--md {
+        font-size: 40px;
+      }
+
+      &--sm {
+        font-size: 38px;
+      }
+    }
+  }
+
+  &__text {
+    @include screen(smlim) {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+  }
+
+  &__special {
+    font-size: 12px;
+    line-height: 2;
+    opacity: 0.4;
+
+    @include screen(smlim) {
+      margin-bottom: 9px;
+    }
+
+    @include screen(lg) {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__card {
+    max-width: 260px;
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+
+    @include screen(smlim) {
+      top: calc(50% - 8px);
+    }
+
+    @include screen(lg) {
+      top: calc(50% - 32px);
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-radius: 3px 0 0 0;
+
+      @include screen(smlim) {
+        width: 12px;
+        height: 12px;
+        border-color: #4bd964;
+      }
+
+      @include screen(lg) {
+        width: 15px;
+        height: 15px;
+        opacity: 0.4;
+      }
+    }
+
+    &:hover {
+      &::after {
+        border-color: #4bd964;
+        opacity: 1;
+      }
+    }
+
+    &--prev {
+      @include screen(smlim) {
+        left: 6px;
+      }
+
+      @include screen(lg) {
+        left: 20px;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &--next {
+      @include screen(smlim) {
+        right: 6px;
+      }
+
+      @include screen(lg) {
+        right: 20px;
+      }
+
+      &::after {
+        transform: rotate(-225deg);
+      }
+    }
+  }
+
+  .btn {
+    margin-left: -5px;
+  }
+}

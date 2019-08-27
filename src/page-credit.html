@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    //= components/header-long.html
+    <div class="content">
+      <div class="container">
+        //= components/breadcrumbs-dark.html
+        <div class="page-head page-head--purple">
+          <div class="page-head__content">
+            <div class="row">
+              <div class="col">
+                <h1 class="page-head__title">Кредит</h1>
+                <p class="page-head__text">С нами покупать в кредит легко!</p>
+                <ul class="page-head__list">
+                  <li class="page-head__item">
+                    Среднее время одобрения 30 минут
+                  </li>
+                  <li class="page-head__item">80% заявок одобряется</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="page-head__bordered-list">
+                  <li>Нет банков и очередей. Оформляем кредит по телефону</li>
+                  <li>
+                    Нет скрытых платежей. Вам заранее сообщат все условия
+                    кредитования
+                  </li>
+                  <li>
+                    Нет длинных анкет 10 минут по телефону и вся информация у
+                    сотрудника банка
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="credit-tabs text-center">
+          <h2 class="title">Как это работает</h2>
+          <div class="tabs">
+            <div class="tabs__container credit-tabs__container">
+              <div class="tabs__btn credit-tabs__tab tabs__btn--active" data-tab="step1">
+                1
+              </div>
+              <div class="tabs__btn credit-tabs__tab" data-tab="step2">2</div>
+              <div class="tabs__btn credit-tabs__tab" data-tab="step3">3</div>
+              <div class="tabs__btn credit-tabs__tab" data-tab="step4">4</div>
+            </div>
+            <div class="tabs__content-wrap">
+              <div id="step1" class="tabs__content tabs__content--visible">
+                <p class="credit-tabs__paragraph">
+                  Выбирите на сайте нужный вам товар<br />
+                  и нажмите “Расчитать кредит”
+                </p>
+                <p class="credit-tabs__info">Пример:</p>
+                <span class="btn btn--width-auto btn--border-green btn--size-sm btn--radius-md credit-tabs__btn">
+                  <svg class="btn__icon">
+                    <use xlink:href="img/symbol/sprite.svg#credit" fill="#1fc119"></use>
+                  </svg>
+                  <span class="btn--text-bright btn--textsize-xs">Расчитать кредит</span><br />
+                  от
+                  <span class="btn--textsize-m">1440&nbsp;₽</span>&nbsp;в&nbsp;месяц
+                </span>
+              </div>
+              <div id="step2" class="tabs__content">
+                <p class="credit-tabs__paragraph">
+                  Кредитный специалист заполнит с вами <br />
+                  короткую анкету по телефону
+                </p>
+                <svg class="credit-tabs__icon">
+                  <use xlink:href="img/symbol/sprite.svg#credit4"></use>
+                </svg>
+              </div>
+              <div id="step3" class="tabs__content">
+                <p class="credit-tabs__paragraph">
+                  Ожидайте решения от банков. <br />
+                  В среднем это занимает 30 минут.
+                </p>
+                <svg class="credit-tabs__icon">
+                  <use xlink:href="img/symbol/sprite.svg#credit3"></use>
+                </svg>
+              </div>
+              <div id="step4" class="tabs__content">
+                <p class="credit-tabs__paragraph">
+                  Ваш заказ доставят вам на дом и останется <br />
+                  лишь подписать бумаги.
+                </p>
+                <svg class="credit-tabs__icon">
+                  <use xlink:href="img/symbol/sprite.svg#credit2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wide-wrapper">
+        <div class="credit container">
+          <h2 class="title credit__title">Условия получения кредита</h2>
+          <div class="row credit__row">
+            <div class="credit-term credit-term--bordered">
+              <svg class="credit-term__icon">
+                <use xlink:href="img/symbol/sprite.svg#credit-adult" fill="#4BD964"></use>
+              </svg>
+              <div class="credit-term__text">Возраст - от 18 до 69 лет</div>
+            </div>
+            <div class="credit-term credit-term--bordered">
+              <svg class="credit-term__icon">
+                <use xlink:href="img/symbol/sprite.svg#credit-income" fill="#4BD964"></use>
+              </svg>
+              <div class="credit-term__text">
+                Наличие постоянного источника дохода
+                <p>(работа, пенсия)</p>
+              </div>
+            </div>
+            <div class="credit-term credit-term--bordered">
+              <svg class="credit-term__icon">
+                <use xlink:href="img/symbol/sprite.svg#credit-passport" fill="#4BD964"></use>
+              </svg>
+              <div class="credit-term__text">
+                Наличие паспорта гражданина РФ
+              </div>
+            </div>
+          </div>
+          <div class="row credit__row">
+            <div class="credit-term">
+              <p class="credit-term__text">На срок:</p>
+              <p class="credit-term__text credit-term__text--large">
+                4 — 36 месяцев
+              </p>
+            </div>
+            <div class="credit-term">
+              <p class="credit-term__text">Возможная сумма кредита:</p>
+              <p class="credit-term__text credit-term__text--large">
+                10000 — 600000₽
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="faq faq--big-margin">
+          <h2 class="title faq__title">Частые вопросы</h2>
+          <ul uk-accordion="multiple: true" class="accordion">
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">У вас есть доставка за пределы КАД?</a>
+              <p class="uk-accordion-content accordion__content">
+                Да. Более того, мы можем доставить товар в любую России.
+              </p>
+            </li>
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">Есть ли у курьера сдача?</a>
+              <p class="uk-accordion-content accordion__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </li>
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">Курьер поможет активировать и настроить
+                устройство?</a>
+              <p class="uk-accordion-content accordion__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </li>
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">Есть ли у курьера банковский терминал?</a>
+              <p class="uk-accordion-content accordion__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </li>
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">Как перенести доставку?</a>
+              <p class="uk-accordion-content accordion__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </li>
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">Могу ли я открыть и проверить товар перед
+                оплатой?</a>
+              <p class="uk-accordion-content accordion__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </li>
+            <li class="accordion__body">
+              <a class="uk-accordion-title accordion__title" href="#">Могу ли я оплатить картой курьеру?</a>
+              <p class="uk-accordion-content accordion__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </li>
+          </ul>
+        </div>
+        //= components/subscribe.html
+      </div>
+    </div>
+    //= components/footer.html
+  </div>
+  <div class="bg"></div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

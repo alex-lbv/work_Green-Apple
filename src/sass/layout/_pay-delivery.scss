@@ -1,0 +1,83 @@
+.pay-delivery {
+  @include screen(smlim) {
+    padding-left: 15px;
+  }
+
+  @include screen(lg) {
+    padding-left: 22px;
+  }
+
+  .title {
+    @include screen(smlim) {
+      margin-bottom: 13px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .intro {
+    line-height: 1.78;
+
+    @include screen(smlim) {
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 28px;
+      padding-right: 124px;
+    }
+  }
+
+  .feature__content {
+    @include screen(smlim) {
+      flex: 1;
+    }
+
+    @include screen(lg) {
+      flex: 0 0 68%;
+    }
+  }
+
+  .tab-features {
+    @include screen(smlim) {
+      margin-bottom: 39px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 80px;
+    }
+
+    &__feature {
+      @include screen(sm) {
+        margin-bottom: 15px;
+        align-items: flex-start;
+      }
+
+      @include screen(mdlim) {
+        margin-bottom: 15px;
+        align-items: center;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .tab-features--row {
+    margin-bottom: 33px;
+  }
+
+  hr {
+    @include screen(smlim) {
+      margin-bottom: 29px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,245 @@
+.search {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 60px;
+  transition: transform .5s .5s;
+
+  @include screen('smlim') {
+    width: 60px;
+
+    .uk-active & {
+      width: 66px;
+      flex: 0 0 66px;
+    }
+  }
+
+  .header__top &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 30px 0 0px 0px #f7f7f7;
+    border-radius: 0 50px 50px 0;
+    z-index: 1;
+  }
+
+  &--shown {
+    z-index: 1001;
+
+    .search__inner {
+      transition: transform .5s, background .5s;
+
+      @include screen('smlim') {
+        background: #fff;
+        transform: translateX(0%);
+      }
+
+      @include screen('lg') {
+        width: 1170px;
+        transform: translateX(-62.25%);
+      }
+    }
+  }
+
+  &--wide {
+    &:after {
+      display: none;
+    }
+  }
+
+  &__inner {
+    border-radius: 30px;
+    height: 60px;
+    transition: transform .5s, background .5s .5s;
+
+    @include screen('smlim') {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100vw - 10px);
+      transform: translateX(calc(100% - 60px));
+
+      .uk-active .search--shown &,
+      .uk-active .search & {
+        transition: transform 0s;
+      }
+    }
+
+    @include screen('lg') {
+      width: auto;
+      transform: translateX(0%);
+    }
+
+    .search--resulted & {
+      border-radius: 30px 30px 0 0;
+    }
+  }
+
+  &__icon {
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    fill: #afafaf;
+    opacity: 0;
+    cursor: pointer;
+    visibility: hidden;
+
+    @include screen(smlim) {
+      .uk-active .search--shown & {
+        transition: opacity .5s;
+      }
+    }
+
+    .search--shown & {
+      opacity: 1;
+      transition: opacity .5s .5s;
+      visibility: initial;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 30px;
+
+    @include screen('smlim') {
+      width: 0;
+      padding-left: 52px;
+      background: url(../img/pic/ico/search.svg) no-repeat 16px 47%/23px auto;
+
+      .search--shown & {
+        width: calc(100% - 102px);
+        background: url(../img/pic/ico/search.svg) no-repeat 22px 48%/17px auto;
+      }
+
+      .header__search--bottom & {
+        background: url(../img/pic/ico/search-bl.svg) no-repeat 16px 47%/24px auto;
+      }
+    }
+
+    @include screen('lg') {
+      padding-left: 50px;
+      background: url(../img/pic/ico/search.svg) no-repeat 20px 50%;
+
+      .search--shown & {
+        margin-right: 10px;
+        width: calc(100% - 235px);
+        background: url(../img/pic/ico/search.svg) no-repeat 15px 50%;
+      }
+    }
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    margin-left: 8px;
+    padding-top: 6px;
+    font-size: 16px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    @include screen(smlim) {
+      display: none;
+    }
+
+    .search--shown & {
+      opacity: 1;
+      visibility: initial;
+      pointer-events: initial;
+      transition: opacity .5s .5s;
+    }
+  }
+
+  &__result {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+    color: #a2a3a4;
+    opacity: 0;
+    z-index: 1001;
+    pointer-events: none;
+    overflow: hidden;
+    transition: opacity .3s;
+
+    @include screen(smlim) {
+      margin-top: -65px;
+
+      .uk-active & {
+        margin-top: 0;
+      }
+    }
+
+    &--visible {
+      opacity: 1;
+      pointer-events: initial
+    }
+
+    span {
+      color: $txt-grey;
+    }
+
+    a {
+      display: block;
+      color: #a2a3a4;
+
+      @include screen('smlim') {
+        padding: 17px 20px 16px;
+      }
+
+      @include screen('lg') {
+        padding: 10px 20px 11px;
+      }
+    }
+
+    span:not(.search__request) {
+      @include screen('smlim') {
+        padding: 17px 20px 16px;
+      }
+
+      @include screen('lg') {
+        padding: 10px 20px 11px;
+      }
+    }
+  }
+
+  &__result-list-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    font-size: 16px;
+
+    &:hover {
+      background-color: #f7f7f7;
+    }
+
+    &.selected {
+      background-color: #f7f7f7;
+    }
+  }
+
+  &__result-info {
+    padding: 15px 0 15px 20px;
+    line-height: 1.71;
+  }
+
+  &__result-title {
+    margin-bottom: 15px;
+    font: 600 14px/1.71 AvenirNext;
+    color: $txt-dark;
+  }
+
+  &__request {
+    color: $txt-grey;
+  }
+}

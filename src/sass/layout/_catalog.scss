@@ -1,0 +1,241 @@
+.catalog {
+
+  &__carousel {
+    @include screen('smlim') {
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #dfdfdf;
+    }
+  }
+
+  .title {
+    @include screen('lg') {
+      flex: 0 0 39%;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include screen('smlim') {
+      padding-bottom: 12px;
+    }
+
+    @include screen('lg') {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #dfdfdf;
+    }
+  }
+
+  &__benefits {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+
+    @include screen('smlim') {
+      display: none;
+    }
+
+    .feature {
+      display: inline-flex;
+      justify-content: flex-start;
+    }
+
+    .feature__icon {
+      width: 37px;
+      min-width: 37px;
+      height: 37px;
+    }
+
+    .feature__text {
+      font-size: 14px;
+    }
+
+    .feature__content {
+      margin-left: 15px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+
+    @include screen(smlim) {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 60px;
+    }
+
+    .filter__wrap {
+      @include screen(lg) {
+        flex: .184;
+      }
+    }
+
+    .card__stickers {
+      @include screen(sm) {
+        margin-bottom: 13px;
+      }
+    }
+
+    .card__title {
+      @include screen(sm) {
+        margin-bottom: 12px;
+        font-size: 12px;
+      }
+    }
+
+    .price__old,
+    .price__discount {
+      @include screen(sm) {
+        font-size: 12px;
+      }
+    }
+
+    .price__current--size-md {
+      @include screen(sm) {
+        font-size: 18px;
+      }
+    }
+
+    .btn--size-s {
+      @include screen(sm) {
+        padding: 3px 30px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen(sm) {
+      margin-bottom: 2px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 10px;
+    }
+
+    &-wrap {
+      @include screen(lg) {
+        flex: .97;
+      }
+
+      .pagination {
+        @include screen(lg) {
+          padding-right: 10px;
+        }
+      }
+
+    }
+  }
+
+  &__item {
+    @include screen(sm) {
+      margin-bottom: 5px;
+      width: 50%;
+
+      &:nth-of-type(2n-1) {
+        padding-right: 3px;
+      }
+
+      &:nth-of-type(2n) {
+        padding-left: 3px;
+      }
+    }
+
+    @include screen(mdlim) {
+      margin-bottom: 10px;
+      width: calc(100% / 3);
+
+      &:nth-of-type(3n-1) {
+        padding: 0 10px;
+      }
+    }
+
+    @include screen(lg) {
+      padding-right: 10px;
+      margin-bottom: 10px;
+      width: calc(100% / 4);
+    }
+  }
+
+  hr {
+    margin-bottom: 40px;
+  }
+
+  &__func {
+    display: flex;
+    justify-content: space-between;
+
+    @include screen('smlim') {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    @include screen('lg') {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__func-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sort-label {
+    font: 600 12px/1 AvenirNext;
+    margin-right: 11px;
+
+    @include screen('smlim') {
+      display: none;
+    }
+  }
+
+  &__filter-btn {
+    display: flex;
+    align-items: center;
+    min-width: 152px;
+    border-radius: 19px;
+    border: solid 1px #e9ebef;
+    padding: 0 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background .5s;
+
+    &--active {
+      background-color: #e7e7e7;
+    }
+
+    @include screen('lg') {
+      display: none;
+    }
+  }
+
+  &__filter-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    fill: #333;
+  }
+
+  .card__buttons .btn {
+    @include screen('smlim') {
+      padding: 4px 25px;
+    }
+  }
+
+  .card {
+
+    @include screen('smlim') {
+      padding: 10px 0 3px;
+    }
+  }
+}

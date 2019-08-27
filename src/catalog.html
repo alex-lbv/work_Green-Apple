@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        //= components/header.html
+        <div class="content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span>Смартфоны iPhone</span>
+                    </li>
+                </ul>
+                <div class="catalog">
+                    <div class="catalog__top">
+                        <h1 class="title shift">Смартфоны iPhone </h1>
+                        <div class="catalog__benefits">
+                            <div class="feature feature--centered">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-delivery"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">Бесплатная доставка <br>по СПБ в день заказа</p>
+                                </div>
+                            </div>
+                            <div class="feature feature--centered">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-warranity"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">Гарантия <br>1 год</p>
+                                </div>
+                            </div>
+                            <div class="feature feature--centered">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/symbol/sprite.svg#feature-original"></use>
+                                </svg>
+                                <div class="feature__content">
+                                    <p class="feature__text">Оригинальная <br>продукция</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__func">
+                        <div class="filter-top swiper-container filter-top-swiper">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide filter-top__link filter-top__link--active" href="#"
+                                    title="Показать">Все</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone XS Max</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone XS</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone XR</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone X</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 8 Plus</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 8</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 7 Plus</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 7</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone XR</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone X</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 8 Plus</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 8</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 7 Plus</a>
+                                <a class="swiper-slide filter-top__link" href="#" title="Показать">iPhone 7</a>
+                            </div>
+                            <div class="filter-top__button filter-top__button--prev swiper-button-disabled"></div>
+                            <div class="filter-top__button filter-top__button--next"></div>
+                        </div>
+                        <div class="catalog__func-bottom">
+                            <div class="catalog__filter-btn js-filter-btn">
+                                <svg class="catalog__filter-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xlink:href="../img/symbol/sprite.svg#filter">
+                                </svg>
+                                Фильтр
+                            </div>
+                            <div class="catalog__sort">
+                                <label class="catalog__sort-label" for="sort">Сортировать</label>
+                                <select name="" id="sort" class="js-choice">
+                                    <option value="">Популярные</option>
+                                    <option value="">her</option>
+                                    <option value="">hr</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__container">
+                        <div class="catalog__list-wrap">
+                            <ul class="catalog__list" uk-height-match="target: .card__title">
+                                <li class="catalog__item">
+                                    <div class="card frame frame--shadowed">
+                                        <div class="card__stickers card__stickers--vertical">
+                                            <span class="sticker sticker--bordered sticker--color-green2">Cкидка
+                                                15%</span>
+                                            <span class="sticker sticker--bordered sticker--color-red">В наличии</span>
+                                        </div>
+                                        <a href="#" title="Подробнее" class="card__image-wrap">
+                                            <img src="img/card.jpg" alt="" class="card__image" />
+                                        </a>
+                                        <div class="card__description">
+                                            <div class="card__stickers">
+                                                &nbsp;
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="#" title="Подробнее">Apple iPhone XS 1</a>
+                                            </h3>
+                                            <div class="price price--columned">
+                                                <div class="price__profit price__profit--rowed">
+                                                    <span class="price__old">59&nbsp;990&nbsp;₽</span>
+                                                    <span class="price__discount">-&nbsp;5000&nbsp;₽</span>
+                                                </div>
+                                                <span
+                                                    class="price__current price__current--size-md">53&nbsp;990&nbsp;₽</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="card__buttons">
+                                            <a href="" class="btn btn--bg-green btn--size-xxs">В корзину</a>
+                                            <a href="" class="btn btn--bg-red btn--size-xxs card__button-desktop">Купить
+                                                в 1 клик</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                                <li class="catalog__item">
+                                    //= components/card/card.html
+                                </li>
+                            </ul>
+                            <div class="pagination">
+                                <a href="#"
+                                    class="pagination__button pagination__button--big pagination__button--shadowed">Показать
+                                    еще</a>
+                                <div class="pagination__row">
+                                    <a href="#" class="pagination__button pagination__button--shadowed">‹</a>
+
+                                    <span
+                                        class="pagination__button pagination__button--gray pagination__button--bordered">1</span>
+
+                                    <a href="#" class="pagination__button pagination__button--bordered">2</a>
+
+                                    <a href="#" class="pagination__button pagination__button--bordered">3</a>
+
+                                    <a href="#" class="pagination__button pagination__button--bordered">4</a>
+
+                                    <a href="#" class="pagination__button pagination__button--shadowed">›</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__wrap">
+                            <!-- Модель -->
+                            <div class="frame frame--bordered filter">
+                                <p class="filter__title">Модель</p>
+                                <ul class="filter__list">
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-1" id="iphone-1" checked>
+                                            <label class="checkbox__label" for="iphone-1">iPhone XS Max</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-2" id="iphone-2">
+                                            <label class="checkbox__label" for="iphone-2">iPhone XS</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-3" id="iphone-3">
+                                            <label class="checkbox__label" for="iphone-3">iPhone XR</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-4" id="iphone-4">
+                                            <label class="checkbox__label" for="iphone-4">iPhone X</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-5" id="iphone-5">
+                                            <label class="checkbox__label" for="iphone-5">iPhone 8 Plus</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-6" id="iphone-6">
+                                            <label class="checkbox__label" for="iphone-6">iPhone 8</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-7" id="iphone-7">
+                                            <label class="checkbox__label" for="iphone-7">iPhone 7 Plus</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__item">
+                                        <div class="checkbox">
+                                            <input class="visually-hidden checkbox__input" type="checkbox"
+                                                name="iphone-8" id="iphone-8">
+                                            <label class="checkbox__label" for="iphone-8">iPhone 7</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="filter__button-wrap">
+                                    <a href=""
+                                        class="btn btn--border-grey btn--radius-xs btn--size-xxxxs btn--color-green">показать
+                                        еще</a>
+                                </div>
+                            </div>
+                            <ul uk-accordion="multiple: true" class="accordion uk-accordion">
+                                <!-- Цвет -->
+                                <li class="accordion__body frame frame--bordered filter uk-open">
+                                    <a class="uk-accordion-title accordion__title accordion__title--spaced-xs accordion__title--caret-small accordion__title--semibold"
+                                        href="#">Цвет</a>
+                                    <div class="uk-accordion-content accordion__content accordion__content--bg-white accordion__content--spaced-xs"
+                                        hidden="" aria-hidden="true">
+                                        <ul class="filter__colors">
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-1" id="color-1">
+                                                <label class="filter__label" style="background-color: #000000;"
+                                                    for="color-1"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-2" id="color-2">
+                                                <label class="filter__label" style="background-color: #6a6a6a;"
+                                                    for="color-2"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-3" id="color-3">
+                                                <label class="filter__label" style="background-color: #f3f3f3;"
+                                                    for="color-3"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-4" id="color-4">
+                                                <label class="filter__label" style="background-color: #e2a78e;"
+                                                    for="color-4"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-5" id="color-5">
+                                                <label class="filter__label" style="background-color: #4bcc62;"
+                                                    for="color-5"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-6" id="color-6">
+                                                <label class="filter__label" style="background-color: #dd3030;"
+                                                    for="color-6"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-7" id="color-7">
+                                                <label class="filter__label" style="background-color: #f8a6a6;"
+                                                    for="color-7"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-8" id="color-8">
+                                                <label class="filter__label" style="background-color: #fd8668;"
+                                                    for="color-8"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-9" id="color-9">
+                                                <label class="filter__label" style="background-color: #ffd14e;"
+                                                    for="color-9"></label>
+                                            </li>
+                                            <li class="filter__color">
+                                                <input class="filter__input visually-hidden" type="checkbox"
+                                                    name="color-10" id="color-10">
+                                                <label class="filter__label" style="background-color: #42b8e2;"
+                                                    for="color-10"></label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- Объем памяти -->
+                                <li class="accordion__body frame frame--bordered filter">
+                                    <a class="uk-accordion-title accordion__title accordion__title--spaced-xs accordion__title--caret-small accordion__title--semibold"
+                                        href="#">Объем памяти</a>
+                                    <div class="uk-accordion-content accordion__content accordion__content--bg-white accordion__content--spaced-xs"
+                                        hidden="" aria-hidden="true">
+                                    </div>
+                                </li>
+                                <!-- Колличество SIM -->
+                                <li class="accordion__body frame frame--bordered filter">
+                                    <a class="uk-accordion-title accordion__title accordion__title--spaced-xs accordion__title--caret-small accordion__title--semibold"
+                                        href="#">Колличество SIM</a>
+                                    <div class="uk-accordion-content accordion__content accordion__content--bg-white accordion__content--spaced-xs"
+                                        hidden="" aria-hidden="true">
+                                    </div>
+                                </li>
+                                <!-- Цена -->
+                                <li class="accordion__body frame frame--bordered filter uk-open">
+                                    <a class="uk-accordion-title accordion__title accordion__title--spaced-xs accordion__title--caret-small accordion__title--semibold"
+                                        href="#">Цена</a>
+                                    <div class="uk-accordion-content accordion__content accordion__content--bg-white accordion__content--spaced-xs"
+                                        hidden="" aria-hidden="true">
+                                        <div class="field__wrap">
+                                            <div class="field">
+                                                <label class="field__title field__title--filter" for="">от</label>
+                                                <input class="field__input field__input--shaded" type="text" name=""
+                                                    id="" placeholder="0&nbsp;&#x20bd;">
+                                            </div>
+                                            <div class="field">
+                                                <label class="field__title field__title--filter" for="">до</label>
+                                                <input class="field__input field__input--shaded" type="text" name=""
+                                                    id="" placeholder="120&nbsp;000&nbsp;&#x20bd;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="filter__reset">Сбросить фильтр</div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="title shift-mob">Отзывы</h2>
+                <div class="carousel carousel-reviews catalog__carousel">
+                    <h2 class="reviews__button reviews__button--vertical">
+                        <span>Добавить отзыв</span>
+                        <div class="reviews__plus-wrap reviews__plus-wrap--big">
+                            <svg class="reviews__plus">
+                                <use xlink:href="img/symbol/sprite.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </h2>
+                    <div class="carousel__inner">
+                        <div class="swiper-container swiper-review">
+                            <ul class="swiper-wrapper">
+                                <li class="carousel__item swiper-slide">
+                                    //= components/review-with-link.html
+                                </li>
+                                <li class="carousel__item swiper-slide">
+                                    //= components/review-with-link.html
+                                </li>
+                                <li class="carousel__item swiper-slide">
+                                    //= components/review-with-link.html
+                                </li>
+                                <li class="carousel__item swiper-slide">
+                                    <div class="review frame frame--shadowed frame--rounded">
+                                        <div class="review__top author">
+                                            <span class="author__avatar author__avatar--rose">
+                                                AA
+                                            </span>
+                                            <div class="author__info">
+                                                <p class="author__name">Антон Антонов</p>
+                                                <time class="author__date">12 мая 2019</time>
+                                            </div>
+                                            <div class="author__mark">
+                                                <span>5</span>
+                                                <svg class="author__star">
+                                                    <use xlink:href="img/symbol/sprite.svg#author-star"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="review__content">
+                                            <p class="review__text">
+                                                Нашёл этот сайт по рекламе в гугл.
+                                            </p>
+                                        </div>
+                                        <p class="review__link-wrap">
+                                            <span class="review__link">
+                                                Еще
+                                            </span>
+                                        </p>
+
+                                        <div class="review__images" uk-lightbox="animation: slide">
+                                            <a class="" href="img/pic/review-mobile-1.jpg"
+                                                title="Увеличить изображение">
+                                                <img src="img/pic/review-mobile-1.jpg" alt="" />
+                                            </a>
+                                            <a class="" href="img/pic/review-mobile-2.jpg"
+                                                title="Увеличить изображение">
+                                                <img src="img/pic/review-mobile-2.jpg" alt="" />
+                                            </a>
+                                            <a class="" href="img/pic/review-mobile-3.jpg"
+                                                title="Увеличить изображение">
+                                                <img src="img/pic/review-mobile-3.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="carousel__item swiper-slide">
+                                    //= components/review-with-link.html
+                                </li>
+                                <li class="carousel__item swiper-slide">
+                                    //= components/review-with-link.html
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="carousel__next review-button-next" title="показать следующий"
+                            href="javascript:void(0)">
+                            <svg class="carousel__arrow" style="margin-top:0px;" title=" ">
+                                <defs>
+                                    <linearGradient id="grad1">
+                                        <stop offset="0%" stop-color="#66d927" />
+                                        <stop offset="100%" stop-color="#b7ff00" />
+                                    </linearGradient>
+                                </defs>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="../img/symbol/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="swiper-scrollbar review-scrollbar"></div>
+                </div>
+            </div>
+            //= components/block_appleshop.html
+            <div class="container">
+                //= components/subscribe.html
+            </div>
+        </div>
+        //= components/footer.html
+    </div>
+    <div class="bg"></div>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

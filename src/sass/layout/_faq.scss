@@ -1,0 +1,19 @@
+.faq {
+    margin-bottom: 60px;
+
+    &--big-margin {
+        margin-bottom: 80px;
+    }
+
+    &__title {
+      @include screen("smlim") {
+        padding: 0 15px;
+        margin-bottom: 15px;
+      }
+
+      @include screen("lg") {
+        padding: 0 20px;
+        margin-bottom: 25px;
+      }
+    }
+}

@@ -1,0 +1,170 @@
+.tabs {
+  padding-left: 1px;
+
+  @include screen("lg") {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    @include screen(smlim) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    width: auto;
+    border-radius: 15px 15px 0 0;
+    border: solid 1px #e2e2e2;
+    border-bottom: none;
+    padding: 10px 30px;
+    margin-left: -1px;
+    background: #f7f7f7;
+    font: 500 16px/1 AvenirNext;
+    color: $txt-dark;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s, border 0.5s;
+
+    &::after {
+      position: absolute;
+      content: "шаг";
+      color: #2b2d30;
+      opacity: 0.3;
+
+      @include screen(sm) {
+        bottom: -22px;
+        left: 13px;
+        font: 600 13px / 19px AvenirNext, sans-serif;
+      }
+
+      @include screen(md) {
+        bottom: -29px;
+        left: 21px;
+        font: 600 14px / 19px AvenirNext, sans-serif;
+      }
+    }
+
+    &--active {
+      border-color: #fff;
+      background-color: #fff;
+      color: #1fc119;
+    }
+
+    &--bright {
+      border-color: #4bd964;
+      background-color: #4bd964;
+      color: #fff;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #fff;
+        color: #1fc119;
+      }
+    }
+
+    &--bright.tabs__btn--active {
+      border-color: #fff;
+      background-color: #fff;
+      color: #1fc119;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &__content {
+    @include screen("sm") {
+      padding: 35px 5px 0;
+    }
+
+    @include screen("mdlim") {
+      padding: 35px 5px;
+    }
+
+    @include screen("lg") {
+      padding: 40px 5px 35px 5px;
+    }
+
+    display: none;
+    animation: fadeEffect 1s;
+
+    &--visible {
+      display: block;
+    }
+
+    &--spaced {
+      @include screen("sm") {
+        padding: 10px 15px;
+      }
+
+      @include screen("mdlim") {
+        padding: 20px 40px;
+      }
+    }
+
+    & .intro--spaced-sm {
+      @include screen("sm") {
+        line-height: 1.78;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .uk-slider-items {
+    @include screen("lg") {
+      transform: translate3d(0px, 0px, 0px) !important;
+      padding: 0 0 0 20px;
+    }
+  }
+
+  &__card {
+    @include screen(smlim) {
+      order: 1;
+    }
+  }
+
+  &-swiper:after {
+    @include screen("smlim") {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 70px;
+      background: linear-gradient(to left, rgba(247, 247, 247, 1), rgba(255, 255, 255, 0));
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.uk-visible-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.uk-slider-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.uk-slider-items {
+  display: flex;
+  will-change: transform;
+}
+
+.uk-slider-items>* {
+  touch-action: pan-y;
+}

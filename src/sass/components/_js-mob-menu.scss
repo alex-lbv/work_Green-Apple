@@ -1,0 +1,6 @@
+.js-mob-menu--shown {
+  @include screen('smlim') {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}

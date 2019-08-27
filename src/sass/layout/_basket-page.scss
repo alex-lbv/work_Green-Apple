@@ -1,0 +1,452 @@
+.basket-page {
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+
+  @include screen(smlim) {
+    padding-top: 20px;
+    margin: 9px 0 40px;
+  }
+
+  @include screen(lg) {
+    padding: 30px 40px 60px;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    @include screen(lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .title {
+    @include screen(smlim) {
+      padding-left: 20px;
+    }
+  }
+
+  &__title {
+    @include screen(smlim) {
+      padding-left: 21px;
+      margin-bottom: 10px;
+      font: 600 16px / normal AvenirNext;
+
+      .frame & {
+        font: 600 18px / normal AvenirNext;
+        margin-bottom: 2px;
+      }
+    }
+
+    @include screen(lg) {
+      margin-bottom: 15px;
+      font: 600 18px / normal AvenirNext;
+    }
+  }
+
+  &__composition {
+    @include screen(smlim) {
+      padding-top: 17px;
+    }
+
+    @include screen(lg) {
+      flex: 0 0 40.5%;
+      padding-top: 30px;
+    }
+
+    .card--micro {
+      .card__title {
+        @include screen(smlim) {
+          padding-right: 50px;
+          margin-bottom: 10px;
+        }
+
+        @include screen(lg) {
+          max-width: 300px;
+          font-weight: 500;
+        }
+      }
+
+      .price--columned {
+        @include screen(smlim) {
+          flex-direction: column;
+          margin-top: -9px;
+        }
+      }
+
+      .price__profit--rowed {
+        @include screen(smlim) {
+          flex-direction: row;
+          align-items: center;
+          padding: 0;
+        }
+
+        @include screen(lg) {
+          padding-right: 15px;
+        }
+      }
+
+      .price__old {
+        @include screen(lg) {
+          font-size: 14px;
+        }
+      }
+
+      .price__discount {
+        @include screen(lg) {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+        }
+      }
+
+      .price__current {
+        @include screen(smlim) {
+          padding-left: 22px;
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  &__container {
+    @include screen(smlim) {
+      margin-bottom: 19px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 27px;
+    }
+  }
+
+  &__registration {
+    @include screen(smlim) {
+      padding: 5px;
+    }
+
+    @include screen(lg) {
+      flex: 0 0 56.8%;
+      padding-top: 10px;
+    }
+
+    .checkbox {
+      @include screen(smlim) {
+        margin: 0 20px 18px;
+        line-height: 1.2;
+      }
+
+      @include screen(lg) {
+        margin: 28px 0 25px;
+      }
+
+      &__label {
+        @include screen(smlim) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .btn--bg-green {
+      margin-bottom: 20px;
+
+      @include screen(smlim) {
+        max-width: 260px;
+        margin: 0 auto 20px;
+        display: block;
+      }
+    }
+
+    .btn--border-green {
+      position: relative;
+      letter-spacing: 0.3px;
+      transition: box-shadow .5s;
+
+      &:hover {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+      }
+
+      @include screen(smlim) {
+        max-width: 260px;
+        display: block;
+        margin: 0 auto;
+        padding: 12px 43px 9px 78px;
+        border-radius: 40px;
+      }
+
+      @include screen(lg) {
+        padding: 14px 20px 13px 60px;
+        border-radius: 30px;
+      }
+    }
+
+    .btn__icon {
+      position: absolute;
+      width: 30px;
+      height: 27px;
+
+      @include screen(smlim) {
+        top: 11px;
+        left: 41px;
+      }
+
+      @include screen(lg) {
+        top: 14px;
+        left: 119px;
+      }
+    }
+
+    .btn--text-bright {
+      margin-right: 13px;
+
+      letter-spacing: -1px;
+
+      @include screen(smlim) {
+        font-size: 16px;
+      }
+
+      @include screen(lg) {
+        font-size: 18px;
+      }
+    }
+
+    .contact {
+      @include screen(smlim) {
+        display: none;
+      }
+    }
+  }
+
+  &__form {
+    @include screen(smlim) {
+      padding: 20px 0;
+    }
+
+    @include screen(lg) {
+      padding: 21px 30px 31px;
+      margin-bottom: 30px;
+    }
+
+    .field {
+      @include screen(smlim) {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+    border-bottom: 1px solid rgba(220, 221, 224, 0.7);
+    border-radius: 0.5px;
+
+    @include screen(smlim) {
+      padding: 15px 20px 16px 21px;
+    }
+
+    @include screen(lg) {
+      padding: 4px 0 17px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-text {
+      font: 500 14px/1.7 AvenirNext;
+    }
+
+    &-number {
+      font-weight: 500;
+      line-height: normal;
+      color: $txt-dark;
+
+      &--lg {
+        font-size: 22px;
+      }
+
+      &--md {
+        font-size: 16px;
+      }
+
+      &--opacity {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__delivery {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(220, 221, 224, 0.7);
+    border-radius: 0.5px;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      @include screen(smlim) {
+        padding: 0 20px;
+      }
+    }
+
+    &-item {
+      width: 100%;
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+
+    .btn {
+      padding: 11px 5px 9px;
+      border: 2px solid rgba(226, 226, 226, 0.8);
+      font: 500 14px / normal Roboto;
+    }
+
+    input:checked+label.btn {
+      border: 2px solid #4bd964;
+      box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+      color: #1fc119;
+      transition: box-shadow 0.3s, border 0.3s, color 0.3s;
+    }
+
+    @include screen(lg) {
+      input:not(:checked):hover+label.btn {
+        color: rgba(31, 193, 25, 0.5);
+        transition: color 0.3s;
+      }
+    }
+
+    &-text {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+
+      @include screen(smlim) {
+        padding: 0 20px;
+      }
+
+      @include screen(lg) {
+        max-width: 352px;
+      }
+    }
+  }
+
+  .btn--color-green {
+    @include screen(smlim) {
+      display: none;
+    }
+
+    @include screen(lg) {
+      display: block;
+      margin: 0 auto 29px;
+      padding: 18px 0 18px;
+      max-width: 560px;
+      background-color: #f7f7f7;
+      font: 600 18px / normal AvenirNext;
+      transition: box-shadow .5s;
+
+      &:hover {
+        box-shadow: 0 0 0 1px #4acd62 inset;
+      }
+    }
+  }
+
+  &__carousel {
+    @include screen(smlim) {
+      display: none;
+    }
+
+    @include screen(lg) {
+      min-height: 250px;
+    }
+  }
+
+  .carousel {
+    @include screen(lg) {
+      position: absolute;
+      width: 539px;
+      margin-left: -31px;
+      padding-top: 0;
+    }
+
+    &:hover {
+      @include screen(lg) {
+        position: absolute;
+      }
+    }
+
+    &__item {
+      @include screen(lg) {
+        max-width: 275px;
+      }
+    }
+
+    .swiper-basket {
+      @include screen(lg) {
+        margin-top: -50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  .swiper-container {
+    @include screen('lg') {
+      padding-left: 10px;
+      padding-right: 180px;
+    }
+  }
+
+  &__form.frame {
+    @include screen(smlim) {
+      border-radius: 6px 6px 25px 25px;
+    }
+  }
+
+  &__card-empty {
+    margin-bottom: 20px;
+
+    @include screen(smlim) {
+      padding: 0 20px 20px 20px;
+    }
+
+    &-text {
+      margin-bottom: 20px;
+      font: normal 18px/normal AvenirNext;
+      color: #d8d8d8;
+    }
+  }
+
+  &__radio {
+    margin-bottom: 15px;
+    
+    .radio__label {
+      line-height: 22px;
+
+      &:before {
+        top: 2px;
+      }
+
+      &:after {
+        top: 6px;
+      }
+    }
+
+    .radio__item {
+      margin: 0 0 0 3px;
+    }
+
+    .radio__item:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+}

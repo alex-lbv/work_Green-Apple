@@ -1,0 +1,99 @@
+<button class="btn" uk-toggle="target: #popup-buy-credit" type="button">
+    Попапчик 'Купить в кредит'
+</button>
+
+<div id="popup-buy-credit" class="uk-flex-top popup" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical popup__inner popup__inner--md">
+        <svg class="popup__close popup__close--below uk-modal-close">
+            <use xlink:href="img/symbol/sprite.svg#close"></use>
+        </svg>
+        <h2 class="title title--mb-30">Купить в кредит</h2>
+        <div class="popup__container">
+            <div class="card card--micro frame frame--wide-m">
+                <div class="card__image-wrap">
+                    <img src="img/pic/phones/card-micro.png" alt="" class="card__image" />
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">
+                        Apple iPhone XS Max Dual SIM 512GB (черный)
+                    </h3>
+                    <div class="price price--columned">
+                        <div class="price__profit price__profit--rowed">
+                            <span class="price__old">59 990 ₽</span>
+                            <span class="price__discount">- 5000 ₽</span>
+                        </div>
+                        <span class="price__current price__current--size-md" data-price="53990">53 990 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calc">
+                <div class="field">
+                    <label for="bank" class="field__title">Выберите банк:</label>
+                    <select name="" id="bank" class="js-choice js-choice--big">
+                        <option value="">Любой</option>
+                        <option value="">her</option>
+                        <option value="">hr</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <p class="field__title">Срок кредита (месяцев):</p>
+                    <div class="range-wrap">
+                        <input class="field__range" type="range" value="2" min="2" max="36" step="1" />
+                        <span class="field__input-val">2</span>
+                        <ul class="range__items">
+                            <li class="range__item">2</li>
+                            <li class="range__item">6</li>
+                            <li class="range__item">12</li>
+                            <li class="range__item">18</li>
+                            <li class="range__item">24</li>
+                            <li class="range__item"></li>
+                            <li class="range__item">36</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="field">
+                    <p class="field__title">Приблизительный ежемесячный платеж:</p>
+                    <div class="calc__total">
+                        <span class="calc__result">16 990 ₽</span>
+                        <span class="field__info">Точный платеж<br>расчитывается менеджером</span>
+                    </div>
+                </div>
+            </div>
+            <div class="field__wrap frame frame--wide-m">
+                <div class="field field--w60">
+                    <p class="field__title">Есть задолженность по кредитам?</p>
+                    <div class="radio">
+                        <div class="radio__item">
+                            <input name="debt" class="visually-hidden radio__input" type="radio" id="yes">
+                            <label class="radio__label" for="yes">Да</label>
+                        </div>
+                        <div class="radio__item">
+                            <input name="debt" class="visually-hidden radio__input" type="radio" id="no">
+                            <label class="radio__label" for="no">Нет</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="field__title" for="">Ваш возраст:</label>
+                    <input class="field__input field__input--sm field__input--shaded" type="" name="" id="" />
+                </div>
+            </div>
+            <p class="popup__text popup__text--big popup__text--mb-20">
+                Напишите свой номер и мы позвоним Вам в течение 5 минут
+            </p>
+            <div class="field">
+                <label class="field__title" for="">Телефон</label>
+                <input class="field__input field__input--shaded" type="" name="" id="" />
+            </div>
+        </div>
+        <a href="" class="btn btn--bg-green btn--size-lg">Отправить заявку</a>
+        <a href="" class="btn btn--border-green btn--color-green btn--size-m">Остались вопросы?</a>
+        <a class="contact" href="tel:8 (812) 509-24-80" title="Позвонить">
+            <div class="contact__content">
+                <p class="contact__text">или позвоните нам по номеру:</p>
+                <p class="contact__number">+7 (812) 509-24-80</p>
+                <span class="contact__info">С 10:00 до 21:00, без выходных, бесплатно по РФ</span>
+            </div>
+        </a>
+    </div>
+</div>

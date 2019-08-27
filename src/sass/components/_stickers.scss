@@ -1,0 +1,84 @@
+.sticker {
+  padding: 5px 12px;
+  margin-right: 6px;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  background-color: #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--bordered {
+    border-radius: 15px;
+    border: solid 1px #e9e9e9;
+    background-color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    box-shadow: none;
+    padding: 3px 9px;
+    margin-left: 3px;
+
+    @include screen('smlim') {
+      .card & {
+        font-size: 10px;
+        padding: 2px 8px;
+      }
+    }
+  }
+
+  &--color-red {
+    color: #fe4e1d;
+  }
+
+  &--color-green2 {
+    color: #1fc119;
+  }
+
+  &--bright {
+    padding: 7px 15px;
+    border-bottom-left-radius: 0;
+    box-shadow: none;
+    background: linear-gradient(to right, #DFDD00, #69C437);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &--bright-red {
+    padding: 7px 15px;
+    border-bottom-left-radius: 0;
+    box-shadow: none;
+    background-image: linear-gradient(254deg, #fe4e1d, #ffa085);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &--color-green {
+    color: #46C029;
+  }
+
+  &--color-blue {
+    color: #0AB9FF;
+  }
+
+  &--color-pink {
+    color: #FF518C;
+  }
+
+  &--color-yellow {
+    color: #fab613;
+  }
+
+  &--tabs {
+    padding: 7px 15px;
+    border-radius: 15px;
+    box-shadow: none;
+    text-transform: uppercase;
+  }
+}

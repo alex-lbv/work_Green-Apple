@@ -1,0 +1,40 @@
+.error {
+  @include screen(smlim) {
+    text-align: center;
+  }
+
+  @include screen(lg) {
+    padding-left: 40px;
+  }
+
+  &__title {
+    padding-top: 80px;
+    margin-bottom: 15px;
+    
+    @include screen(smlim) {
+      font: 500 55px / normal AvenirNext;
+    }
+
+    @include screen(lg) {
+      font: 500 80px / normal AvenirNext;
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font: normal 32px / normal AvenirNext;
+  }
+
+  .btn {
+    padding: 14px 40px 16px;
+    max-width: 320px;
+
+    @include screen(smlim) {
+      font: 600 18px / normal AvenirNext;
+    }
+
+    @include screen(lg) {
+      font: 600 22px / normal AvenirNext;
+    }
+  }
+}

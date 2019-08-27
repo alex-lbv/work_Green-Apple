@@ -1,0 +1,49 @@
+.site-map {
+  margin-top: 20px;
+
+  &__wrapper {
+    padding-left: 20px;
+
+    @include screen(smlim) {
+      margin-bottom: 100px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    border-left: 2px solid rgba(185, 186, 186, 0.3);
+
+    &--md {
+      padding-left: 15px;
+    }
+
+    &--sm {
+      padding-left: 10px;
+      box-shadow: -19px 0 0 rgb(247, 247, 247);
+    }
+  }
+
+  &__item {
+    &--lg {
+      margin-bottom: 14px;
+      font: 500 18px / normal AvenirNext;
+      color: $txt-dark;
+    }
+
+    &--md {
+      margin-bottom: 15px;
+      font: normal 14px / normal Roboto;
+      color: #30373d;
+    }
+
+    &--sm {
+      margin-bottom: 10px;
+      font: normal 12px / normal Roboto;
+      color: #30373d;
+    }
+  }
+}

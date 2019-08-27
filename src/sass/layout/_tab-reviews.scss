@@ -1,0 +1,59 @@
+.tab-reviews {
+  @include screen(sm) {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0 30px 0;
+  }
+
+  @include screen(md) {
+    padding: 22px 0 60px 0;
+  }
+
+  &__card {
+    @include screen(lg) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__comments {
+    @include screen(sm) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__comment {
+    &:not(:last-of-type) {
+      @include screen(sm) {
+        margin-bottom: 10px;
+      }
+
+      @include screen(md) {
+        margin-bottom: 19px;
+      }
+    }
+  }
+
+  &__pagination {
+    @include screen(smlim) {
+      margin-top: 30px;
+    }
+  }
+
+  .tab-col--left {
+    @include screen(lg) {
+      min-height: 500px;
+    }
+  }
+}
+
+.tab-col--right .form--commented {
+  display: none;
+}
+
+.text-no-reviews {
+  padding: 0 20px;
+}

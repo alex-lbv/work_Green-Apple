@@ -1,0 +1,151 @@
+.contacts {
+  overflow: hidden;
+
+  @include screen("smlim") {
+    margin-bottom: 40px;
+    border-radius: 30px;
+  }
+
+  @include screen("lg") {
+    margin-top: -46px;
+    margin-bottom: 60px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  &__info {
+    color: #fff;
+    background-image: linear-gradient(41deg, #2d3235, #4c565a);
+
+    @include screen("smlim") {
+      padding: 25px 30px 30px 30px;
+    }
+
+    @include screen ("md") {
+      width: 36%;
+    }
+
+    @include screen("lg") {
+      padding: 64px 28px 40px 50px;
+    }
+  }
+
+  &__phone {
+    line-height: normal;
+
+    @include screen("lg") {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__email {
+    margin-bottom: 15px;
+  }
+
+  &__address {
+    font-size: 14px;
+
+    p {
+      @include screen("sm") {
+        margin-bottom: 7px;
+        line-height: 26px;
+      }
+
+      @include screen("mdlim") {
+        margin-bottom: 14px;
+        line-height: 18px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 4px;
+        line-height: 28px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__small-text {
+    opacity: 0.5;
+
+    p {
+      font-size: 12px;
+
+      @include screen("lg") {
+        margin-bottom: 7px;
+        line-height: 15px;
+      }
+    }
+
+    @include screen("smlim") {
+      margin-bottom: 15px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    line-height: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    @include screen("smlim") {
+      display: none;
+    }
+
+    @include screen("lg") {
+      margin-top: 32px;
+      padding: 14px 42px;
+      font-weight: 600;
+    }
+  }
+
+  &__map {
+    position: relative;
+    z-index: 1; // Border-radius solution for chrome and safari
+    overflow: hidden;
+    background-color: #fff;
+
+    @include screen("sm") {
+      height: 480px;
+    }
+
+    @include screen("md") {
+      min-width: 64%;
+    }
+
+    @include screen("lg") {
+     /*  height: 660px; */ // Safari solution for map
+    }
+  }
+
+  @include screen("sm") {
+    margin-bottom: 40px;
+  }
+
+  @include screen("md") {
+    display: flex;
+  }
+}
+
+.label-title {
+  font: 700 12px/30px "AvenirNext";
+  text-transform: uppercase;
+  opacity: 0.3;
+
+  @include screen("sm") {
+    margin-bottom: 5px;
+  }
+
+  @include screen("md") {
+    margin-bottom: 4px;
+  }
+}

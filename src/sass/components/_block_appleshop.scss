@@ -1,0 +1,161 @@
+.about {
+  @include screen("smlim") {
+    padding: 40px 0 20px;
+  }
+
+  @include screen("lg") {
+    padding: 60px 0 30px;
+  }
+
+
+  &__title {
+    font-family: "AvenirNext";
+    font-weight: 600;
+
+    @include screen("smlim") {
+      padding-right: 110px;
+      padding-left: 19px;
+      margin-bottom: 15px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+
+    @include screen("smlim") {
+      padding: 0 5px;
+    }
+  }
+
+
+  &__image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    @include screen("md") {
+      width: 42%;
+    }
+
+    &--left {
+      padding-right: 4%;
+    }
+
+    &--right {
+      padding-left: 4%;
+    }
+  }
+
+  &__text {
+    box-sizing: border-box;
+    line-height: normal;
+
+    @include screen("smlim") {
+      padding: 0 15px;
+      width: 100%;
+    }
+
+    @include screen("lg") {
+      width: 52%;
+    }
+
+    &--second {
+      @include screen("smlim") {
+        margin-top: 30px;
+      }
+
+      @include screen("lg") {
+        margin: 40px 0 0 0;
+      }
+    }
+
+
+  }
+
+  &__paragraph {
+    line-height: 24px;
+    color: $txt-dark;
+
+    @include screen("smlim") {
+      margin-bottom: 20px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__paragraph-title {
+    font: 600 18px/1.56 "AvenirNext";
+    margin-bottom: 10px;
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+    line-height: 18px;
+    color: #ababab;
+
+    @include screen('smlim') {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include screen('lg') {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .features__item {
+    align-items: center;
+  }
+}
+
+.features {
+  box-sizing: border-box;
+  box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.06);
+
+  @include screen("smlim") {
+    margin-bottom: 30px;
+    padding: 20px 19px;
+    width: 100%;
+  }
+
+  @include screen("lg") {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 45px;
+    width: 481px;
+
+    .about & {
+      margin-right: 65px;
+    }
+  }
+
+  &__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include screen("smlim") {
+      margin-bottom: 20px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 30px;
+    }
+  }
+}

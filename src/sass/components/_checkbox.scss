@@ -1,0 +1,52 @@
+.checkbox {
+  position: relative;
+  padding-left: 27px;
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input+&__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #e9ebec;
+  }
+
+  &__input:checked+&__label::before {
+    background-color: #f6f6f6;
+  }
+
+  &__input+&__label::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/pic/ico/check.svg") no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &__input:checked+&__label::after {
+    opacity: 1;
+  }
+
+  &__input--color+&__label--color::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid $white;
+  }
+}

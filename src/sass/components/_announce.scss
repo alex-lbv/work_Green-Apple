@@ -1,0 +1,129 @@
+.announce {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 10px 20px 18px 20px;
+  min-height: 243px;
+  color: $white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(38, 40, 43, 0), #26282b);
+    transition: opacity 0.5s;
+  }
+
+  &--upper {
+    @include screen("sm") {
+      min-height: 420px;
+      padding: 7px 30px 25px;
+      border-radius: 30px;
+    }
+
+    @include screen("md") {
+      border-radius: 30px;
+    }
+
+    @include screen("md") {
+      min-height: 420px;
+    }
+
+    @include screen("lg") {
+      padding: 40px 40% 50px 50px;
+      min-height: 419px;
+      border-radius: 0 0 30px 30px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font: 600 16px/1.56 AvenirNext;
+
+    &--big {
+      margin-bottom: 10px;
+      line-height: normal;
+
+      @include screen("sm") {
+        font-size: 20px;
+      }
+
+      @include screen("mdlim") {
+        font-size: 20px;
+      }
+
+      @include screen("lg") {
+        font-size: 38px;
+      }
+    }
+  }
+
+  &__date {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    opacity: 0.5;
+
+    &--big {
+      font-size: 14px;
+
+      @include screen("sm") {
+        margin-bottom: 12px;
+      }
+
+      @include screen("mdlim") {
+        margin-bottom: 10px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.72;
+
+    @include screen("sm") {
+      -webkit-line-clamp: 7;
+    }
+
+    @include screen("mdlim") {
+      -webkit-line-clamp: 7;
+    }
+
+    @include screen("lg") {
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+
+/* Поведение при наведении на аннонс, если он является ссылкой */
+a.announce:hover::before {
+  opacity: 0.3;
+}

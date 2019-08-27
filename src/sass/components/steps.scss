@@ -1,0 +1,85 @@
+.steps {
+  margin-bottom: 30px;
+
+  @include screen(smlim) {
+    padding: 9px 15px;
+    margin-bottom: 10px;
+  }
+
+  @include screen(lg) {
+    padding: 50px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include screen(smlim) {
+      width: 80%;
+      font: 600 18px/1.58 AvenirNext;
+    }
+
+    @include screen(lg) {
+      font: 600 24px/1.58 AvenirNext;
+    }
+  }
+
+  &__container {
+
+    @include screen(smlim) {
+      padding: 18px 0 0;
+    }
+
+    @include screen(lg) {
+      position: relative;
+      margin-top: 40px;
+      display: flex;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 34px;
+        left: 0;
+        right: 20%;
+        height: 1px;
+        background-color: #dbdee4;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__item {
+    counter-increment: inst;
+    flex: 1 1 37%;
+    line-height: 1.75;
+    counter-increment: inst;
+
+    &:before {
+      content: counter(inst);
+      display: block;
+      width: 68px;
+      height: 68px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.08), 0 0 0 20px #f7f7f7;
+      border-radius: 50%;
+      background-color: #ffffff;
+      font: 600 24px/68px AvenirNext;
+      color: #4bd964;
+      text-align: center;
+    }
+
+    &:last-child {
+      flex: 1 0 25%;
+      padding: 0;
+    }
+
+    @include screen(smlim) {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include screen(lg) {
+      padding-right: 150px;
+    }
+  }
+}

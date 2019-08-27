@@ -1,0 +1,152 @@
+.uk-accordion-content::before,
+.uk-accordion-content::after {
+  content: "";
+  display: table;
+}
+
+.uk-accordion-content::after {
+  clear: both;
+}
+
+.accordion {
+  padding: 0;
+  transition: transform .5s;
+}
+
+.accordion__body {
+  list-style: none;
+  border-radius: 6px;
+  margin: 0 0 6px;
+}
+
+.accordion__title::before {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  display: inline-block;
+  transform: rotate(225deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-radius: 3px 0 0 0;
+  border-color: $positive;
+  transition: transform .5s;
+
+
+  @include screen("sm") {
+    line-height: 20px;
+  }
+
+  @include screen("mdlim") {
+    line-height: 19px;
+  }
+
+  @include screen("lg") {
+    line-height: 19px;
+    right: 23px;
+  }
+}
+
+.uk-open>.accordion__title::before {
+  transform: rotate(45deg);
+}
+
+.uk-open {
+  margin-bottom: 0;
+
+  .accordion__content--spaced-xs {
+    margin-bottom: 5px;
+  }
+}
+
+.filter.uk-open {
+  margin-bottom: 6px;
+}
+
+.accordion__title {
+  display: block;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  font-family: "AvenirNext";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  text-decoration: none;
+  color: $txt-dark;
+  background-color: #fff;
+
+  @include screen("sm") {
+    padding: 15px 43px 15px 15px;
+  }
+
+  @include screen("mdlim") {
+    padding: 15px 21px;
+  }
+
+  @include screen("lg") {
+    padding: 15px 23px;
+  }
+
+  &--dark {
+    background-color: #f2f3f5;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--spaced-xs {
+    @include screen("sm") {
+      padding: 15px 19px;
+    }
+
+    @include screen("mdlim") {
+      padding: 15px 19px;
+    }
+
+    @include screen("lg") {
+      padding: 15px 19px;
+    }
+  }
+
+  &--caret-small {
+    &::before {
+      font-size: 10px;
+    }
+  }
+}
+
+.accordion__content {
+  line-height: 25px;
+  border-radius: 0 0 6px 6px;
+  font-family: "AvenirNext";
+  font-size: 14px;
+  font-weight: 500;
+  color: $txt-dark;
+
+  @include screen("sm") {
+    padding: 15px;
+  }
+
+  @include screen("md") {
+    padding: 15px 21px;
+  }
+
+  &--spaced-xs {
+    @include screen("sm") {
+      padding: 0px 15px 19px 18px;
+    }
+
+    @include screen("md") {
+      padding: 0px 15px 19px 18px;
+    }
+  }
+
+  &--bg-white {
+    box-shadow: 0 -5px 0 #fff;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,40 @@
+.voting {
+  display: flex;
+  padding-left: 17px;
+
+  &__container:not(:last-of-type) {
+    margin-right: 23px;
+  }
+
+  &__button {
+    margin: 0;
+    margin-right: 4px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    transition: opacity .5s;
+
+    &:active,
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__image {
+    width: 12px;
+    height: 12px;
+
+    &--liked {
+      fill: $positive;
+    }
+
+    &--disliked {
+      fill: $negative;
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__counter {
+    font-size: 12px;
+  }
+}

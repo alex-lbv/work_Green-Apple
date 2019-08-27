@@ -1,0 +1,255 @@
+.popup {
+  &--visible {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .title {
+    @include screen(sm) {
+      margin-bottom: 15px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 10px;
+    }
+
+    &--mb-30 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    @include screen(sm) {
+      margin-bottom: 20px;
+    }
+
+    @include screen(md) {
+      &--mb-20 {
+        margin-bottom: 20px;
+      }
+
+      &--mb-25 {
+        margin-bottom: 25px;
+      }
+
+      &--mb-30 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--big {
+      color: #2b2d30;
+
+      @include screen(sm) {
+        font: 600 14px/1.71 AvenirNext;
+      }
+
+      @include screen(md) {
+        font: 600 24px/1.5 AvenirNext;
+      }
+    }
+  }
+
+  .btn {
+    &:nth-of-type(2n) {
+      margin: 20px 0;
+    }
+
+    &--size-m {
+      padding: 14px;
+      font-size: 18px;
+    }
+
+    &--size-lg {
+      padding: 15px;
+    }
+  }
+
+  .field {
+    &__wrap {
+      padding-top: 20px;
+
+      @include screen(sm) {
+        margin-bottom: 20px;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__input {
+      padding: 17px 15px;
+    }
+
+    &__input--sm {
+      padding: 14px 15px;
+    }
+  }
+
+  &__container {
+    @include screen(sm) {
+      margin-bottom: 20px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 30px;
+    }
+
+    .popup__inner--lg & {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+
+    @include screen("smlim") {
+      align-self: flex-start;
+    }
+
+    &--sm {
+      @include screen(sm) {
+        padding: 25px 29px 30px;
+      }
+
+      @include screen(md) {
+        padding: 37px 40px;
+        max-width: 460px;
+      }
+    }
+
+    &--md {
+      @include screen(sm) {
+        padding: 26px 30px;
+      }
+
+      @include screen(md) {
+        padding: 31px 40px;
+        max-width: 560px;
+      }
+    }
+
+    &--lg {
+      @include screen(sm) {
+        padding: 26px 29px;
+      }
+
+      @include screen(md) {
+        padding: 31px 40px;
+        max-width: 870px;
+      }
+    }
+
+    &--full {
+      max-width: 920px;
+      overflow: hidden;
+
+      @include screen(smlim) {
+        padding: 22px 0 0;
+      }
+
+      @include screen(lg) {
+        padding: 31px 0 0;
+      }
+
+      iframe {
+        display: block;
+      }
+
+      .title {
+        padding-right: 60px;
+
+        @include screen(smlim) {
+          margin-bottom: 15px;
+          padding-left: 30px;
+        }
+
+        @include screen(lg) {
+          font-size: 32px;
+          margin-bottom: 26px;
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 5;
+    top: 19px;
+    right: 18px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    fill: #b8b4b4;
+    cursor: pointer;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @include screen(md) {
+      &--below {
+        top: 28px;
+        right: 28px;
+      }
+    }
+  }
+
+  .row {
+    justify-content: space-between;
+
+    @include screen(sm) {
+      flex-direction: column;
+    }
+
+    @include screen(md) {
+      flex-direction: row;
+    }
+  }
+
+  .col {
+    flex: 0 0 48%;
+    min-width: 48%;
+  }
+
+  .contact {
+    display: block;
+    padding: 8px 0 5px;
+  }
+
+  .card {
+    margin-bottom: 29px;
+  }
+
+  &__video {
+    @include screen(smlim) {}
+
+    iframe {
+      @include screen(sm) {
+        width: 320px;
+        height: 200px;
+      }
+
+      @include screen(mdlim) {
+        width: 700px;
+        height: 400px;
+      }
+
+      @include screen(lg) {
+        max-width: 1110px;
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+.gallery-thumbnav-popup {
+	position: relative;
+}

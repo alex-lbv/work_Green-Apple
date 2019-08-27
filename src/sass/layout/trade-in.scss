@@ -1,0 +1,56 @@
+.trade-in-tab {
+  &__title {
+    @include screen(smlim) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    @include screen(sm) {
+      margin-top: 10px;
+    }
+  }
+
+  &__text {
+    line-height: 1.8;
+
+    &--mb-sm {
+      margin-bottom: 20px;
+    }
+
+    &--mb-lg {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__card {
+    @include screen(mdlim) {
+      margin-bottom: 20px;
+    }
+    
+    &-price {
+      margin-bottom: 5px;
+      font: 600 16px/1.63 AvenirNext;
+      color: #1fc119;
+    }
+
+    &-value {
+      margin-bottom: 15px;
+      font: 500 32px / normal Roboto;
+      color: $txt-dark;
+    }
+
+    .btn {
+      padding: 14px;
+    }
+  }
+
+  .tab-col--left {
+    @include screen(smlim) {
+      padding: 15px;
+    }
+    @include screen(lg) {
+      padding-left: 19px;
+    }
+  }
+}

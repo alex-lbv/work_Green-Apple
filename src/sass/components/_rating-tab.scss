@@ -1,0 +1,32 @@
+.rating-tab {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 20px;
+  padding-left: 20px;
+
+  &__stars {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  &__star {
+    width: 15px;
+    height: 14px;
+    margin-right: 5px;
+  }
+
+  &__reviews {
+    display: block;
+    margin-right: 20px;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #1fc119;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity .5s;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body class="container">
+  <div class="wrapper">
+    //= components/header-long.html
+    <div class="content">
+      <div class="container">
+        //= components/breadcrumbs-dark.html
+        <article class="story">
+          <header class="announce announce--upper story__header"
+            style="background-image: linear-gradient(to bottom, rgba(38, 40, 43, 0), #26282b),  url('../img/mobile.jpg')">
+            <h1 class="announce__title announce__title--big">Apple полностью переработает 4 приложения под macOS к
+              релизу
+              Catalina</h1>
+            <time class="announce__date announce__date--big">20.06.2019</time>
+          </header>
+          <div class="story__wrap">
+            <div class="story__content">
+              <p class="story__text story__text--size-big">
+                Проект Catalyst, предполагающий унификацию приложений для Mac и iPad, должен существенно облегчить жизнь
+                как
+                разработчикам, так и рядовым пользователям. Однако, прежде чем это станет реальностью, Apple предстояло
+                проделать большую работу по созданию специального инструментария разработки, а также объединить AppKit и
+                UIKit. Задача, которую поставили перед собой в Купертино, оказалась настолько трудоемкой, что над ее
+                реализацией сама компания будет трудиться до самого сентября, занимаясь апгрейдом собственных
+                приложений,
+                перенесенных на macOS с iOS.
+              </p>
+              <picture class="story__image-wrap">
+                <source media="(min-width: 600px)" srcset="./img/article-img/catalina@2x.jpg">
+                <source media="(min-width: 0)" srcset="./img/article-img/catalina@1x.jpg"><img class="story__image"
+                  src="./img/article-img/catalina@2x.jpg" alt="mac os catalina">
+              </picture>
+              <p class="story__text">
+                В данном случае речь идет о приложениях «Акции», «Дом», «Новости» и «Диктофон» на Mac, которые пока
+                недостаточно удобны для использования на компьютерах, признается Крейг Федериги, вице-президент Apple по
+                разработке программного обеспечения. Основная цель, которую компания ставит перед собой, — это
+                модернизировать
+                эти приложения так, чтобы они выглядели и работали именно как настольные и не вызывали у пользователей
+                ассоциаций с мобильными.
+              </p>
+              <h3 class="story__title">iOS-приложения для Mac</h3>
+              <p class="story__text">
+                Пока сложно сказать, насколько удачен или неудачен проект Catalyst, однако с тем, что Apple испытывает
+                проблемы идентичности, смешивая дизайн-коды, спорить бесполезно. Даже если в Купертино создадут
+                универсальны
+                инструментарий для создания приложений под macOS и iPadOS, разработчикам все равно придется рисовать для
+                них
+                разный дизайн, заточенный под разные типы управления, что, по сути, не только не упрощает работу, а лишь
+                усложняет ее.
+              </p>
+            </div>
+            <aside class="story__interesting interesting-stories">
+              <h3 class="interesting-stories__title">Вам будет интересно</h3>
+              <div class="announce interesting-stories__item"
+                style="background-image: linear-gradient(to bottom, rgba(38, 40, 43, 0), #26282b),  url('../img/mobile.jpg')">
+                <h3 class="announce__title">Apple TV: Будущее, которое не наступило</h3>
+                <time class="announce__date">20.06.2019</time>
+              </div>
+              <div class="announce interesting-stories__item"
+                style="background-image: linear-gradient(to bottom, rgba(38, 40, 43, 0), #26282b),  url('../img/mobile.jpg')">
+                <h3 class="announce__title">Apple разрабатывает новые приложения для macOS Catalina</h3>
+                <time class="announce__date">19.06.2019</time>
+              </div>
+              <div class="announce interesting-stories__item"
+                style="background-image: linear-gradient(to bottom, rgba(38, 40, 43, 0), #26282b),  url('../img/mobile.jpg')">
+                <h3 class="announce__title">Apple полностью переработает 4 приложения под macOS к релизу Catalina</h3>
+                <time class="announce__date">18.06.2019</time>
+              </div>
+            </aside>
+          </div>
+        </article>
+        //= components/subscribe.html
+      </div>
+    </div>
+    //= components/footer.html
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

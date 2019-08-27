@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>News</title>
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    //= components/header-long.html
+    <div class="content">
+      <div class="container tradein">
+        //= components/breadcrumbs.html
+        <div class="page-head page-head--grey">
+          <div class="page-head__content">
+            <h1 class="page-head__title">Время обновиться!</h1>
+            <p class="page-head__text">Обменяйте свой iPhone на скидку до 50% на покупку нового!</p>
+            <div class="btn btn--bg-green btn--radius-lg btn--width-auto btn--big" uk-toggle="target: #popup-assesment">
+              Получить оценку устройства</div>
+          </div>
+        </div>
+        <div class="steps">
+          <h2 class="title">Как это работает:</h2>
+          <ol class="steps__container">
+            <li class="steps__item">
+              <p class="steps__title">Оставьте заявку
+                на Trade-iN на сайте</p>
+              <p>Купите в Trade-iN в карточке товара, позвоните по номеру или оставьте заявку на этой странице ниже
+              </p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__title">Отдайте устройство
+                на диагностику</p>
+              <p>iPhone должен быть полностью в рабочем состоянии, без существенных повреждений корпуса и экрана, с
+                работающими функциональными кнопками и без следов от контакта с жидкостью</p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__title">Получите скидку
+                на нове устройство</p>
+              <p>Оставшуюся сумму можно доплатить картой, наличными или оформить в кредит</p>
+            </li>
+          </ol>
+        </div>
+        <div class="frame tradein-calc">
+          <h2 class="title">Рассчитайте стоимость</h2>
+          <div class="tradein-calc__inner">
+            <div class="tradein-calc__col">
+              <p class="tradein-calc__title">Старый смартфон</p>
+                
+              <div class="tradein-calc__col-inner" uk-filter="target: .js-filter">
+                <div class="tradein-calc__col-2">
+                  <p class="tradein-calc__table-title">Модель:</p>
+                  <div class="tradein-calc__field">iPhone X</div>  
+                  <ul class="tradein-calc__table tradein-calc__mob-drop">
+                    <li><span uk-filter-control=".iPhoneX" class="uk-active tradein-calc__chosen tradein-calc__chosen--active">iPhone X</span>
+                    </li>
+                    <li><span uk-filter-control=".iPhone8P" class="tradein-calc__chosen">iPhone 8 Plus</span></li>
+                    <li><span uk-filter-control=".iPhone8" class="tradein-calc__chosen">iPhone 8</span></li>
+                    <li><span uk-filter-control=".iPhone7P" class="tradein-calc__chosen">iPhone 7 Plus</span></li>
+                    <li><span uk-filter-control=".iPhone7" class="tradein-calc__chosen">iPhone 7</span></li>
+                    <li><span uk-filter-control=".iPhone6sP" class="tradein-calc__chosen">iPhone 6S Plus</span></li>
+                    <li><span uk-filter-control=".iPhone6s" class="tradein-calc__chosen">iPhone 6S</span></li>
+                    <li><span uk-filter-control=".iPhone6" class="tradein-calc__chosen">iPhone 6</span></li>
+                    <li><span uk-filter-control=".iPhone5se" class="tradein-calc__chosen">iPhone SE</span></li>
+                    <li><span uk-filter-control=".iPhone5s" class="tradein-calc__chosen">iPhone 5S</span></li>
+                    <li><span uk-filter-control=".iPhone5c" class="tradein-calc__chosen">iPhone 5С</span></li>
+                    <li><span uk-filter-control=".iPhone5" class="tradein-calc__chosen">iPhone 5</span></li>
+                  </ul>
+                </div>
+                <div class="tradein-calc__col-2">
+                  <p class="tradein-calc__table-title">Память (Гб):</p>
+                  <div class="tradein-calc__field">8</div>  
+                  <ul class="js-filter tradein-calc__table-old tradein-calc__table-price tradein-calc__mob-drop">
+                      <li class="iPhoneX"><span data-price="1000" class="tradein-calc__chosen tradein-calc__chosen--active">8</span></li>
+                      <li class="iPhoneX"><span data-price="1200" class="tradein-calc__chosen">512</span></li>
+                      <li class="iPhoneX"><span data-price="1200" class="tradein-calc__chosen">128</span></li>
+                      <li class="iPhone8P"><span data-price="3000" class="tradein-calc__chosen">32</span></li>
+                      <li class="iPhone8P"><span data-price="3000" class="tradein-calc__chosen">16</span></li>
+                      <li class="iPhone8P"><span data-price="3000" class="tradein-calc__chosen">128</span></li>
+                      <li class="iPhone7"><span data-price="3000" class="tradein-calc__chosen">32</span></li>
+                      <li class="iPhone7"><span data-price="3000" class="tradein-calc__chosen">64</span></li>
+                      <li class="iPhone7"><span data-price="3000" class="tradein-calc__chosen">512</span></li>
+                      <li class="iPhone6s"><span data-price="3000" class="tradein-calc__chosen">32</span></li>
+                      <li class="iPhone6s"><span data-price="3000" class="tradein-calc__chosen">112</span></li>
+                      <li class="iPhone8"><span data-price="3000" class="tradein-calc__chosen">32</span></li>
+                      <li class="iPhone8"><span data-price="3000" class="tradein-calc__chosen">512</span></li>
+                      <li class="iPhone7P"><span data-price="3000" class="tradein-calc__chosen">32</span></li>
+                      <li class="iPhone7P"><span data-price="3000" class="tradein-calc__chosen">128</span></li>
+                      <li class="iPhone7P"><span data-price="3000" class="tradein-calc__chosen">64</span></li>
+                      <li class="iPhone7"><span data-price="3000" class="tradein-calc__chosen">32</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tradein-calc__col">
+              <p class="tradein-calc__title">Новый смартфон</p>
+              <div class="tradein-calc__col-inner" uk-filter="target: .js-filter">
+                <div class="tradein-calc__col-2">
+                  <p class="tradein-calc__table-title">Модель:</p>
+                  <div class="tradein-calc__field">iPhone X</div>  
+                  <ul class="tradein-calc__table tradein-calc__mob-drop">
+                    <li><span uk-filter-control=".iPhoneX" class="uk-active tradein-calc__chosen tradein-calc__chosen--active">iPhone X</span>
+                    </li>
+                    <li><span uk-filter-control=".iPhone8P" class="tradein-calc__chosen">iPhone 8 Plus</span></li>
+                    <li><span uk-filter-control=".iPhone8" class="tradein-calc__chosen">iPhone 8</span></li>
+                    <li><span uk-filter-control=".iPhone7P" class="tradein-calc__chosen">iPhone 7 Plus</span></li>
+                    <li><span uk-filter-control=".iPhone7" class="tradein-calc__chosen">iPhone 7</span></li>
+                    <li><span uk-filter-control=".iPhone6sP" class="tradein-calc__chosen">iPhone 6S Plus</span></li>
+                    <li><span uk-filter-control=".iPhone6s" class="tradein-calc__chosen">iPhone 6S</span></li>
+                    <li><span uk-filter-control=".iPhone6" class="tradein-calc__chosen">iPhone 6</span></li>
+                    <li><span uk-filter-control=".iPhone5se" class="tradein-calc__chosen">iPhone SE</span></li>
+                    <li><span uk-filter-control=".iPhone5s" class="tradein-calc__chosen">iPhone 5S</span></li>
+                    <li><span uk-filter-control=".iPhone5c" class="tradein-calc__chosen">iPhone 5С</span></li>
+                    <li><span uk-filter-control=".iPhone5" class="tradein-calc__chosen">iPhone 5</span></li>
+                  </ul>
+                </div>
+                <div class="tradein-calc__col-2">
+                  <p class="tradein-calc__table-title">Память (Гб):</p>
+                  <div class="tradein-calc__field">8</div>  
+                  <ul class="js-filter tradein-calc__table-new tradein-calc__table-price tradein-calc__mob-drop">
+                    <li class="iPhoneX"><span data-price="10000" class="tradein-calc__chosen tradein-calc__chosen--active">8</span></li>
+                    <li class="iPhoneX"><span data-price="12000" class="tradein-calc__chosen">512</span></li>
+                    <li class="iPhoneX"><span data-price="12000" class="tradein-calc__chosen">128</span></li>
+                    <li class="iPhone8P"><span data-price="30000" class="tradein-calc__chosen">32</span></li>
+                    <li class="iPhone8P"><span data-price="30000" class="tradein-calc__chosen">16</span></li>
+                    <li class="iPhone8P"><span data-price="30000" class="tradein-calc__chosen">128</span></li>
+                    <li class="iPhone7"><span data-price="30000" class="tradein-calc__chosen">32</span></li>
+                    <li class="iPhone7"><span data-price="30000" class="tradein-calc__chosen">64</span></li>
+                    <li class="iPhone7"><span data-price="30000" class="tradein-calc__chosen">512</span></li>
+                    <li class="iPhone6s"><span data-price="30000" class="tradein-calc__chosen">32</span></li>
+                    <li class="iPhone6s"><span data-price="30000" class="tradein-calc__chosen">112</span></li>
+                    <li class="iPhone8"><span data-price="30000" class="tradein-calc__chosen">32</span></li>
+                    <li class="iPhone8"><span data-price="30000" class="tradein-calc__chosen">512</span></li>
+                    <li class="iPhone7P"><span data-price="30000" class="tradein-calc__chosen">32</span></li>
+                    <li class="iPhone7P"><span data-price="30000" class="tradein-calc__chosen">128</span></li>
+                    <li class="iPhone7P"><span data-price="30000" class="tradein-calc__chosen">64</span></li>
+                    <li class="iPhone7"><span data-price="30000" class="tradein-calc__chosen">32</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="frame frame--dark">
+              <div class="tradein-calc__card">
+                <img src="img/card-mini.jpg" alt="">
+                <p>Apple iPhone X 128GB </p>
+              </div>
+              <div class="tradein-calc__result">
+                <p class="tradein-calc__text">Ваша скидка</p>
+                <p class="tradein-calc__discount" id="discount">- 0 ₽</p>
+                <p class="tradein-calc__text">Стоимость нового с учетом скидки</p>
+                <div class="tradein-calc__total" id="total">0 ₽</div>
+                <div class="btn btn--bg-green btn--radius-lg btn--big" uk-toggle="target: #popup-request">Оставить
+                  заявку</div>
+                <p class="tradein-calc__text tradein-calc__disclaimer">* Размер скидки не может привышать 50% стоимости
+                  новго устройства, если
+                  расчетная цена вашего устройства больше половины нового, разницу можете потратить на покупку
+                  аксессуаров
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel tradein__carousel">
+          <h2 class="carousel__title">
+            <div class="carousel__menu-wrap">
+              <svg class="carousel__link js-mob-menu-open">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#dots">
+              </svg>
+              <ul class="carousel__menu js-mob-menu">
+                <li class="carousel__menu-item carousel__menu-item--bright">Показать все</li>
+                <li class="carousel__menu-item">iPhone 7</li>
+                <li class="carousel__menu-item">iPhone 7 Plus</li>
+                <li class="carousel__menu-item">iPhone 8</li>
+                <li class="carousel__menu-item">iPhone 8 Plus</li>
+                <li class="carousel__menu-item">iPhone X</li>
+                <li class="carousel__menu-item">iPhone XS</li>
+                <li class="carousel__menu-item">iPhone XS Max</li>
+                <li class="carousel__menu-item">iPhone XR</li>
+              </ul>
+            </div>
+            <span class="carousel__title-text">Новые&nbsp;модели</span>
+          </h2>
+          <div class="carousel__inner">
+            <div class="swiper-container swiper-good">
+              <ul class="swiper-wrapper" uk-height-match="target: .card__title">
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+                <li class="carousel__item swiper-slide">
+                  //= components/card/card--green.html
+                </li>
+              </ul>
+            </div>
+            <a class="carousel__next swiper-button-next" title="показать следующий" href="javascript:void(0)">
+              <svg class="carousel__arrow" style="margin-top:0px;" title=" ">
+                <defs>
+                  <linearGradient id="grad1">
+                    <stop offset="0%" stop-color="#66d927" />
+                    <stop offset="100%" stop-color="#b7ff00" />
+                  </linearGradient>
+                </defs>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <p class="tradein__disclaimer">* Проект Catalyst, предполагающий унификацию приложений для Mac и iPad, должен
+          существенно облегчить жизнь как разработчикам, так и рядовым пользователям. Однако, прежде чем это станет
+          реальностью, Apple предстояло проделать большую работу по созданию специального инструментария разработки, а
+          также объединить AppKit и UIKit. Задача, которую поставили перед собой в Купертино, оказалась настолько
+          трудоемкой, что над ее реализацией сама компания будет трудиться до самого сентября, занимаясь апгрейдом
+          собственных приложений, перенесенных на macOS с iOS.</p>
+        //= components/subscribe.html
+      </div>
+    </div>
+
+    //= components/footer.html
+  </div>
+  <div class="bg"></div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.table {
+  font-size: 12px;
+
+  td {
+    line-height: normal;
+    color: #30373d;
+
+    &:first-child{
+      color: #959595;
+      
+      @include screen("smlim"){
+        padding-bottom: 10px;
+      }
+
+      @include screen("lg"){
+        padding-bottom: 20px;
+      }
+    }
+
+    @include screen("sm") {
+      display: block;
+      padding-bottom: 11px;
+    }
+    @include screen("md") {
+      width: 50%;
+    }
+  }
+
+  tr {
+    &:last-child {
+      @include screen("sm") {
+        td:last-child {
+          padding: 0;
+        }
+      }
+
+      @include screen("lg") {
+        td {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  @include screen("md") {
+    width: 100%;
+  }
+}
