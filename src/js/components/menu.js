@@ -35,3 +35,12 @@ if (menuBtn !== null && document.querySelector(".menu__cats") !== null) {
     }
   });
 }
+
+// Отступ при скролле
+$(window).scroll(function () {
+  var offsetTop = $(this).scrollTop();
+  console.log(offsetTop);
+  var bar = $('#menu-mobile').find('.uk-offcanvas-bar');
+  var top = 130 - offsetTop;
+  $(bar).css('top', top);
+});
