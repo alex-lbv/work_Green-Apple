@@ -1,7 +1,7 @@
 var menuBtn = document.querySelector(".js-btn-toggle");
 
 if (menuBtn !== null && document.querySelector(".menu__cats") !== null) {
-  document.addEventListener("click", function(ev) {
+  document.addEventListener("click", function (ev) {
     if (
       !ev.target.classList.contains("menu__cats-name") &&
       !ev.target.classList.contains("menu__subcats-name") &&
@@ -16,14 +16,14 @@ if (menuBtn !== null && document.querySelector(".menu__cats") !== null) {
       menuBtn.classList.remove("menu__btn--shown");
     }
   });
-  menuBtn.addEventListener("click", function() {
+  menuBtn.addEventListener("click", function () {
     this.classList.toggle("menu__btn--shown");
     document
       .querySelector(".menu__cats")
       .classList.toggle("menu__cats--showed");
   });
 
-  document.querySelector(".menu__cats").addEventListener("click", function(e) {
+  document.querySelector(".menu__cats").addEventListener("click", function (e) {
     if (e.target.classList.contains("menu__cats-name--dropdown")) {
       var content = e.target.nextElementSibling;
 
@@ -39,7 +39,6 @@ if (menuBtn !== null && document.querySelector(".menu__cats") !== null) {
 // Отступ при скролле
 $(window).scroll(function () {
   var offsetTop = $(this).scrollTop();
-  console.log(offsetTop);
   var bar = $('#menu-mobile').find('.uk-offcanvas-bar');
   var top = 130 - offsetTop;
   $(bar).css('top', top);
