@@ -63,7 +63,12 @@
     font-size: 14px;
     line-height: 1.2;
 
+    @include screen(smlim) {
+      padding-bottom: 10px;
+    }
+
     @include screen ("lg") {
+      padding-bottom: 20px;
       width: 51.2%;
     }
   }
