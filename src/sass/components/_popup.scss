@@ -253,3 +253,13 @@
 .gallery-thumbnav-popup {
 	position: relative;
 }
+
+body.checkout-simplecheckout .popup .card--micro {
+	margin: -11px 0 10px 0;
+	padding: 5px 0;
+}
+
+#popup-buy-credit .price__current--size-md {
+  font-size: 18px;
+  line-height: 32px;
+}

@@ -103,6 +103,10 @@
     .filter__item:not(:last-of-type) {
       margin-bottom: 7px;
     }
+
+    &-item label {
+      white-space: nowrap;
+    }
   }
 
   &__memory {
@@ -153,7 +157,7 @@
       transition: border 0.3s, box-shadow 0.3s;
     }
 
-    &-input:checked + &-label {
+    &-input:checked+&-label {
       box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #4bd964;
       border: solid 1px #4bd964;
       color: $positive;
@@ -205,7 +209,7 @@
     }
   }
 
-  &__input:checked + &__label {
+  &__input:checked+&__label {
     border: 2px solid $positive;
     box-shadow: 0px 0px 0px 1px #4bd964;
   }
@@ -529,7 +533,7 @@
       margin-right: 4px;
     }
 
-    .product__presents-checkbox:checked + & {
+    .product__presents-checkbox:checked+& {
       border: solid 1px #4bd964;
       box-shadow: 0 0 0 1px #4bd964;
     }
@@ -561,37 +565,31 @@
 
     &--glass {
       @include screen(smlim) {
-        background: url("../img/pic/bg/present-glass.jpg") bottom center/100px
-          73px no-repeat;
+        background: url("../img/pic/bg/present-glass.jpg") bottom center/100px 73px no-repeat;
       }
 
       @include screen(lg) {
-        background: url("../img/pic/bg/present-glass.jpg") bottom center/119px
-          92px no-repeat;
+        background: url("../img/pic/bg/present-glass.jpg") bottom center/119px 92px no-repeat;
       }
     }
 
     &--discount {
       @include screen(smlim) {
-        background: url("../img/pic/bg/present-discount.svg") bottom center/79px
-          72px no-repeat;
+        background: url("../img/pic/bg/present-discount.svg") bottom center/79px 72px no-repeat;
       }
 
       @include screen(lg) {
-        background: url("../img/pic/bg/present-discount.svg") bottom
-          center/100px 79px no-repeat;
+        background: url("../img/pic/bg/present-discount.svg") bottom center/100px 79px no-repeat;
       }
     }
 
     &--case {
       @include screen(smlim) {
-        background: url("../img/pic/bg/present-case.jpg") bottom center/71px
-          73px no-repeat;
+        background: url("../img/pic/bg/present-case.jpg") bottom center/71px 73px no-repeat;
       }
 
       @include screen(lg) {
-        background: url("../img/pic/bg/present-case.jpg") bottom center/96px
-          86px no-repeat;
+        background: url("../img/pic/bg/present-case.jpg") bottom center/96px 86px no-repeat;
       }
     }
   }

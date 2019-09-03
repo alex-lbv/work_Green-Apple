@@ -1,6 +1,6 @@
 .specs {
   padding: 19px 20px;
-  
+
   @include screen("sm") {
     margin-bottom: 10px;
     margin-top: 20px;
@@ -20,7 +20,7 @@
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     @include screen("smlim") {
       margin-bottom: 18px;
     }
@@ -60,6 +60,9 @@
   }
 
   td {
+    font-size: 14px;
+    line-height: 1.2;
+
     @include screen ("lg") {
       width: 51.2%;
     }
