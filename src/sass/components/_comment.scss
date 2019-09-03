@@ -216,6 +216,8 @@
     margin: 0;
     padding-left: 17px;
     line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__footer {

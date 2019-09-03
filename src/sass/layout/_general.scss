@@ -196,8 +196,9 @@ hr {
 }
 
 .wide-wrapper {
-  border: solid 1px #d9d9d9;
-  background-color: #ffffff;
+  position: relative;
+  border: none;
+  background-color: transparent;
   width: 100%;
 
   @include screen("smlim") {
@@ -206,6 +207,23 @@ hr {
 
   @include screen("lg") {
     margin-bottom: 60px;
+  }
+
+  &::before {
+    background-color: #fff;
+    border-bottom: solid 1px #d9d9d9;
+    border-top: solid 1px #d9d9d9;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    right: 50%;
+    width: 100vw;
+    top: 0;
+    z-index: -1;
   }
 }
 
