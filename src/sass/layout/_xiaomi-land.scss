@@ -1424,4 +1424,338 @@
       }
     }
   }
+
+  &--note-4x {
+    padding-bottom: 40px;
+
+    .xiaomi-land {
+      &__header {
+        @include screen(smlim) {
+          background: url("../img/pic/xiaomi/note-4x/xiaomi-1.jpg") no-repeat, rgb(20, 20, 24);
+          background-size: contain;
+          background-position: bottom;
+        }
+
+        @include screen(lg) {
+          background: url("../img/pic/xiaomi/note-4x/xiaomi-1.jpg") no-repeat;
+          background-size: cover;
+        }
+
+        p {
+          text-align: center;
+          text-transform: uppercase;
+          color: #ffffff;
+
+          @include screen(smlim) {
+            padding: 90px 15px 150px;
+            margin: 0 auto;
+            font: 500 40px/60px AvenirNext, sans-serif;
+          }
+
+          @include screen(lg) {
+            padding: 90px 15px 220px;
+            font: 500 64px/87px AvenirNext, sans-serif;
+          }
+        }
+      }
+
+      &__section {
+        &--feature {
+          position: relative;
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column-reverse;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            position: relative;
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 70px 50px 600px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 620px;
+            max-height: 300px;
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              left: 0;
+              margin: auto;
+            }
+          }
+        }
+
+        &--perfomance {
+          background: #000000;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            color: #ffffff;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          picture {
+            @include screen(smlim) {
+              display: flex;
+            }
+          }
+
+          img {
+            max-width: 610px;
+            max-height: 470px;
+
+            @include screen(smlim) {
+              margin: 0 0 0 auto;
+            }
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+        }
+
+        &--autonomy {
+          position: relative;
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column-reverse;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            position: relative;
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 70px 50px 600px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 415px;
+            max-height: 350px;
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              left: 65px;
+              margin: auto;
+            }
+          }
+        }
+
+        &--black {
+          background: #000000;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            color: #ffffff;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          picture {
+            @include screen(smlim) {
+              display: flex;
+            }
+          }
+
+          img {
+            max-width: 475px;
+            max-height: 380px;
+
+            @include screen(smlim) {
+              margin: 0 0 0 auto;
+            }
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+        }
+
+        &--protection {
+          position: relative;
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column-reverse;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            position: relative;
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 70px 50px 600px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 420px;
+            max-height: 350px;
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              left: 0;
+              margin: auto;
+            }
+          }
+        }
+
+        &--footer {
+          background: #DFD5CB;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          picture {
+            @include screen(smlim) {
+              display: flex;
+            }
+          }
+
+          img {
+            max-width: 465px;
+            max-height: 410px;
+
+            @include screen(smlim) {
+              margin: 0 0 0 auto;
+            }
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
