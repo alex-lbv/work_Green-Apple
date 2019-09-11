@@ -1758,4 +1758,431 @@
       }
     }
   }
+
+  &--redmi-note7 {
+    padding-bottom: 40px;
+
+    .xiaomi-land {
+      &__header {
+        display: flex;
+        mix-blend-mode: darken;
+
+        @include screen(smlim) {
+          flex-direction: column;
+          text-align: center;
+          padding: 50px 20px 0;
+        }
+
+        @include screen(lg) {
+          justify-content: space-between;
+          align-items: center;
+          padding: 40px 150px 0 90px;
+        }
+
+        p {
+          font: 700 32px/44px AvenirNext, sans-serif;
+          text-transform: uppercase;
+          color: #333333;
+
+          @include screen(smlim) {
+            margin: 0 auto 20px;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 70px;
+            opacity: .5;
+          }
+        }
+
+        img {
+          align-self: flex-end;
+          max-width: 460px;
+          max-height: 395px;
+        }
+      }
+
+      &__section {
+        &--design {
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px 30px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px 30px;
+          }
+
+          p {
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 420px;
+            max-height: 430px;
+
+            @include screen(smlim) {
+              margin: 0 0 0 auto;
+            }
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              right: 65px;
+              margin: auto;
+            }
+          }
+        }
+
+        &--quality {
+          position: relative;
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column-reverse;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            position: relative;
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 70px 50px 600px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 460px;
+            max-height: 415px;
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+            }
+          }
+        }
+
+        &--camera {
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 440px;
+            max-height: 385px;
+
+            @include screen(smlim) {
+              margin: 0 0 0 auto;
+            }
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+        }
+
+        &--selfi {
+          position: relative;
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column-reverse;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            position: relative;
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 70px 20px 600px;
+              align-self: center;
+            }
+          }
+
+          .xiaomi-land__image {
+            max-width: 400px;
+            max-height: 520px;
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              left: 90px;
+              margin: auto;
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+
+            @include screen(smlim) {
+              padding: 0 15px;
+            }
+
+            @include screen(lg) {
+              padding-left: 600px;
+            }
+
+            li {
+              display: flex;
+            }
+
+            li:not(:last-of-type) {
+              margin-bottom: 20px;
+            }
+
+            img {
+              width: 50px;
+              height: 50px;
+              margin-right: 15px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 20px;
+              padding: 0;
+              margin: 0;
+
+              span {
+                opacity: .5;
+              }
+            }
+          }
+        }
+
+        &--perfomance {
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          img {
+            &:first-of-type {
+              max-width: 455px;
+              max-height: 190px;
+
+              @include screen(smlim) {
+                margin: 0 0 0 auto;
+              }
+
+              @include screen(lg) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+              }
+            }
+
+            &:last-of-type {
+              max-width: 270px;
+              max-height: 165px;
+              mix-blend-mode: darken;
+
+              @include screen(smlim) {
+                display: none;
+              }
+
+              @include screen(lg) {
+                position: absolute;
+                top: 25px;
+                right: 300px;
+              }
+            }
+          }
+        }
+
+        &--autonomy {
+          position: relative;
+          background: #ffffff;
+          overflow: visible;
+
+          @include screen(smlim) {
+            flex-direction: column-reverse;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            position: relative;
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 70px 50px 600px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 450px;
+            max-height: 380px;
+            mix-blend-mode: multiply;
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              left: 50px;
+              margin: auto;
+            }
+          }
+        }
+
+        &--unlock {
+          background: #ffffff;
+
+          @include screen(smlim) {
+            flex-direction: column;
+            margin: 0 10px;
+          }
+
+          @include screen(lg) {
+            margin: 0 40px;
+          }
+
+          p {
+            color: #333333;
+
+            @include screen(smlim) {
+              align-self: center;
+              padding: 30px 20px 0;
+              margin-bottom: 15px;
+              max-width: 750px;
+            }
+
+            @include screen(lg) {
+              z-index: 1;
+              padding: 50px 0 50px 80px;
+              max-width: 540px;
+              align-self: center;
+            }
+          }
+
+          img {
+            max-width: 405px;
+            max-height: 239px;
+
+            @include screen(smlim) {
+              margin: 0 0 0 auto;
+            }
+
+            @include screen(lg) {
+              position: absolute;
+              bottom: 0;
+              right: 95px;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
