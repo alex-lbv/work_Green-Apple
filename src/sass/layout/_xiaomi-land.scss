@@ -1762,6 +1762,10 @@
   &--redmi-note7 {
     padding-bottom: 40px;
 
+    img {
+      mix-blend-mode: darken;
+    }
+
     .xiaomi-land {
       &__header {
         display: flex;
