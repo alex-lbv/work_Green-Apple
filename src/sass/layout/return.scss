@@ -1,0 +1,289 @@
+.return {
+  @include screen(smlim) {
+    margin-bottom: 40px;
+  }
+
+  @include screen(lg) {
+    margin-bottom: 60px;
+  }
+
+  &__inner-frame {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-bottom: 1px solid #EAEAEA;
+
+    @include screen(smlim) {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include screen(lg) {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      width: max-content;
+      border-bottom: 1px solid transparent;
+      font: 600 16px/22px AvenirNext;
+      color: #1FC119;
+      transition: border .3s;
+
+      &:hover {
+        border-color: #1FC119;
+      }
+    }
+
+    br {
+      @include screen(smlim) {
+        display: none;
+      }
+    }
+  }
+
+  &__inner-top {
+    display: flex;
+    margin-bottom: 20px;
+
+    @include screen(smlim) {
+      flex-direction: column;
+    }
+  }
+
+  &__inner-bottom {
+    @include screen(lg) {
+      justify-content: center;
+      margin: 0 0 0 130px;
+      width: 60%;
+      max-width: 60%;
+    }
+  }
+
+  &__text {
+    &-date {
+      @include screen(smlim) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-gray {
+      font: normal 16px/26px Roboto;
+      color: rgba(48, 55, 61, .7);
+    }
+
+    &-green {
+      margin-bottom: 10px;
+      font: 600 24px/24px AvenirNext;
+      color: #27CC00;
+    }
+
+    &-green-norm {
+      font: normal 20px/26px AvenirNext;
+      color: #1FC119;
+    }
+
+    &-border {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      border-top: 1px solid rgba(216, 216, 216, .5);
+    }
+  }
+
+  &__inner-container {
+    display: flex;
+    flex-direction: column;
+
+    @include screen(smlim) {
+      text-align: center;
+    }
+
+    &--left {
+      @include screen(lg) {
+        padding-top: 10px;
+        margin-left: 30px;
+      }
+    }
+
+    &--right {
+      @include screen(lg) {
+        align-self: flex-end;
+        text-align: right;
+        margin: auto 0 auto auto;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font: 600 24px/24px AvenirNext;
+  }
+
+  .feature__icon {
+    border-radius: 50%;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+
+    @include screen(smlim) {
+      margin: 0 auto 20px;
+      width: 90px;
+      height: 90px;
+    }
+
+    @include screen(lg) {
+      width: 100px;
+      height: 100px;
+    }
+
+    &-image {
+      @include screen(smlim) {
+        margin: 0 auto 20px;
+        width: 100px;
+        height: 100px;
+      }
+
+      @include screen(lg) {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+
+  &__tab-delivery {
+    .return {
+      &__title {
+        font: 500 20px/32px AvenirNext;
+        color: #30373D;
+
+        @include screen(lg) {
+          margin-bottom: 40px;
+        }
+      }
+
+      &__inner {
+        &-frame {
+          padding-top: 40px;
+          border-top: 1px solid #EAEAEA;
+          border-bottom: none;
+        }
+
+        &-top {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__feature {
+    display: flex;
+    text-align: center;
+
+    @include screen(smlim) {
+      flex-direction: column;
+    }
+
+    @include screen(lg) {
+      justify-content: space-around;
+      padding-bottom: 40px;
+    }
+
+    .feature__icon {
+      @include screen(smlim) {
+        margin-bottom: 0;
+      }
+
+      @include screen(lg) {
+        margin-bottom: 0;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include screen(smlim) {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+      }
+
+      @include screen(lg) {
+        width: 25%;
+      }
+
+      &:not(:last-of-type) {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-color: #EAEAEA;
+
+          @include screen(smlim) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+          }
+
+          @include screen(lg) {
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1px;
+            height: 270px;
+          }
+        }
+      }
+
+      &>div {
+        margin-bottom: 20px;
+      }
+
+      p {
+        &:first-of-type {
+          margin-bottom: 10px;
+          font: 600 18px/28px AvenirNext;
+          color: #2B2D30;
+        }
+
+        &:last-of-type {
+          @include screen(lg) {
+            padding: 0 40px;
+            font: normal 16px/26px Roboto;
+            color: #30373D;
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    @include screen(smlim) {
+      padding: 20px 0 30px;
+    }
+
+    @include screen(lg) {
+      padding: 20px 0 60px;
+    }
+  }
+
+  .tabs__content {
+    @include screen(smlim) {
+      padding: 20px;
+    }
+  }
+}

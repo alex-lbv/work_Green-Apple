@@ -362,4 +362,12 @@
       }
     }
   }
+
+  &--violet {
+    background: linear-gradient(189.7deg, #A25BD1 0%, #692EA4 100%);
+
+    @include screen(smlim) {
+      height: auto;
+    }
+  }
 }

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    //= components/header-long.html
+    <div class="container">
+      //= components/breadcrumbs-dark.html
+      <div class="page-head page-head--violet">
+        <div class="page-head__content">
+          <h1 class="page-head__title">Доставка и возвраты</h1>
+          <p class="page-head__text">Смотрите способы доставки и условия возврата в вашем городе</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs return">
+      <div class="container swiper-container tabs-swiper">
+        <div class="tabs__container swiper-wrapper">
+          <span class="swiper-slide tabs__btn tabs__btn--active" data-tab="delivery">
+            Доставка
+          </span>
+          <span class="swiper-slide tabs__btn" data-tab="return">
+            Возвраты
+          </span>
+        </div>
+      </div>
+
+      <div class="tabs__content-wrap frame frame--wide">
+        <!-- Tab content -->
+        <div id="delivery" class="container tabs__content tabs__content--visible">
+
+          <div class="return__inner-frame">
+            <div class="return__inner-top">
+              <svg class="feature__icon">
+                <use xlink:href="img/symbol/sprite.svg#return-1"></use>
+              </svg>
+
+              <div class="return__inner-container return__inner-container--left">
+                <span class="return__subtitle">Наложенный платеж</span>
+                <span class="return__text-gray">Ожидаемая датат доставки:</span>
+                <span class="return__text-date">Вторник, 15 октября 2019</span>
+              </div>
+              <div class="return__inner-container return__inner-container--right">
+                <span class="return__text-green">Бесплатно</span>
+                <span class="return__text-gray">Бесплатно на сумму <br>от 1500 рублей</span>
+              </div>
+            </div>
+
+            <div class="return__inner-bottom">
+              <p class="return__text-border">Наложенный платеж —
+                это получение посылки на почте после ее оплаты. <br>При этом вы можете полностью осмотреть устройство
+                перед оплатой.</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="return__inner-frame">
+            <div class="return__inner-top">
+              <img class="feature__icon feature__icon-image" src="img/pic/ico/return-cdek.jpg" width="100" height="100"
+                alt="Cdek">
+
+              <div class="return__inner-container return__inner-container--left">
+                <span class="return__subtitle">Доставка компанией CDEK</span>
+                <span class="return__text-gray">Ожидаемая датат доставки:</span>
+                <span class="return__text-date">Среда, 6 октября 2019</span>
+              </div>
+              <div class="return__inner-container return__inner-container--right">
+                <span class="return__text-green">Бесплатно</span>
+                <span class="return__text-gray">Бесплатно на сумму <br>от 1000 рублей</span>
+              </div>
+            </div>
+
+            <div class="return__inner-bottom">
+              <p class="return__text-border return__text-green-norm uk-padding-top@l uk-padding-top@s uk-margin-bottom">
+                Быстрая доставка по России за 3-4 рабочих дней <br>до двери вашего дома или почтового отделения.</p>
+              <p class="return__text-border">Примечание: данный способ оплаты доступен только по полной предоплате
+                товара </p>
+            </div>
+          </div>
+
+          <span class="title">Способы оплаты</span>
+
+          <ul class="return__feature">
+            <li>
+              <div>
+                <svg class="feature__icon">
+                  <use xlink:href="img/symbol/sprite.svg#return-3"></use>
+                </svg>
+              </div>
+              <p><b>Оплата наличными</b></p>
+              <p>Вы можете оплатить товар курьеру при
+                доставке заказа</p>
+            </li>
+            <li
+              class="feature--violet uk-flex uk-flex-column uk-flex-middle uk-margin-medium-bottom@s uk-padding-medium-bottom@s">
+              <div class="uk-margin-bottom">
+                <svg class="feature__icon">
+                  <use xlink:href="img/symbol/sprite.svg#return-4"></use>
+                </svg>
+              </div>
+              <p class="uk-margin-small-bottom"><b>Банковской картой</b></p>
+              <p class="uk-padding-medium-right@l uk-padding-medium-left@l">Переводом онлайн без комиссии при
+                получении
+                заказа</p>
+            </li>
+            <li
+              class="feature--pink uk-flex uk-flex-column uk-flex-middle uk-margin-medium-bottom@s uk-padding-medium-bottom@s">
+              <div class="uk-margin-bottom">
+                <svg class="feature__icon">
+                  <use xlink:href="img/symbol/sprite.svg#return-5"></use>
+                </svg>
+              </div>
+              <p class="uk-margin-small-bottom"><b>Безналичный рассчет</b></p>
+              <p class="uk-padding-medium-right@l uk-padding-medium-left@l">Деньги списываются с расчетного счета
+                предпринимателя.</p>
+            </li>
+            <li class="feature--green uk-flex uk-flex-column uk-flex-middle">
+              <div class="uk-margin-bottom">
+                <svg class="feature__icon">
+                  <use xlink:href="img/symbol/sprite.svg#return-6"></use>
+                </svg>
+              </div>
+              <p class="uk-margin-small-bottom"><b>В кредит</b></p>
+              <p class="uk-padding-medium-right@l uk-padding-medium-left@l">Деньги списываются с расчетного счета
+                предпринимателя.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="return" class="container return__tab-delivery tabs__content clearfix">
+          <p class="return__title">Обмен и возврат в течении 14 дней с момента покупки.</p>
+
+          <div class="return__inner-frame">
+            <div class="return__inner-top">
+              <img class="feature__icon feature__icon-image" src="img/pic/ico/return-pochta.jpg" width="100"
+                height="100" alt="Cdek">
+
+              <div class="return__inner-container return__inner-container--left">
+                <span class="return__subtitle">Местное почтовое отделение</span>
+                <span class="return__text-gray">Ожидаемая датат доставки:</span>
+                <span class="return__text-date">Вторник, 15 октября 2019</span>
+              </div>
+              <div class="return__inner-container return__inner-container--right">
+                <span class="return__text-gray">Оплату почтового отправлеия <br>при обмене или возврате <br>производит
+                  покупатель </span>
+              </div>
+            </div>
+
+            <div class="return__inner-bottom">
+              <p class="return__text-border return__text-green-norm uk-padding-top@l uk-padding-top@s uk-margin-bottom">
+                Вы можете вернуть заказ через любое почтовое отделение</p>
+              <p class="return__text-border">К каждому товару прилагается накладная и гарантийный талон. Держите
+                их в сохранности.</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="faq">
+        <h2 class="title faq__title">Частые вопросы</h2>
+        <ul uk-accordion="multiple: true" class="accordion">
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">У вас есть доставка за пределы
+              КАД?</a>
+            <p class="uk-accordion-content accordion__content">
+              Да. Более того, мы можем доставить товар в любую России.
+            </p>
+          </li>
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">Есть ли у курьера сдача?</a>
+            <p class="uk-accordion-content accordion__content">
+              Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+            </p>
+          </li>
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">Курьер поможет активировать и
+              настроить
+              устройство?</a>
+            <p class="uk-accordion-content accordion__content">
+              Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+            </p>
+          </li>
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">Есть ли у курьера банковский
+              терминал?</a>
+            <p class="uk-accordion-content accordion__content">
+              Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+            </p>
+          </li>
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">Как перенести доставку?</a>
+            <p class="uk-accordion-content accordion__content">
+              Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+            </p>
+          </li>
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">Могу ли я открыть и проверить товар
+              перед оплатой?</a>
+            <p class="uk-accordion-content accordion__content">
+              Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+            </p>
+          </li>
+          <li class="accordion__body">
+            <a class="uk-accordion-title accordion__title" href="#">Могу ли я оплатить картой
+              курьеру?</a>
+            <p class="uk-accordion-content accordion__content">
+              Есть, есть есть да есть сдача есть. Есть, есть есть да есть сдача есть.
+            </p>
+          </li>
+        </ul>
+      </div>
+      //= components/subscribe.html
+      //= components/footer.html
+    </div>
+  </div>
+  <div class="bg"></div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
